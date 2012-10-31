@@ -317,8 +317,8 @@ Bundle 'tpope/vim-surround'
 """ end vim-surround
 
 """ numbers.vim
-Bundle "myusuf3/numbers.vim"
-nnoremap <F3> :NumbersToggle<CR>
+"Bundle "myusuf3/numbers.vim"
+"nnoremap <F3> :NumbersToggle<CR>
 """ end numbers.vim
 
 ""ctrlp.vim
