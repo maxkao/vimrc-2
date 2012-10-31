@@ -2,7 +2,7 @@
 It's my vim config setting 
 ========================================
 :Author:
-    Chu-siang Lai (凍仁翔)
+    Chu-Siang Lai (凍仁翔)
 :Build Date:
     2012/10/31
 :Version:
