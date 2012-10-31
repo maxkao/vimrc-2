@@ -1,6 +1,6 @@
 "========================================== 
-" Author    : Kang-min Wang ( Aminzai )
-" E-mail    : lagunawang --AT-- Gmail.com
+" Author    : Chu-siang Lai ( 凍仁翔 )
+" E-mail    : chusiang.lai (at) gmail.com
 "==========================================
 "
 "
@@ -40,10 +40,7 @@ if has('gui')
 endif
 
 " Set Color Sheme
-"colorscheme wombat256
-"color wombat256
-colorscheme desertEx
-color desertEx
+colorscheme fu
 
 "" Wild Mode
 "set wildmode=full,list
@@ -180,7 +177,7 @@ nn <c-=> <c-w>=
 "nn <C-m-t> :tabnew<CR>
 "nn <C-m-o> :tabnew<CR>:Explore<CR>
 "nn <C-tab> :tabNext<CR>
-nn tn :<C-u>tabnew<CR>
+nn tt :<C-u>tabnew<CR>
 nn te :<C-u>Texplore<CR>
 nn th :<C-u>tabprev<CR>
 nn tl :<C-u>tabnext<CR>
