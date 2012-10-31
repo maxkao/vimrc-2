@@ -1,0 +1,16 @@
+" fold <table>, </table> at HTML.
+
+syntax on
+
+let php_folding = 1 " 只折疊 { class } 與函數(funtion)
+
+set foldmarker=<table,</table>
+set foldmethod=marker
+set foldlevel=0 " 預設全部關閉
+set foldnestmax=5 
+
+
+"autocmd FileType php let php_folding = 1 | set foldmarker=<table,</table> | set foldmethod=marker | set foldlevel=0 | set foldnestmax=5
+"autocmd BufRead,BufNewFile *.php let php_folding = 1 
+"autocmd BufRead,BufNewFile *.php let php_folding = 1 | set foldmarker=<table,</table> | set foldmethod=marker | set foldlevel=0 | set foldnestmax=5
+
