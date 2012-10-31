@@ -2,11 +2,11 @@
 It's my vim config setting
 ========================================
 :Author:
-    Kang-min Wang (Aminzai)
+    Chu-siang Lai (凍仁翔)
 :Build Date:
-    2011/11/28
+    2012/10/31
 :Version:
-    2.0
+    1.0
 
 Introduction
 ========================================
@@ -45,8 +45,4 @@ Backup directory: ${HOME}/.vim_back-${data}
 Clean backup 
 ----------------------------------------
 $ make clean_backup_file
-
-
-
-
 
