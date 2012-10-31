@@ -1,14 +1,14 @@
 ========================================
 It's my vim config setting 
 ========================================
-:Author:
+:Author
     Chu-siang Lai (凍仁翔)
-:Build Date:
+:Build Date
     2012/10/31
-:Version:
+:Version
     2.0
-:fork:
-    [Aminzai/vimrc](https://github.com/aminzai/vimrc)
+:forked from
+    @Aminzai/`vimrc <https://github.com/aminzai/vimrc>`_
 
 Introduction
 ========================================
