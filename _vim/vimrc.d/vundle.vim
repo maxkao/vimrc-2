@@ -125,12 +125,12 @@ let g:ctrlp_custom_ignore = {
 ""end easymotion
 
 """ Vimwiki
-Bundle 'vimwiki.vim'
+Bundle 'vimwiki'
 
 """ Gitv - need the fugitive plugin.
-"Bundle 'gitv.vim'				
-Bundle 'gregsexton/gitv'
-Bundle 'tpope/vim-fugitive.vim'
+Bundle 'gitv'				
+"Bundle 'gregsexton/gitv'
+Bundle 'tpope/vim-fugitive'
 
 """ Color
 Bundle 'flazz/vim-colorschemes'
