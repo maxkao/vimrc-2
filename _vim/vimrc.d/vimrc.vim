@@ -35,7 +35,8 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
-"set showcmd		" Show (partial) command in status line.
+set showcmd		" Show (partial) command in status line.
+set showmode	" Show '-insert-' Mode at the lower left.
 "set showmatch		" Show matching brackets.
 "set ignorecase		" Do case insensitive matching
 "set smartcase		" Do smart case matching
@@ -51,17 +52,41 @@ set fileencodings=utf8
 set hlsearch		" (hls) Hightlight in Search
 set ignorecase		" (ic) Case sensitive searches
 "set nobackup
-set autochdir
-set directory=~/tmp	" move swap and backup files from your working directory
-set backupdir=~/tmp
+set autochdir		" auto cd curent dir.
 
-" indent.
+" - move swap and backup files from your working directory
+set backupdir=~/tmp
+set directory=~/tmp	
+
+" - indent.
 set autoindent		" (ai)
+"set expandtab		"Set Tab to Space
 set tabstop=4
-set shiftwidth=4
+set softtabstop=4	"Set Soft tab stop
+set shiftwidth=4	"Set Soft tab width
 filetype indent on
 
-" auto folds.
+" - Wild Mode
+"set wildmode=full,list
+"set wildmode=list:full
+set wildmode=longest,list	" 類似 bash 的自動補齊，有相同開頭才補，而不是自動填上第一個完整名稱。
+set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
+set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
+" set wildoptions
+"set  winaltkeys=no
+
+" - Do not redraw while running macros (much faster).
+set lazyredraw
+
+" - Don't make noise
+"set noerrorbells
+
+" - Set Folding 
+"set foldenable
+"set foldmethod=indent
+"set foldcolumn=3
+
+"  - auto folds.
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
