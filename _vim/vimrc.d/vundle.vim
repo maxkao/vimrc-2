@@ -127,9 +127,9 @@ let g:ctrlp_custom_ignore = {
 """ Vimwiki
 Bundle 'vimwiki.vim'
 
-""" Gitv
-"Bundle 'gitv.vim'				" need the fugitive plugin.
-Bundle 'gregsexton/gitv'		" need the fugitive plugin.
+""" Gitv - need the fugitive plugin.
+"Bundle 'gitv.vim'				
+Bundle 'gregsexton/gitv'
 Bundle 'tpope/vim-fugitive.vim'
 
 """ Color
