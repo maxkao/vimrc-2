@@ -5,7 +5,7 @@
 "nmap <leader>gV :Gitv! --all<CR>
 "vmap <leader>gV :Gitv! --all<CR>
 
-" === PHP ===
+" === phpfolding.vim ===
 " - keymap.
 autocmd FileType php noremap <F4> :!php -l % <CR>
 autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
@@ -19,7 +19,6 @@ autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr>
 "nmap <leader>e	:TrinityToggleNERDTree <CR>	 
 "nmap <leader>b	:TrinityToggleSourceExplorer <CR>
 "nmap <leader>d	:Calendar <CR>
-"nmap <C-e>		:<C-U> NERDTree <CR>
 
 " == Vimwiki ==
 " - g:vimwiki_list* *vimwiki-multiple-wikies*.
