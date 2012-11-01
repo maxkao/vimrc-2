@@ -33,17 +33,17 @@ Installation
 Update
 ========================================
 #. use vim (comaand mode), run command BundleInstall
-#. use make, $make update [1]_
+#. use make, $make update [*]_\
 
 Backup
 ========================================
 This version can auto backup orginal config before install.
 
-Backup directory: ${HOME}/.vim_back-${data} [1]_
+Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
 Clean backup 
 ----------------------------------------
 $ make clean_backup_file
 
-.. [1] Just support Unix-like operating-system.
+.. [*] Just support Unix-like operating-system.
 
