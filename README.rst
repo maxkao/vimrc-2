@@ -16,8 +16,8 @@ This verison use vundle that can get the newest vim script use eazy way.
 
 Require
 ========================================
-1. Git
-2. Network
+#. Git
+#. Network
 #. make (Unix Link Only)
 #. Vim
 #. Curl
@@ -32,16 +32,18 @@ Installation
 
 Update
 ========================================
-1. use vim (comaand mode), run command BundleInstall
-2. use make, $make update .. Just support Unix like system
+#. use vim (comaand mode), run command BundleInstall
+#. use make, $make update [1]_
 
 Backup
 ========================================
 This version can auto backup orginal config before install.
 
-Backup directory: ${HOME}/.vim_back-${data} .. Just support Unix like system
+Backup directory: ${HOME}/.vim_back-${data} [1]_
 
 Clean backup 
 ----------------------------------------
 $ make clean_backup_file
+
+.. [1] Just support Unix-like operating-system.
 
