@@ -40,7 +40,7 @@ set showmode	" Show '-insert-' Mode at the lower left.
 "set showmatch		" Show matching brackets.
 "set ignorecase		" Do case insensitive matching
 "set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
+set incsearch		" Incremental search (is), 使用隨打即找的搜尋功能。預設 off。
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden         " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
@@ -48,11 +48,12 @@ set mouse=nv		" Enable mouse usage (Normal + Visual modes)
 
 " = Cutsom Main Environment =
 
+set autochdir		" auto cd curent dir.
 set fileencodings=utf8
 set hlsearch		" (hls) Hightlight in Search
 set ignorecase		" (ic) Case sensitive searches
 "set nobackup
-set autochdir		" auto cd curent dir.
+set ruler	"Show Row & Colume position
 
 " - move swap and backup files from your working directory
 set backupdir=~/tmp
@@ -60,11 +61,17 @@ set directory=~/tmp
 
 " - indent.
 set autoindent		" (ai)
-"set expandtab		"Set Tab to Space
+set cindent
+"set expandtab		" Set Tab to Space.
+set smartindent
 set tabstop=4
-set softtabstop=4	"Set Soft tab stop
-set shiftwidth=4	"Set Soft tab width
+set softtabstop=4	" Set Soft tab stop.
+set shiftwidth=4	" Set Soft tab width.
 filetype indent on
+
+" - Set Scroll setting
+set scrolloff=3		" We keep 3 lines when scrolling .
+"set scrolljump=5	" Jump 5 lines when scrolling.
 
 " - Wild Mode
 "set wildmode=full,list
