@@ -1,4 +1,4 @@
-" = Cutsom hotkey Environment =
+" = Cutsom Hotkey =
 "imap <C-I>	<ESC>
 
 " Re-Read vim Configure.
@@ -16,7 +16,6 @@ cmap WW	:w <CR>
 " - Copy the characters under the cursor until the end
 imap <leader>y	<C-o>y$<ESC>
 nmap <leader>y	y$
-
 vmap <C-c>	y <CR>
 vmap <S-c>	"+y <CR>
 
@@ -50,6 +49,15 @@ nmap <S-TAB> v<
 "vmap <tab> >gv
 "xnoremap <s-tab> <gv
 
+" == NERDTree ==
+nmap <leader>e :<C-u>NERDTree<CR>
+
+" == numbers.vim ==
+"nnoremap <F3> :NumbersToggle<CR>
+
+" == OmniCppComplete ==
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
 " == Scroll ==
 " - hide scroll of split windows mode.
 nmap +b		:set guioptions+=b <CR>
@@ -79,7 +87,10 @@ nmap <leader>f2	:set guifont=Monospace\ 14 <CR>
 nmap <leader>f3	:set guifont=Monospace\ 16 <CR>
 nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
 
-" == 補齊括弧 ==
+" == 自動補齊 ==
+inoremap  <leader><tab> <C-x><C-p>
+
+" - 自動補齊括弧
 " inoremap  triger_char  mapping_str
 " 映射指令     觸發字元     映射字串
 "
@@ -91,11 +102,44 @@ inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
-" 自動補齊
-inoremap  <leader><tab> <C-x><C-p>
+" ----
+
+" = Hotkey for Plugin =
+
+" == Gitv ==
+"nmap <leader>gv :Gitv --all<CR>
+"nmap <leader>gV :Gitv! --all<CR>
+"vmap <leader>gV :Gitv! --all<CR>
+
+" == phpfolding.vim ==
+autocmd FileType php noremap <F4> :!php -l % <CR>
+autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
+autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
+autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
+
+" == Vimwiki ==
+autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtm	:r /home/jonny/vimwiki/time-management-for-system-administrators.wiki <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<C-j>		:VimwikiDiaryNextDay <CR>
+autocmd BufRead,BufNewFile *.wiki noremap	<C-k>		:VimwikiDiaryPrevDay <CR>
+"autocmd BufRead,BufNewFile *.wiki nmap		<C-o>		<C-Space> <CR>
+"nmap <C-J>		:VimwikiDiaryNextDay <CR>	" old syntax.
+"nmap <C-K>		:VimwikiDiaryPrevDay <CR>
+
+" - GTD.
+nmap <leader>g	2<leader>ww:Calendar<CR><C-w>w<C-w>s<leader>w<leader>wgg
+"nmap <leader>g	2<leader>ww:Calendar<CR><C-w>wgg
+
+" == Tagbar ==
+nmap <leader>t :<C-u>TagbarToggle<CR>
+nnoremap <F3> :<C-u>TagbarToggle<CR>
 
 " -----------------------------------
 "  Author : Chu-siang Lai
 "  E-mail : jonny (at) ubuntu-tw.org
 "  Blog : http://jonny.ubuntu-tw.net
 " -----------------------------------
+
