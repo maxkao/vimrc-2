@@ -1,20 +1,156 @@
 " = Plugin =
 
-" === Gitv ===
-"nmap <leader>gv :Gitv --all<CR>
-"nmap <leader>gV :Gitv! --all<CR>
-"vmap <leader>gV :Gitv! --all<CR>
+" == Vundle ==
+" Vim plugin manager with Vundle [2].
+"
+" - Sample Bundles here:
+"
+"  - original repos on github
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"
+"  - vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+"Bundle 'rails.vim'
+"
+"  - non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+" ...
+"
+" - Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: [1] comments after Bundle command are not allowed..
+" NOTE: [2] Github - https://github.com/gmarik/vundle
+"
 
-" === phpfolding.vim ===
-" - keymap.
-autocmd FileType php noremap <F4> :!php -l % <CR>
-autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
-autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
-autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
+filetype off                   " required!
 
-"nmap <leader>d	:Calendar <CR>
+"use git:// as bundle default protocal
+"let g:vundle_default_git_proto = 'git'
+
+if has('win32')
+    set rtp+=%UserProfile%\vimfiles/bundle/vundle/
+else
+    set rtp+=~/.vim/bundle/vundle/
+endif
+
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+filetype plugin indent on     " required! 
+
+" == calendar.vim ==
+Bundle 'calendar.vim'
+
+" == Colorscheme ==
+Bundle 'flazz/vim-colorschemes'
+
+" == ctrlp.vim ==
+Bundle 'kien/ctrlp.vim.git'
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+""let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+" == Gitv - need the fugitive plugin ==
+"Bundle 'gregsexton/gitv'
+Bundle 'gitv'				
+Bundle 'tpope/vim-fugitive'
+
+" == NERDTree ==
+Bundle "scrooloose/nerdtree"
+
+" == numbers.vim ==
+"Bundle "myusuf3/numbers.vim"
+
+" == Omni Complete ==
+set ofu=syntaxcomplete#Complete
+
+" - Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" - Enable heavy omni completion.
+if !exists('g:neocomplcache_omni_patterns')
+  let g:neocomplcache_omni_patterns = {}
+endif
+
+let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+"autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
+let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+
+" - OmniCppComplete
+Bundle 'OmniCppComplete'
+
+set tags+=~/vimfiles/tags/tags
+set tags+=~/vimfiles/tags/c++.tags
+set tags+=~/vimfiles/tags/stl-3.3.tags
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+let OmniCpp_MayCompleteDot = 1 " autocomplete with .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete with ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
+let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
+let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
+
+" == pythoncomplete ==
+Bundle 'pythoncomplete'
+
+" == phpfolding.vim ==
+Bundle 'phpfolding.vim'
+
+" == snipMate  ==
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+
+" == Tagbar ==
+Bundle "majutsushi/tagbar"
+
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+
+if has('win32')
+    let g:tagbar_ctags_bin='C:\ctags.exe'
+endif
+
+" == vim-surround ==
+"Bundle 'tpope/vim-surround'
+
+" == easymotion ==
+"Bundle 'Lokaltog/vim-easymotion'
+""end easymotion
 
 " == Vimwiki ==
+Bundle 'vimwiki'
+
 " - g:vimwiki_list* *vimwiki-multiple-wikies*.
 let g:vimwiki_list = [
 	\ {'path': '~/vimwiki/', 'index': 'index', 'path_html': '~/vimwiki/public_html/'},
@@ -35,28 +171,35 @@ let g:vimwiki_list = [
 " - Default Browser.
 let g:vimwiki_browsers=['/usr/bin/firefox']
 
-" - keymap.
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtm	:r /home/jonny/vimwiki/time-management-for-system-administrators.wiki <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<C-j>		:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<C-k>		:VimwikiDiaryPrevDay <CR>
-"autocmd BufRead,BufNewFile *.wiki nmap		<C-o>		<C-Space> <CR>
-"nmap <C-J>		:VimwikiDiaryNextDay <CR>	" old syntax.
-"nmap <C-K>		:VimwikiDiaryPrevDay <CR>
-
-"  - GTD.
-nmap <leader>g	2<leader>ww:Calendar<CR><C-w>w<C-w>s<leader>w<leader>wgg
-"nmap <leader>g	2<leader>ww:Calendar<CR><C-w>wgg
-
-" == VST (Vim reStructured Text) ==
+" == VST - Vim reStructured Text ==
+Bundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
+" == Start Syntax ==
+Bundle 'vim-scripts/Python-Syntax'
+Bundle 'php.vim'
+Bundle 'jQuery'
+Bundle 'css_color.vim'
+"Bundle 'cpp.vim'
+"Bundle 'django.vim'
+Bundle 'plasticboy/vim-markdown'
+"Bundle 'rest.vim'
+"set syntax=rest
+
+" ----
+
+" == Init Env ==
+command InitENV call InitBundleEnv()
+
+fun! InitBundleEnv()
+   BundleInstall
+   quit
+   quit
+endf
 
 " -----------------------------------
 "  Author : Chu-siang Lai
 "  E-mail : jonny (at) ubuntu-tw.org
 "  Blog : http://jonny.ubuntu-tw.net
 " -----------------------------------
+
