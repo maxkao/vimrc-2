@@ -2,13 +2,6 @@
 It's my vim config setting 
 ========================================
 :Author:
-<<<<<<< HEAD
-    Chu-siang Lai (凍仁翔)
-:Build Date:
-    2012/10/31
-:Version:
-    1.0
-=======
     Chu-Siang Lai (凍仁翔)
 :Build Date:
     2012/10/31
@@ -16,7 +9,6 @@ It's my vim config setting
     2.0
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
->>>>>>> 9c33148e940762cffc4f7e9819ccc7192dae1cf9
 
 Introduction
 ========================================
@@ -41,16 +33,13 @@ Installation
 Update
 ========================================
 1. use vim (comaand mode), run command BundleInstall
-2. use make, $make update 
-*Just support Unix like system
+2. use make, $make update .. Just support Unix like system
 
 Backup
 ========================================
 This version can auto backup orginal config before install.
 
-Backup directory: ${HOME}/.vim_back-${data}
-
-*Just support Unix like system
+Backup directory: ${HOME}/.vim_back-${data} .. Just support Unix like system
 
 Clean backup 
 ----------------------------------------
