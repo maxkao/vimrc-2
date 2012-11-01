@@ -12,12 +12,6 @@ autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
 autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
 autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
 
-" == Trinity ==
-" - keymap.
-"nmap <leader>ta	:TrinityToggleAll <CR>
-"nmap <leader>l	:TrinityToggleTagList <CR>
-"nmap <leader>e	:TrinityToggleNERDTree <CR>	 
-"nmap <leader>b	:TrinityToggleSourceExplorer <CR>
 "nmap <leader>d	:Calendar <CR>
 
 " == Vimwiki ==
