@@ -1,27 +1,33 @@
-" = Vundle (VIM model tool) =
+" = Plugin =
+
+" == Vundle ==
+" Vim plugin manager with Vundle [2].
 "
-" Sample Bundles here:
+" - Sample Bundles here:
 "
-"" original repos on github
+"  - original repos on github
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"" vim-scripts repos
+"
+"  - vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 "Bundle 'rails.vim'
-"" non github repos
+"
+"  - non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 "
-" Brief help
+" - Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles
 " :BundleSearch(!) foo - search(or refresh cache first) for foo
 " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: [1] comments after Bundle command are not allowed..
+" NOTE: [2] Github - https://github.com/gmarik/vundle
 "
 
 filetype off                   " required!
@@ -43,25 +49,39 @@ Bundle 'gmarik/vundle'
 
 filetype plugin indent on     " required! 
 
-" == snipMate  ==
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+" == calendar.vim ==
+Bundle 'calendar.vim'
+
+" == Colorscheme ==
+Bundle 'flazz/vim-colorschemes'
+
+" == ctrlp.vim ==
+Bundle 'kien/ctrlp.vim.git'
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+""let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+" == Gitv - need the fugitive plugin ==
+"Bundle 'gregsexton/gitv'
+Bundle 'gitv'				
+Bundle 'tpope/vim-fugitive'
 
 " == NERDTree ==
 Bundle "scrooloose/nerdtree"
-nmap <leader>e :<C-u>NERDTree<CR>
 
-" == Tagbar ==
-Bundle "majutsushi/tagbar"
-nmap <leader>t :<C-u>TagbarToggle<CR>
-let g:tagbar_autofocus = 1
-let g:tagbar_sort = 0
-
-if has('win32')
-    let g:tagbar_ctags_bin='C:\ctags.exe'
-endif
+" == numbers.vim ==
+"Bundle "myusuf3/numbers.vim"
 
 " == Omni Complete ==
 set ofu=syntaxcomplete#Complete
@@ -77,6 +97,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
 endif
+
 let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 "autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
@@ -86,7 +107,6 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 " - OmniCppComplete
 Bundle 'OmniCppComplete'
 
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 set tags+=~/vimfiles/tags/tags
 set tags+=~/vimfiles/tags/c++.tags
 set tags+=~/vimfiles/tags/stl-3.3.tags
@@ -102,31 +122,27 @@ let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 " == pythoncomplete ==
 Bundle 'pythoncomplete'
 
-" == VST :Vim reStructured Text ==
-Bundle 'VST'
+" == phpfolding.vim ==
+Bundle 'phpfolding.vim'
+
+" == snipMate  ==
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+
+" == Tagbar ==
+Bundle "majutsushi/tagbar"
+
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+
+if has('win32')
+    let g:tagbar_ctags_bin='C:\ctags.exe'
+endif
 
 " == vim-surround ==
 "Bundle 'tpope/vim-surround'
-
-" == numbers.vim ==
-"Bundle "myusuf3/numbers.vim"
-"nnoremap <F3> :NumbersToggle<CR>
-
-" == ctrlp.vim ==
-Bundle 'kien/ctrlp.vim.git'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-
-""let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
 
 " == easymotion ==
 "Bundle 'Lokaltog/vim-easymotion'
@@ -135,18 +151,29 @@ let g:ctrlp_custom_ignore = {
 " == Vimwiki ==
 Bundle 'vimwiki'
 
-" == Gitv - need the fugitive plugin ==
-"Bundle 'gregsexton/gitv'
-Bundle 'gitv'				
-Bundle 'tpope/vim-fugitive'
+" - g:vimwiki_list* *vimwiki-multiple-wikies*.
+let g:vimwiki_list = [
+	\ {'path': '~/vimwiki/', 'index': 'index', 'path_html': '~/vimwiki/public_html/'},
+	\ {'path': '~/vimwiki/diary/', 'index': 'gtd'},
+	\ {'path': '~/vimwiki/csu/', 'index': 'index_csu'},
+	\ {'path': '/media/data_ext3/home.d/vim/vimwiki-secret', 'index': 'secret'},
+	\ {'path': '~/vimwiki/vim-like/', 'index': 'vim-like'},
+	\ {'path': '~/vimwiki/radtek/',	'index': 'radtek'} ]
 
-" == Color ==
-Bundle 'flazz/vim-colorschemes'
+" - Header level color.
+:hi VimwikiHeader1 guifg=#FF0000	" Red
+:hi VimwikiHeader2 guifg=#FFDB00	" Yellow
+:hi VimwikiHeader3 guifg=#9C9CE0	" Light Purple 
+:hi VimwikiHeader4 guifg=#91B9E0	" Light Blue
+:hi VimwikiHeader5 guifg=#999999	" Light Grey
+:hi VimwikiHeader6 guifg=#49D432	" Light Green
 
-" == Fold ==
-Bundle 'phpfolding.vim'
+" - Default Browser.
+let g:vimwiki_browsers=['/usr/bin/firefox']
 
-Bundle 'calendar.vim'
+" == VST - Vim reStructured Text ==
+Bundle 'VST'
+let g:vst_write_export=1	" plugin of vst default export html.
 
 " == Start Syntax ==
 Bundle 'vim-scripts/Python-Syntax'
@@ -159,6 +186,8 @@ Bundle 'plasticboy/vim-markdown'
 "Bundle 'rest.vim'
 "set syntax=rest
 
+" ----
+
 " == Init Env ==
 command InitENV call InitBundleEnv()
 
@@ -167,4 +196,10 @@ fun! InitBundleEnv()
    quit
    quit
 endf
+
+" -----------------------------------
+"  Author : Chu-siang Lai
+"  E-mail : jonny (at) ubuntu-tw.org
+"  Blog : http://jonny.ubuntu-tw.net
+" -----------------------------------
 
