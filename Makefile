@@ -31,7 +31,10 @@ install:
 update:
 	vim -c InitENV
 
-clean_backup_file:
+update-config:
+	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
+
+clean-backup-file:
 	@echo "--Starting cleaning vim's backup file...--"
 	rm -rf ${HOME}/.vim_bak*
 	@echo ''
