@@ -80,7 +80,7 @@ Bundle 'tpope/vim-fugitive'
 " == Global Session ==
 Bundle 'c9s/gsession.vim'
 "Bundle 'gsession.vim'
-"let g:session_dir				= '$HOME/.vim/session'
+let g:session_dir				= '$HOME/.vim/session'
 "let g:local_session_filename	= '.session.vim'
 let g:autoload_session = 0
 let g:autosave_session = 0
