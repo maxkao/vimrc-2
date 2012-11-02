@@ -77,11 +77,20 @@ set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 Bundle 'gitv'				
 Bundle 'tpope/vim-fugitive'
 
+" == Global Session ==
+Bundle 'c9s/gsession.vim'
+"Bundle 'gsession.vim'
+"let g:session_dir				= '$HOME/.vim/session'
+"let g:local_session_filename	= '.session.vim'
+let g:autoload_session = 0
+let g:autosave_session = 0
+"let g:gsession_non_default_mapping = 1
+
 " == NERDTree ==
-Bundle "scrooloose/nerdtree"
+Bundle 'scrooloose/nerdtree'
 
 " == numbers.vim ==
-"Bundle "myusuf3/numbers.vim"
+"Bundle 'myusuf3/numbers.vim'
 
 " == Omni Complete ==
 set ofu=syntaxcomplete#Complete
@@ -126,13 +135,18 @@ Bundle 'pythoncomplete'
 Bundle 'phpfolding.vim'
 
 " == snipMate  ==
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
+
+" == vim-surround =="
+" ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
+Bundle 'tpope/vim-surround'
+"Bundle 'surround'
 
 " == Tagbar ==
-Bundle "majutsushi/tagbar"
+Bundle 'majutsushi/tagbar'
 
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
