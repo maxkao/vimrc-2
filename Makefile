@@ -14,8 +14,8 @@ backup:
 	mv ${FILE_VIMRC} ${DIR_VIM_BAK}/
 	mv ${FILE_GVIMRC} ${DIR_VIM_BAK}/
 	mv ${DIR_VIM} ${DIR_VIM_BAK}/
-	tar jcf  ${DIR_VIM_BAK}.tar.bz2 ${DIR_VIM_BAK}
-	sync && sync && sync && rm -rf ${DIR_VIM_BAK}
+	tar jcf  ${DIR_VIM_BAK}.tar.bz2 ${DIR_VIM_BAK} && sync
+	rm -rf ${DIR_VIM_BAK}
 	@echo '--backup setting success!--'
 	@echo ''
 
