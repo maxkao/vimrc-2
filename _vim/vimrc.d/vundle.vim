@@ -107,7 +107,7 @@ set ofu=syntaxcomplete#Complete
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " - Enable heavy omni completion.
@@ -147,7 +147,7 @@ set fillchars+=stl:\ ,stlnc:\
 "set -g default-terminal "screen-256color"
 
 " == pythoncomplete ==
-Bundle 'pythoncomplete'
+"Bundle 'pythoncomplete'
 
 " == snipMate  ==
 Bundle 'MarcWeber/vim-addon-mw-utils'
