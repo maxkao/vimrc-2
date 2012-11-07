@@ -162,6 +162,13 @@ endif
 "Bundle 'Lokaltog/vim-easymotion'
 ""end easymotion
 
+" == Powerline for Vim ==
+Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
+set fillchars+=stl:\ ,stlnc:\ 
+"let g:Powerline_symbols = 'fancy'
+"set -g default-terminal "screen-256color"
+
 " == Vimwiki ==
 Bundle 'vimwiki'
 
