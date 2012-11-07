@@ -72,6 +72,11 @@ let g:ctrlp_custom_ignore = {
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
+
+" == easymotion ==
+"Bundle 'Lokaltog/vim-easymotion'
+""end easymotion
+
 " == Gitv - need the fugitive plugin ==
 "Bundle 'gregsexton/gitv'
 Bundle 'gitv'				
@@ -85,6 +90,9 @@ let g:session_dir				= '$HOME/.vim/session'
 let g:autoload_session = 0
 let g:autosave_session = 0
 "let g:gsession_non_default_mapping = 1
+
+" == Matchit ==
+Bundle 'matchit.zip'
 
 " == NERDTree ==
 Bundle 'scrooloose/nerdtree'
@@ -128,11 +136,18 @@ let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
 let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
 let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
-" == pythoncomplete ==
-Bundle 'pythoncomplete'
-
 " == phpfolding.vim ==
 Bundle 'phpfolding.vim'
+
+" == Powerline for Vim ==
+Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
+set fillchars+=stl:\ ,stlnc:\ 
+"let g:Powerline_symbols = 'fancy'
+"set -g default-terminal "screen-256color"
+
+" == pythoncomplete ==
+Bundle 'pythoncomplete'
 
 " == snipMate  ==
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -140,7 +155,12 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
 
-" == vim-surround =="
+" == Ragtag =="
+Bundle 'tpope/vim-ragtag'
+" Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
+" Ctrl x Space = 同上，但不會加上斷行
+
+" == surround =="
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
 Bundle 'tpope/vim-surround'
 "Bundle 'surround'
@@ -155,19 +175,12 @@ if has('win32')
     let g:tagbar_ctags_bin='C:\ctags.exe'
 endif
 
-" == vim-surround ==
-"Bundle 'tpope/vim-surround'
+" == vim-indent-object ==
+"Bundle 'michaeljsmith/vim-indent-object'
+" v i i - 選取相同縮排層級的文字
+" v a i - 同上，但會連帶上一層級也一併選取
+" 
 
-" == easymotion ==
-"Bundle 'Lokaltog/vim-easymotion'
-""end easymotion
-
-" == Powerline for Vim ==
-Bundle 'Lokaltog/vim-powerline'
-set laststatus=2
-set fillchars+=stl:\ ,stlnc:\ 
-"let g:Powerline_symbols = 'fancy'
-"set -g default-terminal "screen-256color"
 
 " == Vimwiki ==
 Bundle 'vimwiki'
