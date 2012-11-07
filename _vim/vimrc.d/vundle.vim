@@ -36,9 +36,9 @@ filetype off                   " required!
 "let g:vundle_default_git_proto = 'git'
 
 if has('win32')
-    set rtp+=%UserProfile%\vimfiles/bundle/vundle/
+	set rtp+=%UserProfile%\vimfiles/bundle/vundle/
 else
-    set rtp+=~/.vim/bundle/vundle/
+	set rtp+=~/.vim/bundle/vundle/
 endif
 
 call vundle#rc()
@@ -179,8 +179,6 @@ endif
 "Bundle 'michaeljsmith/vim-indent-object'
 " v i i - 選取相同縮排層級的文字
 " v a i - 同上，但會連帶上一層級也一併選取
-" 
-
 
 " == Vimwiki ==
 Bundle 'vimwiki'
