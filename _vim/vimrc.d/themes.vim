@@ -7,7 +7,7 @@ set nocompatible
 "set showtabline=2
 
 " - Status Line
-set laststatus=2
+"set laststatus=2
 " - [filetype] filename \t encoding file-format AscII Hex Line
 "set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [Hex=\%02.2B]\ [LINE=%L]\ [Pos=%l,%v,%p%%]
 set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [LINE=%L]\ [Pos=%l,%v,%p%%]
