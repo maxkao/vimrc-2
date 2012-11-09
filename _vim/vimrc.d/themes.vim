@@ -1,7 +1,7 @@
 " = Themes Environment =
 
 set cursorline
-set nocompatible
+set nocompatible	" 不要向下相同。
 
 " - always show the tab bar.
 "set showtabline=2
