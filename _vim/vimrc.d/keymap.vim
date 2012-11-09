@@ -130,6 +130,7 @@ autocmd BufRead,BufNewFile *.wiki noremap	<C-k>		:VimwikiDiaryPrevDay <CR>
 "nmap <C-K>		:VimwikiDiaryPrevDay <CR>
 
 " - GTD.
+nmap <leader>c	:Calendar<CR>
 nmap <leader>g	2<leader>ww:Calendar<CR><C-w>w<C-w>s<leader>w<leader>wgg
 "nmap <leader>g	2<leader>ww:Calendar<CR><C-w>wgg
 
