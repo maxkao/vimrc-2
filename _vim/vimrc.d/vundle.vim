@@ -50,7 +50,8 @@ Bundle 'gmarik/vundle'
 filetype plugin indent on     " required! 
 
 " == calendar.vim ==
-Bundle 'calendar.vim'
+"Bundle 'calendar.vim'
+Bundle 'calendar.vim--Matsumoto'
 
 " == Colorscheme ==
 Bundle 'flazz/vim-colorschemes'
@@ -118,14 +119,14 @@ endif
 "let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 "autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
-let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+"let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
+"let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " - OmniCppComplete
-Bundle 'OmniCppComplete'
+"Bundle 'OmniCppComplete'
 
 set tags+=~/vimfiles/tags/tags
-set tags+=~/vimfiles/tags/c++.tags
+"set tags+=~/vimfiles/tags/c++.tags
 set tags+=~/vimfiles/tags/stl-3.3.tags
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -150,9 +151,12 @@ set fillchars+=stl:\ ,stlnc:\
 "Bundle 'pythoncomplete'
 
 " == snipMate  ==
+"- Install dependencies:
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
+
+"- Install
 Bundle 'garbas/vim-snipmate'
 
 " == Ragtag =="
