@@ -1,6 +1,7 @@
 TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
 FILE_VIMRC=${HOME}/.vimrc
 FILE_GVIMRC=${HOME}/.gvimrc
+FILE_PENTADACTYLRC=${HOME}/.pentadactylrc
 DIR_VIM=${HOME}/.vim
 DIR_VIM_BAK=${HOME}/.vim_bak-${TIMESTAMP}
 
@@ -19,11 +20,11 @@ backup:
 	@echo '--backup setting success!--'
 	@echo ''
 
-
 install:
 	@echo '--Starting install vim setting...--'
 	cat _vimrc > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
+	cat _pentadactylrc > ${FILE_PENTADACTYLRC}
 	cp -a _vim ${DIR_VIM} 
 	git clone https://github.com/gmarik/vundle.git ${DIR_VIM}/bundle/vundle
 	vim -c InitENV
