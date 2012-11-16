@@ -5,7 +5,7 @@ for CONFIG in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
 endfor
 
 " ------------------------------------
-" Author : Chu-siang Lai
-" E-mail : jonny (at) ubuntu-tw.org
-" Blog : http://jonny.ubuntu-tw.net
+" Author : Chu-Siang Lai
+" E-mail : jonny (at) drx.tw
+" Blog : http://note.drx.tw
 " ------------------------------------
