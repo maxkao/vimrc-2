@@ -39,7 +39,7 @@ echo Copy base init file to %VIMFILES%
 copy _vimrc.win32 "%VIMRC%"
 copy ctags.exe C:\WINDOWS\system32\
 xcopy _vim\* "%VIMFILES%" /E /Y
-copy _pentadactylrc "%VIMFILES%"
+copy _pentadactylrc "%HOME%"
 
 echo build vimrc shortcut...
 ::mklink "%VIMRC%" "%VIMFILES%"\_vimrc
