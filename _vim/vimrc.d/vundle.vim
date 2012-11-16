@@ -126,7 +126,7 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "Bundle 'OmniCppComplete'
 
 set tags+=~/vimfiles/tags/tags
-"set tags+=~/vimfiles/tags/c++.tags
+set tags+=~/vimfiles/tags/c++.tags
 set tags+=~/vimfiles/tags/stl-3.3.tags
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
