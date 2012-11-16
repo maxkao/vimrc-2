@@ -4,6 +4,34 @@ for CONFIG in split(glob('~/vimfiles/vimrc.d/*.vim'), '\n')
    exe 'source' CONFIG
 endfor
 
+" = Environment on Windows =
+
+" == $SHELL on Windows ==
+"set shell=C:\cygwin\bin\bash.exe
+"set shellcmdflag='-c'
+set shell=C:\cygwin\bin\bash.exe
+set shellcmdflag=--login\ -c
+set shellxquote=\"
+
+" == encode ==
+" - utf-8.
+set encoding=utf-8
+"set termencoding=utf-8
+set fileencodings=ucs-bom,utf-8,chinese,latin-1
+if has("win32")
+	set fileencoding=chinese
+else
+	set fileencoding=utf-8
+endif
+
+" - big5.
+set langmenu=zh_TW.utf-8
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+language messages zh_tw.utf-8		"console encode.
+
+
 " ------------------------------------
 " Author : Chu-Siang Lai
 " E-mail : jonny (at) drx.tw
