@@ -25,9 +25,9 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 
 
-set HOME=%UserProfile%
-set VIMFILES=%UserProfile%\vimfiles
-set VIMRC=%UserProfile%\_vimrc
+set HOME="%UserProfile%"
+set VIMFILES="%UserProfile%\vimfiles"
+set VIMRC="%UserProfile%\_vimrc"
 
 echo Build VIM env directory...
 mkdir "%VIMFILES%"
@@ -42,7 +42,7 @@ xcopy _vim\* "%VIMFILES%" /E /Y
 
 echo build vimrc shortcut...
 ::mklink "%VIMRC%" "%VIMFILES%\_vimrc"
-copy _vimrc.win32 "%VIMFILES%\vimrc"
+copy _vimrc.win32 "%VIMFILES%\_vimrc"
 
 echo Initial base plugin...
 call :InstallCurl
