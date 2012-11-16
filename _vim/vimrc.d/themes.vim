@@ -42,7 +42,7 @@ endif
 
 " - font type and size setting.
 if has('win32')
-	set guifont=Consolas:11
+	set guifont=Consolas:h12
 else
 	set guifont=Monospace\ 12
 endif
