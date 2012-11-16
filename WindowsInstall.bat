@@ -37,7 +37,7 @@ mkdir "%VIMFILES%\autoload"
 
 echo Copy base init file to %VIMFILES% 
 copy _vimrc.win32 "%VIMFILES%\_vimrc"
-copy ctags.exe C:\
+copy ctags.exe C:\WINDOWS\system32\
 xcopy _vim\* "%VIMFILES%" /E /Y
 
 echo build vimrc shortcut...
