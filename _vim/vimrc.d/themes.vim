@@ -14,7 +14,6 @@ set nocompatible	" 不要向下相同。
 
 if has('gui')
 	set number
-	set guifont=Monospace\ 12
 	set guioptions+=m	" add Menu.
 	set guioptions-=e	" add Tab-Page.
 	set guioptions-=T	" remove Toolbar.
@@ -41,8 +40,15 @@ if !has('gui')
 	set background=dark
 endif
 
+" - font type and size setting.
+if has('win32')
+	set guifont=Consolas:11
+else
+	set guifont=Monospace\ 12
+endif
+
 " -----------------------------------
-"  Author : Chu-siang Lai
-"  E-mail : jonny (at) ubuntu-tw.org
-"  Blog : http://jonny.ubuntu-tw.net
+"  Author : Chu-Siang Lai
+"  E-mail : jonny (at) drx.tw
+"  Blog : http://note.drx.tw
 " -----------------------------------
