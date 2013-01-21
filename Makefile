@@ -26,13 +26,13 @@ install:
 	cat _gvimrc > ${FILE_GVIMRC}
 	cat _pentadactylrc > ${FILE_PENTADACTYLRC}
 	cp -a _vim ${DIR_VIM} 
-	git clone https://github.com/gmarik/vundle.git ${DIR_VIM}/bundle/vundle
-	vim -c InitENV
+	git clone https://github.com/Shougo/neobundle.vim.git ${DIR_VIM}/bundle/neobundle.vim
+	#vim -c InitENV
 	@echo '--Done!--'
 	@echo ''
 
 update:
-	vim -c InitENV
+	#vim -c InitENV
 
 update-config:
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
