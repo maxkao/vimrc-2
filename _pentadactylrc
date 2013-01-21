@@ -15,12 +15,12 @@ autocmd LocationChange mail\.yahoo\.com/ -js modes.set(modes.PASS_THROUGH)
 " - Default show GUI elements of 'Bookmarks Toobar', 'Tab number over image' and 'Status bar'.
 set guioptions=BNs
 
-# = Options =
+" = Options =
 
-# - Maximum number of items to display at once in a listing.
+" - Maximum number of items to display at once in a listing.
 set maxitems=6
 
-# - Items which are completed at the :open prompts. 
+" - Items which are completed at the :open prompts. 
 set complete=b
 
 " - Highlight previous find pattern matches.

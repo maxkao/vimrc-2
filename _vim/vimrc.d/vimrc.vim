@@ -98,7 +98,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
 " -----------------------------------
-"  Author : Chu-siang Lai
-"  E-mail : jonny (at) ubuntu-tw.org
-"  Blog : http://jonny.ubuntu-tw.net
+"  Author : Chu-Siang Lai
+"  E-mail : jonny (at) drx.tw
+"  Blog : http://note.drx.tw
 " -----------------------------------
