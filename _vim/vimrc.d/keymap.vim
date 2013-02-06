@@ -139,8 +139,8 @@ nmap <leader>t :<C-u>TagbarToggle<CR>
 nnoremap <F3> :<C-u>TagbarToggle<CR>
 
 " -----------------------------------
-"  Author : Chu-siang Lai
-"  E-mail : jonny (at) ubuntu-tw.org
-"  Blog : http://jonny.ubuntu-tw.net
+"  Author : Chu-Siang Lai
+"  E-mail : jonny (at) drx.tw
+"  Blog : http://note.drx.tw
 " -----------------------------------
 
