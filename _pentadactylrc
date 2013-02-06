@@ -76,21 +76,40 @@ map -modes=n <C-3> -builtin 3gt
 map -modes=n <C-4> -builtin 4gt
 map -modes=n <C-5> -builtin 5gt
 
-" - Quick switch GUI.
+" - GUI switch.
 map -modes=n <F7> :set<Space>guioptions=BNsT<Space><Return>
 map -modes=n <F8> :set<Space>guioptions=BNs<Space><Return>
 map -modes=n <F9> :set<Space>guioptions-=Bs<Space><Return>
 
-" - Quick share link.
+" - Post (link) share.
+
+"  - Diggo.
 map -modes=n sd o javascript:javascript:(function(){DIIGO_R_TEST=false;DIIGO_R_SCRIPT=document.createElement('SCRIPT');DIIGO_R_SCRIPT.type='text/javascript';DIIGO_R_SCRIPT.src='http://www.diigo.com/javascripts/readlater.js';document.getElementsByTagName('body')[0].appendChild(DIIGO_R_SCRIPT)})(); <Return>
+
+"  - Evernote.
 map -modes=n se o javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})(); <Return>
+
+"  - Facebook.
 map -modes=n sf o javascript:var%20d=document,f='http://www.facebook.com/share',l=d.location,e=encodeURIComponent,p='.php?src=bm&v=4&i=1253986134&u='+e(l.href)+'&t='+e(d.title);1;try{if%20(!/^(.*\.)?facebook\.[^.]*$/.test(l.host))throw(0);share_internal_bookmarklet(p)}catch(z)%20{a=function()%20{if%20(!window.open(f+'r'+p,'sharer','toolbar=0,status=0,resizable=1,width=626,height=436'))l.href=f+p};if%20(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else{a()}}void(0) <Return>
+
+"  - PLurk.
 map -modes=n sp o javascript:%20void(window.open('http://www.plurk.com/m?qualifier=shares&content='%20.concat(encodeURIComponent(location.href))%20.concat('%20')%20.concat('(')%20.concat(encodeURIComponent(document.title))%20.concat(')'))); <Return>
 
+" - Doing something with selected.
+
+"  - Open URL, bookmarks or history.
+map -modes=n o -js content.getSelection().toString()!=""?dactyl.execute(":open "+ content.getSelection()):CommandExMode().open("open ")
+map -modes=n t -js content.getSelection().toString()!=""?dactyl.execute(":tabopen "+ content.getSelection()):CommandExMode().open("tabopen ")
+
+"  - Liu (boshiamy) IME.
+map -modes=n x -js content.getSelection().toString()!=""?dactyl.execute(":tabopen http://liu.twbbs.org/liuzmd1/index.php?tde_string="+ content.getSelection()):CommandExMode().open("tabopen ")
+
+"  - Chinese-English Dictionary / Calculator
+map -modes=n <F1> -js content.getSelection().toString()!=""?dactyl.execute(":tabopen http://cdict.net/?q="+ content.getSelection()):CommandExMode().open("tabopen ")
+
 " - Quick open link.
-map <F1> -js content.getSelection().toString()!=""?dactyl.execute(":tabopen http://cdict.net/?q="+ content.getSelection()):CommandExMode().open("tabopen ")
-map o -js content.getSelection().toString()!=""?dactyl.execute(":open "+ content.getSelection()):CommandExMode().open("open ")
-map t -js content.getSelection().toString()!=""?dactyl.execute(":tabopen "+ content.getSelection()):CommandExMode().open("tabopen ")
+
+"  - Diigo.
 map -modes=n <ESC>l t http://www.diigo.com/user/chusiang <Return>
 
 " = Abbreviate =
