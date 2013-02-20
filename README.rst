@@ -47,3 +47,9 @@ $ make clean_backup_file
 
 .. [*] Just support Unix-like operating-system.
 
+Bundled Plugins
+========================================
+
+- `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_ - The script of create calender window and don`t use the `cal`.
+- `ctrlp.vim <https://github.com/kien/ctrlp.vim>`_ - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+- `gregsexton/gitv <https://github.com/gregsexton/gitv>`_ - gitv is a 'gitk clone' plugin for the text editor Vim.
