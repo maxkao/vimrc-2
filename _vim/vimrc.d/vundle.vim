@@ -121,8 +121,8 @@ set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 ""end easymotion
 
 " - Gitv (need the fugitive plugin)
-"NeoBundle 'gregsexton/gitv'
-NeoBundle 'gitv'				
+"NeoBundle 'gitv'				
+NeoBundle 'gregsexton/gitv'
 NeoBundle 'tpope/vim-fugitive'
 
 " - Global Session
