@@ -254,7 +254,7 @@ NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
 " - Start Syntax
-NeoBundle 'vim-scripts/Python-Syntax'
+NeoBundle 'Python-Syntax'
 NeoBundle 'php.vim'
 NeoBundle 'jQuery'
 NeoBundle 'css_color.vim'
