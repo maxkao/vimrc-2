@@ -50,6 +50,23 @@ $ make clean_backup_file
 Bundled Plugins
 ========================================
 
-- `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_ - The script of create calender window and don`t use the `cal`.
-- `ctrlp.vim <https://github.com/kien/ctrlp.vim>`_ - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-- `gregsexton/gitv <https://github.com/gregsexton/gitv>`_ - gitv is a 'gitk clone' plugin for the text editor Vim.
+#. `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_ - The script of create calender window and don`t use the `cal`.
+#. `ctrlp.vim <https://github.com/kien/ctrlp.vim>`_ - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+#. `gitv <https://github.com/gregsexton/gitv>`_ - gitv is a 'gitk clone' plugin for the text editor Vim. (need `vim-fugitive <https://github.com/tpope/vim-fugitive>`_)
+#. `matchit.zip · GitHub <https://github.com/vim-scripts/matchit.zip>`_ - allows you to configure % to match more than just single characters.
+#. `nerdtree <https://github.com/scrooloose/nerdtree>`_ - explore your filesystem and to open files and directories.
+#. `phpfolding.vim <https://github.com/vim-scripts/phpfolding.vim>`_ - fold PHP functions and/or classes.
+#. `vim-powerline <https://github.com/Lokaltog/vim-powerline>`_ - better-looking, more functional vim statuslines.
+#. `vim-snipmate <https://github.com/garbas/vim-snipmate>`_ - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tomtom/tlib_vim · GitHub <https://github.com/tomtom/tlib_vim>`_, `honza/snipmate-snippets · GitHub <https://github.com/honza/snipmate-snippets>`_)
+#. `vim-ragtag <https://github.com/tpope/vim-ragtag>`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
+#. `surround.vim <https://github.com/tpope/vim-surround>`_ - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
+#. `tagbar <https://github.com/majutsushi/tagbar>`_ - Display tags of the current file ordered by scope.
+#. `vimwiki <http://code.google.com/p/vimwiki/>`_ - Personal Wiki for Vim.
+#. `VST <https://github.com/vim-scripts/vst>`_ - Vim reStructured Text.
+#. `Python Syntax <http://www.vim.org/scripts/script.php?script_id=3782>`_ - Revised version based on Ian McCracken's version.
+#. `php.vim <http://www.vim.org/scripts/script.php?script_id=346>`_ - Indent for php.
+#. `jQuery <http://www.vim.org/scripts/script.php?script_id=2416>`_- Syntax file for jQuery.
+#. `css_color.vim <http://www.vim.org/scripts/script.php?script_id=2150>`_- CSS color preview.
+#. `vim-markdown <https://github.com/plasticboy/vim-markdown>`_ - Syntax highlighting and matching rules for Markdown.
+#. `rest.vim <http://www.vim.org/scripts/script.php?script_id=973>`_- A reStructuredText syntax mode.
+
