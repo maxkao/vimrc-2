@@ -1,5 +1,6 @@
 " = Cutsom Hotkey =
-"imap <C-I>	<ESC>
+imap <C-I>	<ESC>
+imap <C-O>	<ESC>
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
