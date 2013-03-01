@@ -1,6 +1,21 @@
 " = Cutsom Hotkey =
+
+" == ESC ==
 imap <C-I>	<ESC>
 imap <C-O>	<ESC>
+
+" == Cursor Move ==
+" - insert mode
+imap <C-h> <left>
+imap <C-j> <down>
+imap <C-k> <up>
+imap <C-l> <right>
+
+" - command mode
+cmap <C-h> <left>
+cmap <C-j> <down>
+cmap <C-k> <up>
+cmap <C-l> <right>
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
