@@ -11,12 +11,12 @@ It's my vim config setting
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 
-Introduction
+1. Introduction
 ========================================
 
 This verison use vundle that can get the newest vim script use eazy way.
 
-Require
+2. Require
 ========================================
 
 #. Git
@@ -25,59 +25,62 @@ Require
 #. Vim
 #. Curl
 
-Installation
+3. Installation
 ========================================
 
 - windows
 
-::
+    ::
 
-  WindowsInstall.bat
+    WindowsInstall.bat
 
 - Linux & MacOSX
 
-::
+    ::
+    
+    make install
 
-  make install
-
-Update
+4. HowTo
 ========================================
+
+4.1. Update
+----------------------------------------
 
 #. run command at Vim (comaand mode).
 
-::
+    ::
+    
+    NeoBundleUpdate
 
-   NeoBundleUpdate
+.. #. use make, $make update [*]_\
 
-    .. #. use make, $make update [*]_\
-
-Backup
-========================================
+4.2. Backup
+----------------------------------------
 
 This version can auto backup orginal config before install.
 
 Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
-::
+    ::
 
     make backup
 
-Clean backup 
-----------------------------------------
+4.2.1. Clean backup 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    ::
+::
 
     make clean_backup_file
 
 .. [*] Just support Unix-like operating-system.
 
-Bundled Plugins
+5. Bundled Plugins
 ========================================
 
 #. `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_
    - The script of create calender window and don`t use the `cal`.
 #. `ctrlp.vim <https://github.com/kien/ctrlp.vim>`_
-   - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+   - Full path fuzzy file, buffer, mru, tag, ...... finder for Vim.
 #. `gitv <https://github.com/gregsexton/gitv>`_
    - gitv is a 'gitk clone' plugin for the text editor Vim. (need `vim-fugitive <https://github.com/tpope/vim-fugitive>`_)
 #. `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
