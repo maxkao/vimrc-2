@@ -1,21 +1,24 @@
 ========================================
 It's my vim config setting 
 ========================================
-:Author:
-    Chu-Siang Lai (凍仁翔)
-:Build Date:
-    2012/10/31
-:Version:
-    2.0
-:forked from:
-    `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
+
+    :Author:
+        Chu-Siang Lai (凍仁翔)
+    :Build Date:
+        2012/10/31
+    :Version:
+        2.0
+    :forked from:
+        `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 
 Introduction
 ========================================
+
 This verison use vundle that can get the newest vim script use eazy way.
 
 Require
 ========================================
+
 #. Git
 #. Network
 #. make (Unix Link Only)
@@ -26,26 +29,48 @@ Installation
 ========================================
 
 - windows
-  - WindowsInstall.bat
+
+  ::
+
+  WindowsInstall.bat
+
+
 - Linux & MacOSX
-  - make install
+
+  ::
+
+  make install
 
 Update
 ========================================
-#. use vim (comaand mode), run command BundleInstall
-#. use make, $make update [*]_\
+
+#. run command at Vim (comaand mode).
+   
+    ::
+
+    NeoBundleUpdate
+
+    .. #. use make, $make update [*]_\
 
 Backup
 ========================================
+
 This version can auto backup orginal config before install.
 
 Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
+    ::
+
+    make backup
+
 Clean backup 
 ----------------------------------------
-$ make clean_backup_file
 
-.. [*] Just support Unix-like operating-system.
+    ::
+
+    make clean_backup_file
+
+    .. [*] Just support Unix-like operating-system.
 
 Bundled Plugins
 ========================================
