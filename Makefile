@@ -27,7 +27,7 @@ install:
 	@echo '--Done!--'
 	@echo ''
 
-update:
+#update:
 	#vim -c InitENV
 
 update-config:
