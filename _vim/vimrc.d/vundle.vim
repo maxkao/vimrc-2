@@ -137,6 +137,20 @@ let g:autosave_session = 0
 " -  Vim Git Gutter
 NeoBundle 'airblade/vim-gitgutter'
 
+"You can explicitly turn vim-gitgutter off and on:
+" - turn off with :DisableGitGutter
+" - turn on with :EnableGitGutter
+" - toggle with :ToggleGitGutter.
+
+"And you can turn line highlighting on and off (defaults to off):
+" - turn on with :EnableGitGutterLineHighlights
+" - turn off with :DisableGitGutterLineHighlights
+" - toggle with :ToggleGitGutterLineHighlights.
+
+"Furthermore you can jump between hunks:
+" - jump to next hunk: :GitGutterNextHunk
+" - jump to previous hunk: :GitGutterPrevHunk.
+
 " - Matchit
 NeoBundle 'matchit.zip'
 
