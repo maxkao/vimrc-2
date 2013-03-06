@@ -134,6 +134,9 @@ let g:autoload_session = 0
 let g:autosave_session = 0
 "let g:gsession_non_default_mapping = 1
 
+" -  Vim Git Gutter
+NeoBundle 'airblade/vim-gitgutter'
+
 " - Matchit
 NeoBundle 'matchit.zip'
 
