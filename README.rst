@@ -91,6 +91,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - explore your filesystem and to open files and directories.
 #. `phpfolding.vim <https://github.com/vim-scripts/phpfolding.vim>`_
    - fold PHP functions and/or classes.
+#. `vim-gitgutter <https://github.com/airblade/vim-gitgutter>`_
+   - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
 #. `vim-powerline <https://github.com/Lokaltog/vim-powerline>`_
    - better-looking, more functional vim statuslines.
 #. `vim-snipmate <https://github.com/garbas/vim-snipmate>`_
