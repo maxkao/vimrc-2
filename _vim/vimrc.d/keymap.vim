@@ -118,6 +118,10 @@ inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
+" == Quick Search ==
+"nnoremap <F3> :NumbersToggle<CR>
+nmap <f3>	/<C-r>0<CR>
+
 " ----
 
 " = Hotkey for Plugin =
