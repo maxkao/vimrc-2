@@ -213,7 +213,7 @@ set fillchars+=stl:\ ,stlnc:\
 "  - Install dependencies:
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'honza/vim-snippets'
 
 " - Install
 NeoBundle 'garbas/vim-snipmate'
