@@ -282,7 +282,9 @@ NeoBundle 'Python-Syntax'
 NeoBundle 'rest.vim'
 "set syntax=rest
 
-NeoBundle 'terryma/vim-multiple-cursors'
+" - Sublime Text like.
+"NeoBundle 'terryma/vim-multiple-cursors'
+"let g:multi_cursor_use_default_mapping=0
 
 
 " ----
