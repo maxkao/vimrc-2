@@ -282,6 +282,9 @@ NeoBundle 'Python-Syntax'
 NeoBundle 'rest.vim'
 "set syntax=rest
 
+NeoBundle 'terryma/vim-multiple-cursors'
+
+
 " ----
 
 filetype plugin indent on     " required! 
