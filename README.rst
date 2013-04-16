@@ -96,7 +96,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 #. `vim-powerline <https://github.com/Lokaltog/vim-powerline>`_
    - better-looking, more functional vim statuslines.
 #. `vim-snipmate <https://github.com/garbas/vim-snipmate>`_
-   - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `snipmate-snippets <https://github.com/honza/snipmate-snippets>`_)
+   - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
 #. `vim-ragtag <https://github.com/tpope/vim-ragtag>`_
    - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
 #. `surround.vim <https://github.com/tpope/vim-surround>`_
