@@ -95,14 +95,14 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - fold PHP functions and/or classes.
 #. `vim-gitgutter <https://github.com/airblade/vim-gitgutter>`_
    - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
+#. `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
+   - use multiple cursors like Sublime Text editor.
 #. `vim-powerline <https://github.com/Lokaltog/vim-powerline>`_
    - better-looking, more functional vim statuslines.
 #. `vim-snipmate <https://github.com/garbas/vim-snipmate>`_
    - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
 #. `vim-ragtag <https://github.com/tpope/vim-ragtag>`_
    - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
-#. `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
-   - use multiple cursors like Sublime Text editor.
 #. `surround.vim <https://github.com/tpope/vim-surround>`_
    - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
 #. `tagbar <https://github.com/majutsushi/tagbar>`_ 
