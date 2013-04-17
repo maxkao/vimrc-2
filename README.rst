@@ -101,6 +101,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
 #. `vim-ragtag <https://github.com/tpope/vim-ragtag>`_
    - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
+#. `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
+   - use multiple cursors like Sublime Text editor.
 #. `surround.vim <https://github.com/tpope/vim-surround>`_
    - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
 #. `tagbar <https://github.com/majutsushi/tagbar>`_ 
