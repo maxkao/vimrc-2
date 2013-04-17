@@ -154,6 +154,9 @@ NeoBundle 'airblade/vim-gitgutter'
 " - Matchit
 NeoBundle 'matchit.zip'
 
+" - mru.vim
+NeoBundle 'mru.vim'
+
 " - NERDTree
 NeoBundle 'scrooloose/nerdtree'
 
