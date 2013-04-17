@@ -85,6 +85,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - gitv is a 'gitk clone' plugin for the text editor Vim. (need `vim-fugitive <https://github.com/tpope/vim-fugitive>`_)
 #. `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
+#. `mru.vim <https://github.com/vim-scripts/mru.vim>`_
+   - provides an easy access to a list of recently opened/edited files.
 #. `neobundle.vim <https://github.com/Shougo/neobundle.vim>`_
    - It`s a Vim plugin manager based on `Vundle <https://github.com/gmarik/vundle>`_\ .
 #. `nerdtree <https://github.com/scrooloose/nerdtree>`_
