@@ -158,6 +158,12 @@ nmap <leader>g	2<leader>ww:Calendar<CR><C-w>w<C-w>s<leader>w<leader>wgg
 nmap <leader>t :<C-u>TagbarToggle<CR>
 nnoremap <F3> :<C-u>TagbarToggle<CR>
 
+" == vim-multiple-cursors mapping ==
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-m>'
+let g:multi_cursor_skip_key='<C-q>'
+let g:multi_cursor_quit_key='<Esc>'
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw
