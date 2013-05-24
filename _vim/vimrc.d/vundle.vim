@@ -226,6 +226,10 @@ NeoBundle 'tpope/vim-ragtag'
 " Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
 " Ctrl x Space = 同上，但不會加上斷行
 
+" - Sublime Text like.
+NeoBundle 'terryma/vim-multiple-cursors'
+let g:multi_cursor_use_default_mapping=0
+
 " - surround
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
 NeoBundle 'tpope/vim-surround'
@@ -284,11 +288,6 @@ NeoBundle 'php.vim'
 NeoBundle 'Python-Syntax'
 NeoBundle 'rest.vim'
 "set syntax=rest
-
-" - Sublime Text like.
-NeoBundle 'terryma/vim-multiple-cursors'
-let g:multi_cursor_use_default_mapping=0
-
 
 " ----
 
