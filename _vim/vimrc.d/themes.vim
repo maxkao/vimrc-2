@@ -1,6 +1,7 @@
 " = Themes Environment =
 
-set cursorline
+set cursorline		"highlight line.
+set cursorcolumn	"highlight colimn.
 set nocompatible	" 不要向下相同。
 
 " - always show the tab bar.
