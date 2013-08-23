@@ -1,9 +1,5 @@
 " = Cutsom Hotkey =
 
-" == ESC ==
-imap <C-I>	<ESC>
-imap <C-O>	<ESC>
-
 " == Cursor Move ==
 " - insert mode
 imap <C-h> <left>
