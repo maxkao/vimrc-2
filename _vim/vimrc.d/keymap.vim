@@ -1,5 +1,21 @@
 " = Cutsom Hotkey =
+
+" == ESC ==
 "imap <C-I>	<ESC>
+"imap <C-O>	<ESC>
+
+" == Cursor Move ==
+" - insert mode
+imap <C-h> <left>
+imap <C-j> <down>
+imap <C-k> <up>
+imap <C-l> <right>
+
+" - command mode
+cmap <C-h> <left>
+cmap <C-j> <down>
+cmap <C-k> <up>
+cmap <C-l> <right>
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -43,20 +59,11 @@ nmap te		:Texplore <CR>
 
 " == Indent ==
 "imap <S-tab> <esc>m`<<``i
-nmap <TAB> v>
+"nmap <TAB> v>
 nmap <S-TAB> v<
 "xnoremap <tab> >gv
 "vmap <tab> >gv
 "xnoremap <s-tab> <gv
-
-" == NERDTree ==
-nmap <leader>e :<C-u>NERDTree<CR>
-
-" == numbers.vim ==
-"nnoremap <F3> :NumbersToggle<CR>
-
-" == OmniCppComplete ==
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " == Scroll ==
 " - hide scroll of split windows mode.
@@ -102,41 +109,10 @@ inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
-" ----
+" == Quick Search ==
+"nnoremap <F3> :NumbersToggle<CR>
+nmap <f3>	/<C-r>0<CR>
 
-" = Hotkey for Plugin =
-
-" == Gitv ==
-"nmap <leader>gv :Gitv --all<CR>
-"nmap <leader>gV :Gitv! --all<CR>
-"vmap <leader>gV :Gitv! --all<CR>
-
-" == phpfolding.vim ==
-autocmd FileType php noremap <F4> :!php -l % <CR>
-autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
-autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
-autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
-
-" == Vimwiki ==
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtm	:r /home/jonny/vimwiki/time-management-for-system-administrators.wiki <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<C-j>		:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<C-k>		:VimwikiDiaryPrevDay <CR>
-"autocmd BufRead,BufNewFile *.wiki nmap		<C-o>		<C-Space> <CR>
-"nmap <C-J>		:VimwikiDiaryNextDay <CR>	" old syntax.
-"nmap <C-K>		:VimwikiDiaryPrevDay <CR>
-
-" - GTD.
-nmap <leader>c	:Calendar<CR>
-nmap <leader>g	2<leader>ww:Calendar<CR><C-w>w<C-w>s<leader>w<leader>wgg
-"nmap <leader>g	2<leader>ww:Calendar<CR><C-w>wgg
-
-" == Tagbar ==
-nmap <leader>t :<C-u>TagbarToggle<CR>
-nnoremap <F3> :<C-u>TagbarToggle<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai

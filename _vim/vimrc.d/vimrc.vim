@@ -56,8 +56,13 @@ set ignorecase		" (ic) Case sensitive searches
 set ruler	"Show Row & Colume position
 
 " - move swap and backup files from your working directory
-set backupdir=~/tmp
-set directory=~/tmp	
+if has('win32')
+	set backupdir=/cygdrive/e/Cache
+	set directory=/cygdrive/e/Cache
+else
+	set backupdir=/dev/shm
+	set directory=/dev/shm
+endif
 
 " - indent.
 set autoindent		" (ai)
