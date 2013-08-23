@@ -22,8 +22,9 @@ install:
 	cat _vimrc > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
 	cp -a _vim ${DIR_VIM} 
-	git clone https://github.com/Shougo/neobundle.vim.git ${DIR_VIM}/bundle/neobundle.vim
+	git clone git://github.com/Shougo/neobundle.vim ${DIR_VIM}/bundle/neobundle.vim
 	#vim -c InitENV
+	@echo " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile"
 	@echo '--Done!--'
 	@echo ''
 
