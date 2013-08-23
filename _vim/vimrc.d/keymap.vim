@@ -16,6 +16,9 @@ cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
+cmap <c-0> <home>
+cmap <c-e> <end>
+cnoremap <c-d> <del>
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -53,9 +56,16 @@ nmap tt		:tabnew <CR>
 nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
-"nmap tn		:tabnext <CR>
-"nmap tp	 	:tabprev <CR>
 nmap te		:Texplore <CR>
+map <A-1>	:tabn1 <CR>
+map <A-2>	:tabn2 <CR>
+map <A-3>	:tabn3 <CR>
+map <A-4>	:tabn4 <CR>
+map <A-5>	:tabn5 <CR>
+map <A-6>	:tabn6 <CR>
+map <A-7>	:tabn7 <CR>
+map <A-8>	:tabn8 <CR>
+map <A-9>	:tabn9 <CR>
 
 " == Indent ==
 "imap <S-tab> <esc>m`<<``i
@@ -113,6 +123,9 @@ inoremap ' ''<LEFT>
 "nnoremap <F3> :NumbersToggle<CR>
 nmap <f3>	/<C-r>0<CR>
 
+" == Color Scheme ==
+nmap <leader>cf	:colorscheme fu <CR>
+nmap <leader>cj	:colorscheme jellybeans <CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
