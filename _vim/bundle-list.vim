@@ -28,7 +28,7 @@ let g:airline_powerline_fonts = 1
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
 NeoBundle 'calendar.vim--Matsumoto'
-nmap <leader>c	:Calendar<CR>
+nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
@@ -88,6 +88,9 @@ nmap gH <Plug>GitGutterPrevHunk
 "Furthermore you can jump between hunks:
 " - jump to next hunk: :GitGutterNextHunk
 " - jump to previous hunk: :GitGutterPrevHunk.
+
+" ## HTML5 omnicomplete and syntax
+NeoBundle 'othree/html5.vim'
 
 " ## Matchit
 NeoBundle 'matchit.zip'
@@ -282,14 +285,17 @@ NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
 " ## Start Syntax
+NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css_color.vim'
+NeoBundle 'css3'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'jQuery'
+NeoBundle 'php.vim'
 "NeoBundle 'cpp.vim'
 "NeoBundle 'django.vim'
-NeoBundle 'jQuery'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'nginx.vim'
-NeoBundle 'php.vim'
 NeoBundle 'Python-Syntax'
+NeoBundle 'nginx.vim'
 NeoBundle 'rest.vim'
+NeoBundle 'plasticboy/vim-markdown'
 "set syntax=rest
 
