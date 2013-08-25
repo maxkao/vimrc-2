@@ -22,7 +22,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundle 'Shougo/neobundle.vim'
 
-source ${HOME}/.vim/bundle-list.vim
+source ${HOME}/.vim/plugin-list.vim
 
 
 filetype plugin indent on     " Required!
