@@ -16,6 +16,9 @@ cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
+cmap <c-0> <home>
+cmap <c-e> <end>
+cnoremap <c-d> <del>
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -53,9 +56,16 @@ nmap tt		:tabnew <CR>
 nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
-"nmap tn		:tabnext <CR>
-"nmap tp	 	:tabprev <CR>
 nmap te		:Texplore <CR>
+map <A-1>	:tabn1 <CR>
+map <A-2>	:tabn2 <CR>
+map <A-3>	:tabn3 <CR>
+map <A-4>	:tabn4 <CR>
+map <A-5>	:tabn5 <CR>
+map <A-6>	:tabn6 <CR>
+map <A-7>	:tabn7 <CR>
+map <A-8>	:tabn8 <CR>
+map <A-9>	:tabn9 <CR>
 
 " == Indent ==
 "imap <S-tab> <esc>m`<<``i
@@ -67,12 +77,14 @@ nmap <S-TAB> v<
 
 " == Scroll ==
 " - hide scroll of split windows mode.
-nmap +b		:set guioptions+=b <CR>
-nmap +l		:set guioptions+=L <CR>
-nmap +r		:set guioptions+=r <CR>
-nmap -b		:set guioptions-=b <CR>
-nmap -l		:set guioptions-=L <CR>
-nmap -r		:set guioptions-=r <CR>
+"nmap +b		:set guioptions+=b <CR>
+"nmap +l		:set guioptions+=L <CR>
+"nmap +r		:set guioptions+=r <CR>
+"nmap -b		:set guioptions-=b <CR>
+"nmap -l		:set guioptions-=L <CR>
+"nmap -r		:set guioptions-=r <CR>
+nmap <F7>		:set guioptions+=m <CR>
+nmap <F8>		:set guioptions-=m <CR>
 
 " == Split ==
 nmap <C-tab>	<C-w>w
@@ -81,9 +93,9 @@ nmap <C-h>		<C-w>h
 nmap <C-l>		<C-w>l
 
 " == Folding ==
-inoremap <F9> <C-o>za
-nnoremap <F9> za
-onoremap <F9> <C-c>za
+inoremap <F2> <C-o>za
+nnoremap <F2> za
+onoremap <F2> <C-c>za
 "vnoremap <F9> zf
 
 " == Font Size ==
@@ -111,8 +123,17 @@ inoremap ' ''<LEFT>
 
 " == Quick Search ==
 "nnoremap <F3> :NumbersToggle<CR>
-nmap <f3>	/<C-r>0<CR>
+nmap <F3>	/<C-r>0<CR>
 
+" == Color Scheme ==
+nmap <leader>cf	:colorscheme fu <CR>
+nmap <leader>cj	:colorscheme jellybeans <CR>
+
+" == Preview current HTML file ==
+" - local.drx.tw (PHP)
+nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+" - current file (Ex: html, txt) 
+nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai

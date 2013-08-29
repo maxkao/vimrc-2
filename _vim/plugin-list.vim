@@ -20,7 +20,7 @@ NeoBundle 'garbas/vim-snipmate'
 " ## vim-airline
 " replace 'vim-powerline'.
 NeoBundle 'bling/vim-airline'
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " ## c.vim
 " Bundle 'vim-scripts/c.vim'
@@ -28,7 +28,7 @@ let g:airline_powerline_fonts = 1
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
 NeoBundle 'calendar.vim--Matsumoto'
-nmap <leader>c	:Calendar<CR>
+nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
@@ -88,6 +88,9 @@ nmap gH <Plug>GitGutterPrevHunk
 "Furthermore you can jump between hunks:
 " - jump to next hunk: :GitGutterNextHunk
 " - jump to previous hunk: :GitGutterPrevHunk.
+
+" ## HTML5 omnicomplete and syntax
+NeoBundle 'othree/html5.vim'
 
 " ## Matchit
 NeoBundle 'matchit.zip'
@@ -163,53 +166,53 @@ NeoBundle 'tpope/vim-ragtag'
 " Ctrl x Space = 同上，但不會加上斷行
 
 " ## SrcExpl 
-NeoBundle "wesleyche/SrcExpl"
-map <leader>s  :<C-u>SrcExplToggle<CR>
-
-" // The switch of the Source Explorer 
-" nmap <F8> :SrcExplToggle<CR> 
+"NeoBundle 'wesleyche/SrcExpl'
+"map <leader>s  :<C-u>SrcExplToggle<CR>
 "
-" " // Set the height of Source Explorer window 
-" let g:SrcExpl_winHeight = 8 
+"" // The switch of the Source Explorer 
+"" nmap <F8> :SrcExplToggle<CR> 
+""
+"" " // Set the height of Source Explorer window 
+"" let g:SrcExpl_winHeight = 8 
+""
+"" " // Set 100 ms for refreshing the Source Explorer 
+"" let g:SrcExpl_refreshTime = 100 
+""
+"" // Set 'Enter' key to jump into the exact definition context 
+"" let g:SrcExpl_jumpKey = '<ENTER>'
+""
+"" // Set 'Space' key for back from the definition context 
+"" let g:SrcExpl_gobackKey = '<SPACE>'
+""
+"" " // In order to Avoid conflicts, the Source Explorer should know what  plugins 
+"" " // are using buffers. And you need add their bufname into the list below 
+"" " // according to the command ':buffers!'
+" let g:SrcExpl_pluginList = [ 
+"             \ '__Tag_List__',
+"             \ '_NERD_tree_', 
+"             \ 'Source_Explorer' 
+"             \ ] 
+""
+"" // Enable/Disable the local definition "searching, and note that this is not 
+"" // guaranteed to work, the Source Explorer "doesn't check the syntax for now. 
+"" // It only searches for a match with the keyword according to command 'gd' 
+"let g:SrcExpl_searchLocalDef = 1 
 "
-" " // Set 100 ms for refreshing the Source Explorer 
-" let g:SrcExpl_refreshTime = 100 
+"" // Do not let the Source Explorer update the "tags file when opening 
+"let g:SrcExpl_isUpdateTags = 0 
 "
-" // Set "Enter" key to jump into the exact definition context 
-" let g:SrcExpl_jumpKey = "<ENTER>" 
+"" // Use 'Exuberant Ctags' with '--sort=foldcase "-R .' or '-L cscope.files' to 
+"" // create/update the tags file 
+"let g:SrcExpl_updateTagsCmd = 'ctags --sort=foldcase -R .' 
 "
-" // Set "Space" key for back from the definition context 
-" let g:SrcExpl_gobackKey = "<SPACE>" 
+"" // Set '<F12>' key for updating the tags file "artificially 
+""let g:SrcExpl_updateTagsKey = '<F12>' 
 "
-" " // In order to Avoid conflicts, the Source Explorer should know what  plugins 
-" " // are using buffers. And you need add their bufname into the list below 
-" " // according to the command ":buffers!" 
- let g:SrcExpl_pluginList = [ 
-             \ "__Tag_List__", 
-             \ "_NERD_tree_", 
-             \ "Source_Explorer" 
-             \ ] 
+"" // Set '<F3>' key for displaying the previous definition in the jump list 
+""let g:SrcExpl_prevDefKey = '<F3>'
 "
-" // Enable/Disable the local definition "searching, and note that this is not 
-" // guaranteed to work, the Source Explorer "doesn't check the syntax for now. 
-" // It only searches for a match with the keyword according to command 'gd' 
-let g:SrcExpl_searchLocalDef = 1 
-
-" // Do not let the Source Explorer update the "tags file when opening 
-let g:SrcExpl_isUpdateTags = 0 
-
-" // Use 'Exuberant Ctags' with '--sort=foldcase "-R .' or '-L cscope.files' to 
-" // create/update the tags file 
-let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
-
-" // Set "<F12>" key for updating the tags file "artificially 
-"let g:SrcExpl_updateTagsKey = "<F12>" 
-
-" // Set "<F3>" key for displaying the previous definition in the jump list 
-"let g:SrcExpl_prevDefKey = "<F3>" 
-
-" // Set "<F4>" key for displaying the next "definition in the jump list 
-"let g:SrcExpl_nextDefKey = "<F4>" 
+"" // Set '<F4>' key for displaying the next "definition in the jump list 
+""let g:SrcExpl_nextDefKey = '<F4>' 
 
 " ## Sublime Text like.
 NeoBundle 'terryma/vim-multiple-cursors'
@@ -282,14 +285,17 @@ NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
 " ## Start Syntax
+NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css_color.vim'
+NeoBundle 'css3'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'jQuery'
+NeoBundle 'php.vim'
 "NeoBundle 'cpp.vim'
 "NeoBundle 'django.vim'
-NeoBundle 'jQuery'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'nginx.vim'
-NeoBundle 'php.vim'
 NeoBundle 'Python-Syntax'
+NeoBundle 'nginx.vim'
 NeoBundle 'rest.vim'
+NeoBundle 'plasticboy/vim-markdown'
 "set syntax=rest
 
