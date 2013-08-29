@@ -100,7 +100,8 @@ NeoBundle 'mru.vim'
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
-nmap <leader>e :<C-u>NERDTree<CR>
+nmap <leader>e	:<C-u>NERDTree<CR>
+nmap <F4>		:<C-u>NERDTree<CR>
 
 " ## numbers.vim
 "NeoBundle 'myusuf3/numbers.vim'
