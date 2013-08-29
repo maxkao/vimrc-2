@@ -15,8 +15,8 @@ set nocompatible	" 不要向下相同。
 
 if has('gui')
 	set number
-	set guioptions+=m	" add Menu.
-	set guioptions-=e	" add Tab-Page.
+	set guioptions-=m	" remove Menu.
+	set guioptions-=e	" remove Tab-Page.
 	set guioptions-=T	" remove Toolbar.
 	set guioptions-=b	" remove Scroll (Below).
 	set guioptions-=l 	" remove Scroll (Left of Split window).
