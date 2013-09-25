@@ -286,6 +286,7 @@ NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
 " ## Start Syntax
+NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css_color.vim'
 NeoBundle 'css3'
