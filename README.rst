@@ -9,7 +9,7 @@ My Vim config setting
 :Version:
     2.1
 :Blog:
-    <http://note.drx.tw>`_
+    `<http://note.drx.tw>`_
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 
