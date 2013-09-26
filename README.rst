@@ -1,5 +1,5 @@
 ========================================
-It's my vim config setting 
+My Vim config setting
 ========================================
 
 :Author:
@@ -7,7 +7,9 @@ It's my vim config setting
 :Build Date:
     2012/10/31
 :Version:
-    2.0
+    2.1
+:Blog:
+    <http://note.drx.tw>`
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 
@@ -81,7 +83,9 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 ----------------------------------------
 
 #. [X] `neobundle.vim <https://github.com/Shougo/neobundle.vim>`_
-   - It`s a Vim plugin manager based on `Vundle <https://github.com/gmarik/vundle>`_ (`vimproc.vim <https://github.com/Shougo/vimproc.vim>`_).
+   - It`s a Vim plugin manager based on `Vundle <https://github.com/gmarik/vundle>`_.
+#. [X] `vimproc.vim <https://github.com/Shougo/vimproc.vim>`_
+   - setup neobundle.vim with *make -f Makefile*.
 
 5.2. File Management
 ----------------------------------------
