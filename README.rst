@@ -118,7 +118,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
 #. [X] `vim-ragtag <https://github.com/tpope/vim-ragtag>`_
    - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
-#. [X] `/taglist.vim <https://github.com/vim-scripts/taglist.vim>`_
+#. [X] `taglist.vim <https://github.com/vim-scripts/taglist.vim>`_
    - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
 
 5.3.3. F2E (Front End Engineer)
