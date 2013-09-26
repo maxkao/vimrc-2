@@ -97,7 +97,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 ----------------------------------------
 
 #. [ ] `c.vim  - <http://www.vim.org/scripts/script.php?script_id=213>`_
-   - C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc.
+   - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
