@@ -230,7 +230,6 @@ NeoBundle 'tpope/vim-surround'
 
 " ## Tagbar
 NeoBundle 'majutsushi/tagbar'
-"nmap <leader>t :<C-u>TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 nmap <leader>t :<C-u>TagbarToggle<CR>
