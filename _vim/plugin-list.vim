@@ -100,7 +100,8 @@ NeoBundle 'mru.vim'
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
-nmap <leader>e :<C-u>NERDTree<CR>
+nmap <leader>e	:<C-u>NERDTree<CR>
+nmap <F4>		:<C-u>NERDTree<CR>
 
 " ## numbers.vim
 "NeoBundle 'myusuf3/numbers.vim'
@@ -229,7 +230,6 @@ NeoBundle 'tpope/vim-surround'
 
 " ## Tagbar
 NeoBundle 'majutsushi/tagbar'
-"nmap <leader>t :<C-u>TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 nmap <leader>t :<C-u>TagbarToggle<CR>
@@ -285,6 +285,7 @@ NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
 " ## Start Syntax
+NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css_color.vim'
 NeoBundle 'css3'

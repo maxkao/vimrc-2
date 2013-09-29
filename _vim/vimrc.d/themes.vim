@@ -38,7 +38,9 @@ endif
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 if !has('gui')
-	set background=dark
+	"set background=dark
+	set t_Co=256		" support 256 color.
+	colorscheme jellybeans
 endif
 
 " - font type and size setting.
