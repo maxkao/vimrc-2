@@ -1,10 +1,10 @@
 " # Bundle List
 
 " ## vimproc
-NeoBundle 'Shougo/vimproc'
+"NeoBundle 'Shougo/vimproc'
 "NeoBundle 'Shougo/vimproc', {
 "      \ 'build' : {
-"      "\     'windows' : 'make -f make_mingw32.mak',
+"      "\     'windows' :'make -f make_mingw32.mak',
 "      "\     'cygwin' : 'make -f make_cygwin.mak',
 "      \     'mac' : 'make -f make_mac.mak',
 "      \     'unix' : 'make -f make_unix.mak',
@@ -145,11 +145,11 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
 " ## phpfolding.vim
-NeoBundle 'phpfolding.vim'
+NeoBundle 'phpfolding.vim', '3d5149e651'
 autocmd FileType php noremap <F4> :!php -l % <CR>
-autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
-autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
-autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
+"autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
+"autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
+"autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
 
 " ## Powerline for Vim
 "NeoBundle 'Lokaltog/vim-powerline'
