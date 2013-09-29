@@ -192,31 +192,29 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 6. File Structure
 ========================================
 
-    ::
-
-    ├── ctags.exe                           # ctags.exe for Windows.
-    ├── _gvimrc                             # GVim setting (ln to _vimrc).
-    ├── Makefile                            # Setup on GNU/Linux.
-    ├── README.rst
-    ├── _vim
-    │   ├── colors
-    │   │   ├── ......
-    │   │   ├── fu.vim                      # Default colorschemes.
-    │   │   ├── ......
-    │   │   ├── jellybeans.vim
-    │   │   └── ......
-    │   ├── plugin-list.vim                 # NeoBundle settings.
-    │   └── vimrc.d
-    │       ├── abbreviation.vim
-    │       ├── blogger-template-fold.vim
-    │       ├── folding-html-php.vim.bak
-    │       ├── function.vim                # Custon function.
-    │       ├── im-switch.vim
-    │       ├── keymap.vim                  # Mapping.
-    │       ├── php-funclist.txt
-    │       ├── themes.vim                  # GUI, Theme settings.
-    │       └── vimrc.vim                   # Other settings.
-    ├── _vimrc                              # Loading '_vim/vimrc.d/*.vim'.
-    ├── _vimrc.win32                        # vimrc for Windows.
-    └── WindowsInstall.bat                  # Setup on Windows. 
+├── ctags.exe                           # ctags.exe for Windows.
+├── _gvimrc                             # GVim setting (ln to _vimrc).
+├── Makefile                            # Setup on GNU/Linux.
+├── README.rst
+├── _vim
+│   ├── colors
+│   │   ├── ......
+│   │   ├── fu.vim                      # Default colorschemes.
+│   │   ├── ......
+│   │   ├── jellybeans.vim
+│   │   └── ......
+│   ├── plugin-list.vim                 # NeoBundle settings.
+│   └── vimrc.d
+│       ├── abbreviation.vim
+│       ├── blogger-template-fold.vim
+│       ├── folding-html-php.vim.bak
+│       ├── function.vim                # Custon function.
+│       ├── im-switch.vim
+│       ├── keymap.vim                  # Mapping.
+│       ├── php-funclist.txt
+│       ├── themes.vim                  # GUI, Theme settings.
+│       └── vimrc.vim                   # Other settings.
+├── _vimrc                              # Loading '_vim/vimrc.d/*.vim'.
+├── _vimrc.win32                        # vimrc for Windows.
+└── WindowsInstall.bat                  # Setup on Windows. 
 
