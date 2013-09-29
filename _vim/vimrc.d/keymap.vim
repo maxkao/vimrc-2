@@ -47,6 +47,7 @@ vmap <S-c>	"+y <CR>
 "imap <C-B>	<ESC>p
 "nmap <S-V>	<ESC>"+gp
 nmap <leader>v	<ESC>"+gp
+nmap <leader>V	<ESC>"+gP
 "nmap <S-B>	<ESC>"+gP
 nmap <leader>p	:set paste <CR>
 nmap <leader>np	:set nopaste <CR>
