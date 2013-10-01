@@ -227,8 +227,8 @@ Sort list A to Z.
 
 #. `Amix <https://github.com/amix/vimrc>`_
 #. `Beata Lin <https://github.com/beata/vimrc>`_
-#. `CrBoy <https://github.com/crboy/vimrc>`_
 #. `Chu-Siang Lai <https://github.com/chusiang/vimrc>`_
+#. `CrBoy <https://github.com/crboy/vimrc>`_
 #. `Denny Huang <https://github.com/denny0223/.vim>`_
 #. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
 #. `Jerry Lee <https://github.com/akitaonrails/vimfiles>`_
