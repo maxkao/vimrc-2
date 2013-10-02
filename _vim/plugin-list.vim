@@ -56,8 +56,8 @@ let g:ctrlp_custom_ignore = {
 
 " ## Gitv (need the fugitive plugin)
 "NeoBundle 'gitv'				
-NeoBundle 'gregsexton/gitv'
-NeoBundle 'tpope/vim-fugitive'
+"NeoBundle 'gregsexton/gitv'
+"NeoBundle 'tpope/vim-fugitive'
 "nmap <leader>gv :Gitv --all<CR>
 "nmap <leader>gV :Gitv! --all<CR>
 "vmap <leader>gV :Gitv! --all<CR>
@@ -73,22 +73,27 @@ NeoBundle 'tpope/vim-fugitive'
 
 " ## Vim Git Gutter
 NeoBundle 'airblade/vim-gitgutter'
+
+"You can explicitly turn vim-gitgutter off and on (defaults to on):
+"
+"    turn off with :GitGutterDisable
+"    turn on with :GitGutterEnable
+"    toggle with :GitGutterToggle.
+nmap <leader>d	:GitGutterToggle<CR>
+"
+"And you can turn line highlighting on and off (defaults to off):
+"
+"    turn on with :GitGutterLineHighlightsEnable
+"    turn off with :GitGutterLineHighlightsDisable
+"    toggle with :GitGutterLineHighlightsToggle.
+"
+"Furthermore you can jump between hunks:
+"
+"    jump to next hunk: ]h
+"    jump to previous hunk: [h.
+"
 nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
-
-"You can explicitly turn vim-gitgutter off and on:
-" - turn off with :DisableGitGutter
-" - turn on with :EnableGitGutter
-" - toggle with :ToggleGitGutter.
-
-"And you can turn line highlighting on and off (defaults to off):
-" - turn on with :EnableGitGutterLineHighlights
-" - turn off with :DisableGitGutterLineHighlights
-" - toggle with :ToggleGitGutterLineHighlights.
-
-"Furthermore you can jump between hunks:
-" - jump to next hunk: :GitGutterNextHunk
-" - jump to previous hunk: :GitGutterPrevHunk.
 
 " ## HTML5 omnicomplete and syntax
 NeoBundle 'othree/html5.vim'

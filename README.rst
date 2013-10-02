@@ -132,7 +132,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
 #. [ ] `gitv <https://github.com/gregsexton/gitv>`_
    - gitv is a 'gitk clone' plugin for the text editor Vim. (need `vim-fugitive <https://github.com/tpope/vim-fugitive>`_)
-#. [ ] `vim-gitgutter <https://github.com/airblade/vim-gitgutter>`_
+#. [X] `vim-gitgutter <https://github.com/airblade/vim-gitgutter>`_
    - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
 
 5.3.2. PHP
@@ -207,16 +207,37 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
     │   │   └── ......
     │   ├── plugin-list.vim                 # NeoBundle settings.
     │   └── vimrc.d
-    │       ├── abbreviation.vim
+    │       ├── abbreviation.vim            # Abbreviation list.
     │       ├── blogger-template-fold.vim
     │       ├── folding-html-php.vim.bak
     │       ├── function.vim                # Custon function.
-    │       ├── im-switch.vim
-    │       ├── keymap.vim                  # Mapping.
+    │       ├── im-switch.vim.bak
+    │       ├── keymap.vim                  # Custon mapping.
     │       ├── php-funclist.txt
     │       ├── themes.vim                  # GUI, Theme settings.
     │       └── vimrc.vim                   # Other settings.
     ├── _vimrc                              # Loading '_vim/vimrc.d/*.vim'.
     ├── _vimrc.win32                        # vimrc for Windows.
     └── WindowsInstall.bat                  # Setup on Windows. 
+
+7. Vimrc List
+========================================
+
+Sort list A to Z.
+
+#. `Amix <https://github.com/amix/vimrc>`_
+#. `Beata Lin <https://github.com/beata/vimrc>`_
+#. `Chu-Siang Lai <https://github.com/chusiang/vimrc>`_
+#. `CrBoy <https://github.com/crboy/vimrc>`_
+#. `Denny Huang <https://github.com/denny0223/.vim>`_
+#. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
+#. `Jerry Lee <https://github.com/akitaonrails/vimfiles>`_
+#. `Josephj <https://github.com/josephj/vimrc>`_
+#. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
+#. `Kang-min Wang <https://github.com/aminzai/vimrc>`_
+#. `Mosky <https://github.com/moskytw/mosky.vim>`_
+#. `Muki Wu <https://github.com/mukiwu/vimrc>`_
+#. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
+#. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
+#. `Vgod <https://github.com/vgod/vimrc>`_
 
