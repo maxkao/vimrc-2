@@ -240,7 +240,7 @@ Sort list A to Z.
 #. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
 #. `Kang-min Wang <https://github.com/aminzai/vimrc>`_
 #. `Mosky <https://github.com/moskytw/mosky.vim>`_
-#. `Muki Wu <https://github.com/mukiwu/vimrc>`_
+#. `Muki Wu <https://github.com/mukiwu/vim-setting>`_
 #. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
 #. `Vgod <https://github.com/vgod/vimrc>`_
