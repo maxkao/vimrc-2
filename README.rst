@@ -178,14 +178,18 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - The script of create calender window and don`t use the `cal`.
 #. [ ] `gsession.vim <https://github.com/c9s/gsession.vim>`_
    - Vim Session Plugin.
+#. [ ] `numbers.vim <https://github.com/myusuf3/numbers.vim>`_
+   -  a plugin for intelligently toggling line numbers.
 #. [X] `vimwiki <http://code.google.com/p/vimwiki/>`_ 
    - Personal Wiki for Vim.
 #. [ ] `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`_
    - one stop shop for vim colorschemes.
 #. [X] `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
    - use multiple cursors like Sublime Text editor.
-#. [ ] `numbers.vim <https://github.com/myusuf3/numbers.vim>`_
-   -  a plugin for intelligently toggling line numbers.
+#. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
+   - Searching word with sdcv at Vim.
+#. [X] `vim-tomorrow-night <https://github.com/mukiwu/vim-tomorrow-night>`_
+   - one stop shop for vim colorschemes.
 #. [X] `VST <https://github.com/vim-scripts/vst>`_ 
    - Vim reStructured Text.
 
