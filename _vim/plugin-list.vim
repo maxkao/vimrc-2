@@ -32,6 +32,7 @@ nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'mukiwu/vim-tomorrow-night'
 
 " ## ctrlp.vim
 NeoBundle 'kien/ctrlp.vim.git'
@@ -232,6 +233,10 @@ let g:multi_cursor_quit_key='<Esc>'
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
 NeoBundle 'tpope/vim-surround'
 "NeoBundle 'surround'
+
+" ## sdcv
+NeoBundle 'chusiang/vim-sdcv'
+nmap <leader>w :call SearchWord()<CR>
 
 " ## Tagbar
 NeoBundle 'majutsushi/tagbar'
