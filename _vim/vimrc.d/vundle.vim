@@ -55,6 +55,7 @@ Bundle 'calendar.vim--Matsumoto'
 
 " == Colorscheme ==
 "Bundle 'flazz/vim-colorschemes'
+Bundle 'mukiwu/vim-tomorrow-night'
 
 " == ctrlp.vim ==
 Bundle 'kien/ctrlp.vim.git'
@@ -169,6 +170,10 @@ Bundle 'garbas/vim-snipmate'
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
 Bundle 'tpope/vim-surround'
 "Bundle 'surround'
+
+" == sdcv ==
+Bundle 'chusiang/vim-sdcv'
+nmap <leader>w :call SearchWord()<CR>
 
 " == Tagbar ==
 Bundle 'majutsushi/tagbar'
