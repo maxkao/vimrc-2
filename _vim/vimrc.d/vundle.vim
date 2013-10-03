@@ -140,7 +140,7 @@ let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
 let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
 " == phpfolding.vim ==
-Bundle 'phpfolding.vim'
+"Bundle 'phpfolding.vim'
 
 " == airline ==
 Bundle 'bling/vim-airline'
@@ -156,10 +156,7 @@ Bundle 'bling/vim-airline'
 "Bundle 'pythoncomplete'
 
 " == snipMate  ==
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Bundle 'msanders/snipmate.vim'
 
 " == Ragtag =="
 "Bundle 'tpope/vim-ragtag'
