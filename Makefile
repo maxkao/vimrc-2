@@ -24,7 +24,7 @@ install:
 	cat _vimrc > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
 	cp -a _vim ${DIR_VIM} 
-	git clone http://github.com/gmarik/vundle.git ${DIR_VIM}/bundle/vundle
+	git clone git@github.com:gmarik/vundle.git ${DIR_VIM}/bundle/vundle
 	vim -c InitENV
 	@echo '--Done!--'
 	@echo ''
