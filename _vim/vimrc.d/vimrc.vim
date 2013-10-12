@@ -87,6 +87,9 @@ set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
 " set wildoptions
 "set  winaltkeys=no
 
+" - 自動換行
+set wrap
+
 " - Do not redraw while running macros (much faster).
 set lazyredraw
 
