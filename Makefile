@@ -33,6 +33,7 @@ install:
 
 update-config:
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
+	cp -a _vim/plugin-list.vim ${DIR_VIM}/
 
 clean-backup-file:
 	@echo "--Starting cleaning vim's backup file...--"
