@@ -263,6 +263,10 @@ NeoBundle 'taglist.vim'
 " ## Trinity (SrcExpl need)
 NeoBundle "wesleyche/Trinity"
 
+" ## vimcdoc-tw
+NeoBundle 'chusiang/vimcdoc-tw'
+"set helplang=tw
+
 " ## vim-indent-object
 "NeoBundle 'michaeljsmith/vim-indent-object'
 " v i i - 選取相同縮排層級的文字
