@@ -186,6 +186,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - one stop shop for vim colorschemes.
 #. [X] `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
    - use multiple cursors like Sublime Text editor.
+#. [X] `vimcdoc-tw <https://github.com/chusiang/vimcdoc-tw>`_ 
+   - Vimcdoc of Traditional Chinese.
 #. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
    - Searching word with sdcv at Vim.
 #. [X] `vim-tomorrow-night <https://github.com/mukiwu/vim-tomorrow-night>`_
