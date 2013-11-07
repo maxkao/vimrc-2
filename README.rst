@@ -246,4 +246,5 @@ Sort list A to Z.
 #. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
 #. `Vgod <https://github.com/vgod/vimrc>`_
+#. `weitsai <https://github.com/weitsai/vim>`_
 
