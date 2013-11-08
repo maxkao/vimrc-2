@@ -13,6 +13,7 @@ iabbrev Can		Canonical
 iabbrev centos	CentOS
 iabbrev chr		Chrome
 iabbrev comm	command
+iabbrev dire	directory
 iabbrev dist	distribution
 iabbrev emb		Embedded
 iabbrev Env		Environment 
