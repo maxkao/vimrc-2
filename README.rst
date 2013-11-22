@@ -13,10 +13,17 @@ My Vim config setting
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 
+.. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
+   :width: 720 px
+   :height: 425 px
+   :scale: 100
+
+Screenshot.
+
 1. Introduction
 ========================================
 
-This verison use vundle that can get the newest vim script use eazy way.
+This verison use NeoBundle that can get the newest vim script use eazy way.
 
 2. Require
 ========================================
@@ -32,13 +39,13 @@ This verison use vundle that can get the newest vim script use eazy way.
 
 - windows
 
-    ::
+::
 
     WindowsInstall.bat
 
 - Linux & MacOSX
 
-    ::
+::
     
     make install
 
@@ -50,7 +57,7 @@ This verison use vundle that can get the newest vim script use eazy way.
 
 #. run command at Vim (comaand mode).
 
-    ::
+::
     
     NeoBundleUpdate
 
@@ -63,14 +70,14 @@ This version can auto backup orginal config before install.
 
 Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
-    ::
+::
 
     make backup
 
 4.2.1. Clean backup 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    ::
+::
 
     make clean_backup_file
 
@@ -246,4 +253,5 @@ Sort list A to Z.
 #. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
 #. `Vgod <https://github.com/vgod/vimrc>`_
+#. `weitsai <https://github.com/weitsai/vim>`_
 
