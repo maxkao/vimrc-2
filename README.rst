@@ -55,7 +55,7 @@ This verison use NeoBundle that can get the newest vim script use eazy way.
 4.1. Update
 ----------------------------------------
 
-#. run command at Vim (comaand mode).
+#. run command at Vim (command mode).
 
 ::
     
