@@ -3,6 +3,8 @@
 set cursorline		"highlight line.
 set cursorcolumn	"highlight colimn.
 set nocompatible	" 不要向下相同。
+"set number
+set relativenumber	" 絕對行號。
 
 " - always show the tab bar.
 "set showtabline=2
@@ -14,7 +16,6 @@ set nocompatible	" 不要向下相同。
 "set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [LINE=%L]\ [Pos=%l,%v,%p%%]
 
 if has('gui')
-	set number
 	set guioptions-=m	" remove Menu.
 	set guioptions-=e	" remove Tab-Page.
 	set guioptions-=T	" remove Toolbar.
