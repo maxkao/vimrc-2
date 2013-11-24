@@ -1,6 +1,6 @@
-========================================
-My Vim config setting
-========================================
+================
+Vim of chusiang
+================
 
 :Author:
     Chu-Siang Lai (凍仁翔)
@@ -18,7 +18,8 @@ My Vim config setting
    :height: 425 px
    :scale: 100
 
-Screenshot.
+.. contents:: Table of Contents
+   :depth: 2
 
 1. Introduction
 ========================================
