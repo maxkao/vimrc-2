@@ -18,9 +18,6 @@ Vim of chusiang
    :height: 425 px
    :scale: 100
 
-.. contents:: Table of Contents
-   :depth: 2
-
 1. Introduction
 ========================================
 
