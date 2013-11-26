@@ -199,6 +199,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - one stop shop for vim colorschemes.
 #. [X] `VST <https://github.com/vim-scripts/vst>`_ 
    - Vim reStructured Text.
+#. [X] `riv.vim <https://github.com/Rykka/riv.vim>`_
+   - reStructured Text in Vim.
 
 6. File Structure
 ========================================
