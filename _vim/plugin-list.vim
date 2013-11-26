@@ -236,6 +236,9 @@ let g:multi_cursor_prev_key='<C-m>'
 let g:multi_cursor_skip_key='<C-q>'
 let g:multi_cursor_quit_key='<Esc>'
 
+" ## reStructuredText in Vim
+NeoBundle 'Rykka/riv.vim'
+
 " ## surround
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
 NeoBundle 'tpope/vim-surround'
