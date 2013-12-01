@@ -105,7 +105,9 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 5.3. Development
 ----------------------------------------
 
-#. [ ] `c.vim  - <http://www.vim.org/scripts/script.php?script_id=213>`_
+#. [X] `Vim Auto Complete Popup <https://github.com/othree/vim-autocomplpop>`_
+   - Automatic trigger complete popup menu.
+#. [X] `c.vim  - <http://www.vim.org/scripts/script.php?script_id=213>`_
    - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
@@ -135,8 +137,10 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 5.3.1. Git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+#. [X] `fugitive.vim <https://github.com/tpope/vim-fugitive>`_
+   - a Git wrapper so awesome.
 #. [ ] `gitv <https://github.com/gregsexton/gitv>`_
-   - gitv is a 'gitk clone' plugin for the text editor Vim. (need `vim-fugitive <https://github.com/tpope/vim-fugitive>`_)
+   - gitv is a 'gitk clone' plugin for the text editor Vim. (need `fugitive.vim <https://github.com/tpope/vim-fugitive>`_)
 #. [X] `vim-gitgutter <https://github.com/airblade/vim-gitgutter>`_
    - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
 
