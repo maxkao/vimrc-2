@@ -22,9 +22,11 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
 
-" ## Vim Auto Complete Popup
+" ## Vim Auto Complete Popup (need L9)
 NeoBundle 'othree/vim-autocomplpop'
 NeoBundle 'L9'
+" autocomplete with snippets.
+let g:acp_behaviorSnipmateLength = 1
 
 " ## c.vim
 NeoBundle 'c.vim'
