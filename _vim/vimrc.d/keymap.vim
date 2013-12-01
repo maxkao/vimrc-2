@@ -1,5 +1,8 @@
 " = Cutsom Hotkey =
 
+" == <leader> ==
+let mapleader = ","
+
 " == ESC ==
 "imap <C-I>	<ESC>
 "imap <C-O>	<ESC>
