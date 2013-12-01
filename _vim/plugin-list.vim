@@ -22,8 +22,11 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
 
+" ## Vim Auto Complete Popup
+NeoBundle 'othree/vim-autocomplpop'
+
 " ## c.vim
-" Bundle 'vim-scripts/c.vim'
+Bundle 'vim-scripts/c.vim'
 
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
@@ -64,7 +67,7 @@ let g:ctrlp_user_command = {
 " ## Gitv (need the fugitive plugin)
 "NeoBundle 'gitv'				
 "NeoBundle 'gregsexton/gitv'
-"NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive'
 "nmap <leader>gv :Gitv --all<CR>
 "nmap <leader>gV :Gitv! --all<CR>
 "vmap <leader>gV :Gitv! --all<CR>
