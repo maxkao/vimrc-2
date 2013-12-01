@@ -106,7 +106,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 ----------------------------------------
 
 #. [X] `Vim Auto Complete Popup <https://github.com/othree/vim-autocomplpop>`_
-   - Automatic trigger complete popup menu.
+   - Automatic trigger complete popup menu (need `L9 <https://github.com/vim-scripts/L9>`_).
 #. [X] `c.vim  - <http://www.vim.org/scripts/script.php?script_id=213>`_
    - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_

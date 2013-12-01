@@ -24,9 +24,10 @@ NeoBundle 'bling/vim-airline'
 
 " ## Vim Auto Complete Popup
 NeoBundle 'othree/vim-autocomplpop'
+NeoBundle 'L9'
 
 " ## c.vim
-Bundle 'vim-scripts/c.vim'
+NeoBundle 'c.vim'
 
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
