@@ -1,8 +1,12 @@
 " = Cutsom Hotkey =
 
+" == <leader> ==
+let mapleader = ","
+
 " == ESC ==
 "imap <C-I>	<ESC>
 "imap <C-O>	<ESC>
+inoremap jj <ESC>
 
 " == Cursor Move ==
 " - insert mode
