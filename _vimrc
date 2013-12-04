@@ -35,8 +35,12 @@ filetype plugin indent on     " Required!
 " Installation check.
 NeoBundleCheck
 
+" reload the im-switch for cover the InsertEnter and InsertLeave.
+source ~/.vim/vimrc.d/im-switch.vim
+
 " ------------------------------------
 " Author : Chu-Siang Lai
 " E-mail : jonny (at) drx.tw
 " Blog : http://note.drx.tw
 " ------------------------------------
+
