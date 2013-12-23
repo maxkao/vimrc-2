@@ -24,6 +24,10 @@ cmap <c-0> <home>
 cmap <c-e> <end>
 cnoremap <c-d> <del>
 
+" - move one line down and up.
+nmap <a-j> ddp
+nmap <a-k> ddkP
+
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
 
@@ -145,4 +149,3 @@ nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 "  E-mail : jonny (at) drx.tw
 "  Blog : http://note.drx.tw
 " -----------------------------------
-
