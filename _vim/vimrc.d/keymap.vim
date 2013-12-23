@@ -77,12 +77,12 @@ map <A-8>	:tabn8 <CR>
 map <A-9>	:tabn9 <CR>
 
 " == Indent ==
-"imap <S-tab> <esc>m`<<``i
-"nmap <TAB> v>
+imap <S-tab> <esc>m`<<``i
+nmap <TAB> v>
 nmap <S-TAB> v<
-"xnoremap <tab> >gv
-"vmap <tab> >gv
-"xnoremap <s-tab> <gv
+xnoremap <tab> >gv
+vmap <tab> >gv
+xnoremap <s-tab> <gv
 
 " == Scroll ==
 " - hide scroll of split windows mode.
@@ -141,8 +141,10 @@ nmap <leader>cj	:colorscheme jellybeans <CR>
 " == Preview current HTML file ==
 " - local.drx.tw (PHP)
 nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 " - current file (Ex: html, txt) 
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
+nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
