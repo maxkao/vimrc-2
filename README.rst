@@ -111,6 +111,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
+#. [X] `EnhCommentify.vim <http://www.vim.org/scripts/script.php?script_id=23>`_
+   - comment lines in a program.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
    - Display tags of the current file ordered by scope.
 #. [X] `surround.vim <https://github.com/tpope/vim-surround>`_
