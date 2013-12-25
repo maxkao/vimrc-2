@@ -67,6 +67,9 @@ let g:ctrlp_user_command = {
 "NeoBundle 'Lokaltog/vim-easymotion'
 ""end easymotion
 
+" ## EnhCommentify.vim
+NeoBundle 'EnhCommentify.vim'
+
 " ## Gitv (need the fugitive plugin)
 "NeoBundle 'gitv'				
 "NeoBundle 'gregsexton/gitv'
@@ -329,4 +332,3 @@ NeoBundle 'nginx.vim'
 NeoBundle 'rest.vim'
 NeoBundle 'plasticboy/vim-markdown'
 "set syntax=rest
-
