@@ -201,8 +201,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - Vimcdoc of Traditional Chinese.
 #. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
    - Searching word with sdcv at Vim.
-#. [X] `vim-tomorrow-night <https://github.com/mukiwu/vim-tomorrow-night>`_
-   - one stop shop for vim colorschemes.
+#. [X] `vim-tomorrow-night <https://github.com/chriskempson/tomorrow-theme>`_
+   - Tomorrow Theme the precursor to Base16 Theme.
 #. [X] `VST <https://github.com/vim-scripts/vst>`_ 
    - Vim reStructured Text.
 #. [X] `riv.vim <https://github.com/Rykka/riv.vim>`_
