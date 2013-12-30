@@ -111,6 +111,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
+#. [X] `EditorConfig Vim Plugin <https://github.com/editorconfig/editorconfig-vim>`_
+   - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim <http://www.vim.org/scripts/script.php?script_id=23>`_
    - comment lines in a program.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
@@ -201,7 +203,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - Vimcdoc of Traditional Chinese.
 #. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
    - Searching word with sdcv at Vim.
-#. [X] `vim-tomorrow-night <https://github.com/chriskempson/tomorrow-theme>`_
+#. [X] `Tomorrow Theme <https://github.com/chriskempson/tomorrow-theme>`_
    - Tomorrow Theme the precursor to Base16 Theme.
 #. [X] `VST <https://github.com/vim-scripts/vst>`_ 
    - Vim reStructured Text.

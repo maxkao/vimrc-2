@@ -68,6 +68,9 @@ let g:ctrlp_user_command = {
 "NeoBundle 'Lokaltog/vim-easymotion'
 ""end easymotion
 
+" ## EditorConfig
+NeoBundle 'editorconfig/editorconfig-vim'
+
 " ## EnhCommentify.vim
 NeoBundle 'EnhCommentify.vim'
 
