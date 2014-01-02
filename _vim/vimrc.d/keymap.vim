@@ -146,6 +146,10 @@ nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?htt
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
+
+" - 80 column layout.
+nmap <leader>l :call HightLightOverLength()<CR>
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw
