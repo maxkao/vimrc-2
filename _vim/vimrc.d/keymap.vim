@@ -149,6 +149,7 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
 " - 80 column layout.
 nmap <leader>l :call HightLightOverLength()<CR>
+nmap <leader><CR> :set columns=80<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
