@@ -62,7 +62,7 @@ nmap <leader>np	:set nopaste <CR>
 
 " == Tabs ==
 nmap tt		:tabnew <CR>
-nmap td		:tabclose <CR>
+"nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
 nmap te		:Texplore <CR>
@@ -149,7 +149,7 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
 " - 80 column layout.
 nmap <leader>l :call HightLightOverLength()<CR>
-nmap <leader><CR> :set columns=80<CR>
+nnoremap <leader>r :set columns=80<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
