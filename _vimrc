@@ -37,7 +37,7 @@ NeoBundleCheck
 set wrap
 
 source ~/.vim/vimrc.d/im-switch.vim
-source ~/.vim/vimrc.d/80-column-layout.vim
+"source ~/.vim/vimrc.d/80-column-layout.vim
 
 " ------------------------------------
 " Author : Chu-Siang Lai
