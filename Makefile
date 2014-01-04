@@ -34,7 +34,7 @@ install:
 	#vim -c InitENV
 
 update-config:
-	cp -a _vimrc ~/.vimrc
+	cp -a _vimrc ${FILE_VIMRC}
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
 	cp -a _vim/plugin-list.vim ${DIR_VIM}/
 
