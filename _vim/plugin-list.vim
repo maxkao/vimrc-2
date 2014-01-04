@@ -338,3 +338,4 @@ NeoBundle 'nginx.vim'
 NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'guns/xterm-color-table.vim.git'
