@@ -27,6 +27,8 @@ cnoremap <c-d> <del>
 " - move one line down and up.
 nmap <a-j> ddp
 nmap <a-k> ddkP
+nmap <a-down> ddp
+nmap <a-up> ddkP
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
