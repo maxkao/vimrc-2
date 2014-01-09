@@ -27,6 +27,8 @@ cnoremap <c-d> <del>
 " - move one line down and up.
 nmap <a-j> ddp
 nmap <a-k> ddkP
+nmap <a-down> ddp
+nmap <a-up> ddkP
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -62,7 +64,7 @@ nmap <leader>np	:set nopaste <CR>
 
 " == Tabs ==
 nmap tt		:tabnew <CR>
-nmap td		:tabclose <CR>
+"nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
 nmap te		:Texplore <CR>
@@ -145,6 +147,11 @@ nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?htt
 " - current file (Ex: html, txt) 
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+
+
+" - 80 column layout.
+nmap <leader>l :call HightLightOverLength()<CR>
+nnoremap <leader>r :set columns=80<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai

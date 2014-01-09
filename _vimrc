@@ -4,7 +4,6 @@ for CONFIG in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
 endfor
 
 " = NeoBundle (Vim plugin manager) =
-
 filetype off                   " required!
 
 "use git:// as bundle default protocal
@@ -35,12 +34,13 @@ filetype plugin indent on     " Required!
 " Installation check.
 NeoBundleCheck
 
-" reload the im-switch for cover the InsertEnter and InsertLeave.
+set wrap
+
 source ~/.vim/vimrc.d/im-switch.vim
+"source ~/.vim/vimrc.d/80-column-layout.vim
 
 " ------------------------------------
 " Author : Chu-Siang Lai
 " E-mail : jonny (at) drx.tw
 " Blog : http://note.drx.tw
 " ------------------------------------
-
