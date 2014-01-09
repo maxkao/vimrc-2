@@ -20,15 +20,19 @@ cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
-cmap <c-0> <home>
-cmap <c-e> <end>
+cmap <C-0> <home>
+cmap <C-e> <end>
 cnoremap <c-d> <del>
 
 " - move one line down and up.
-nmap <a-j> ddp
-nmap <a-k> ddkP
-nmap <a-down> ddp
-nmap <a-up> ddkP
+nmap <A-j> :.m.+1<cr>
+nmap <C-n> :.m.+1<cr>
+"nmap <a-up> :.m.-2<cr>
+
+nmap <C-m> :.m.-2<cr>
+nmap <A-k> :.m.-2<cr>
+"nmap <a-down> :.m.+1<cr>
+
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
