@@ -171,15 +171,17 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
 #. [X] `css_color.vim <http://www.vim.org/scripts/script.php?script_id=2150>`_
    - CSS color preview.
-#. [X] `vim-css-color <https://github.com/ap/vim-css-color>`_
-   - Highlight colors in css files. (like `vim-coloresque <https://github.com/gorodinskiy/vim-coloresque>`_ .)
+#. [X] `vim-coloresque <https://github.com/gorodinskiy/vim-coloresque>`_
+   - css/less/sass/html color preview for vim.
+#. [X] `django.vim <https://github.com/jgb/django.vim>`_
+   - Syntax highlighting for Django templates.
 #. [X] `jQuery <http://www.vim.org/scripts/script.php?script_id=2416>`_
    - Syntax file for jQuery.
 #. [x] `nginx.vim <https://github.com/vim-scripts/nginx.vim>`_
    - highlights configuration files for nginx.
 #. [X] `Python Syntax <http://www.vim.org/scripts/script.php?script_id=3782>`_ 
    - Revised version based on Ian McCracken's version.
-#. [X] `rest.vim <http://www.vim.org/scripts/script.php?script_id=973>`_ 
+#. [ ] `rest.vim <http://www.vim.org/scripts/script.php?script_id=973>`_ 
    - A reStructuredText syntax mode.
 #. [X] `vim-javascript-syntax <https://github.com/othree/vim-javascript-syntax>`_
    - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
