@@ -257,6 +257,7 @@ Sort list A to Z.
 #. `Denny Huang <https://github.com/denny0223/.vim>`_
 #. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
 #. `Jerry Lee <https://github.com/akitaonrails/vimfiles>`_
+#. `joe di castro <https://github.com/joedicastro/dotfiles/tree/master/vim>`_
 #. `Josephj <https://github.com/josephj/vimrc>`_
 #. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
 #. `Kang-min Wang <https://github.com/aminzai/vimrc>`_
