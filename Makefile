@@ -33,7 +33,9 @@ install:
 #update:
 	#vim -c InitENV
 
+# sync vimrc from git to home.
 update-config:
+	cp -a _vimrc ${FILE_VIMRC}
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
 	cp -a _vim/plugin-list.vim ${DIR_VIM}/
 

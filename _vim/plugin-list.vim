@@ -29,7 +29,8 @@ NeoBundle 'L9'
 let g:acp_behaviorSnipmateLength = 1
 
 " ## c.vim
-NeoBundle 'c.vim'
+NeoBundleLazy 'c.vim'
+autocmd FileType c NeoBundleSource c.vim
 
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
@@ -38,7 +39,8 @@ nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'mukiwu/vim-tomorrow-night'
+"NeoBundle 'mukiwu/vim-tomorrow-night'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 " ## ctrlp.vim
 NeoBundle 'kien/ctrlp.vim.git'
@@ -66,6 +68,9 @@ let g:ctrlp_user_command = {
 " ## easymotion
 "NeoBundle 'Lokaltog/vim-easymotion'
 ""end easymotion
+
+" ## EditorConfig
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " ## EnhCommentify.vim
 NeoBundle 'EnhCommentify.vim'
@@ -137,8 +142,8 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 "  - Enable heavy omni completion.
 if !exists('g:neocomplcache_omni_patterns')
@@ -167,7 +172,8 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
 " ## phpfolding.vim
-NeoBundle 'phpfolding.vim', '3d5149e651'
+NeoBundleLazy 'phpfolding.vim', '3d5149e651'
+autocmd FileType php NeoBundleSource phpfolding
 autocmd FileType php noremap <F4> :!php -l % <CR>
 "autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
 "autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
@@ -178,10 +184,10 @@ autocmd FileType php noremap <F4> :!php -l % <CR>
 "set laststatus=2
 "set fillchars+=stl:\ ,stlnc:\ 
 "let g:Powerline_symbols = 'fancy'
-"set -g default-terminal "screen-256color"
+"set -g default-terminal 'screen-256color'
 
 " ## pythoncomplete
-"NeoBundle 'pythoncomplete'
+NeoBundle 'pythoncomplete'
 
 " ## Ragtag
 NeoBundle 'tpope/vim-ragtag'
@@ -320,15 +326,18 @@ let g:vst_write_export=1	" plugin of vst default export html.
 " ## Start Syntax
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
-NeoBundle 'css_color.vim'
 NeoBundle 'css3'
 NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'css_color.vim'
+NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'jQuery'
 NeoBundle 'php.vim'
 "NeoBundle 'cpp.vim'
 "NeoBundle 'django.vim'
+NeoBundle 'jgb/django.vim'
 NeoBundle 'Python-Syntax'
 NeoBundle 'nginx.vim'
-NeoBundle 'rest.vim'
-NeoBundle 'plasticboy/vim-markdown'
+"NeoBundle 'rest.vim'
 "set syntax=rest
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'guns/xterm-color-table.vim.git'

@@ -7,11 +7,13 @@ Vim of chusiang
 :Build Date:
     2012/10/31
 :Version:
-    2.1
+    2.2
 :Blog:
     `<http://note.drx.tw>`_
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
+:plugins count:
+    46
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -111,6 +113,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
+#. [X] `EditorConfig Vim Plugin <https://github.com/editorconfig/editorconfig-vim>`_
+   - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim <http://www.vim.org/scripts/script.php?script_id=23>`_
    - comment lines in a program.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
@@ -163,19 +167,23 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 5.4. Syntax
 ----------------------------------------
 
-#. [X] `css_color.vim <http://www.vim.org/scripts/script.php?script_id=2150>`_
-   - CSS color preview.
 #. [X] `css3 <https://github.com/vim-scripts/css3>`_
    - css3 syntax for vim.
 #. [X] `vim-css3-syntax <https://github.com/hail2u/vim-css3-syntax>`_
    - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
+#. [X] `css_color.vim <http://www.vim.org/scripts/script.php?script_id=2150>`_
+   - CSS color preview.
+#. [X] `vim-coloresque <https://github.com/gorodinskiy/vim-coloresque>`_
+   - css/less/sass/html color preview for vim.
+#. [X] `django.vim <https://github.com/jgb/django.vim>`_
+   - Syntax highlighting for Django templates.
 #. [X] `jQuery <http://www.vim.org/scripts/script.php?script_id=2416>`_
    - Syntax file for jQuery.
 #. [x] `nginx.vim <https://github.com/vim-scripts/nginx.vim>`_
    - highlights configuration files for nginx.
 #. [X] `Python Syntax <http://www.vim.org/scripts/script.php?script_id=3782>`_ 
    - Revised version based on Ian McCracken's version.
-#. [X] `rest.vim <http://www.vim.org/scripts/script.php?script_id=973>`_ 
+#. [ ] `rest.vim <http://www.vim.org/scripts/script.php?script_id=973>`_ 
    - A reStructuredText syntax mode.
 #. [X] `vim-javascript-syntax <https://github.com/othree/vim-javascript-syntax>`_
    - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
@@ -201,12 +209,14 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - Vimcdoc of Traditional Chinese.
 #. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
    - Searching word with sdcv at Vim.
-#. [X] `vim-tomorrow-night <https://github.com/mukiwu/vim-tomorrow-night>`_
-   - one stop shop for vim colorschemes.
+#. [X] `Tomorrow Theme <https://github.com/chriskempson/tomorrow-theme>`_
+   - Tomorrow Theme the precursor to Base16 Theme.
 #. [X] `VST <https://github.com/vim-scripts/vst>`_ 
    - Vim reStructured Text.
 #. [X] `riv.vim <https://github.com/Rykka/riv.vim>`_
    - reStructured Text in Vim.
+#. [X] `xterm-color-table.vim <https://github.com/guns/xterm-color-table.vim>`_
+   - All 256 xterm colors with their RGB equivalents, right in Vim!
 
 6. File Structure
 ========================================
@@ -251,6 +261,7 @@ Sort list A to Z.
 #. `Denny Huang <https://github.com/denny0223/.vim>`_
 #. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
 #. `Jerry Lee <https://github.com/akitaonrails/vimfiles>`_
+#. `joe di castro <https://github.com/joedicastro/dotfiles/tree/master/vim>`_
 #. `Josephj <https://github.com/josephj/vimrc>`_
 #. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
 #. `Kang-min Wang <https://github.com/aminzai/vimrc>`_
