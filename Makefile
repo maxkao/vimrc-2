@@ -29,6 +29,7 @@ install:
 	@echo " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile"
 	@echo '--Done!--'
 	@echo ''
+	vim
 
 #update:
 	#vim -c InitENV
