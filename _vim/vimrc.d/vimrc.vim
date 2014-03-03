@@ -67,11 +67,11 @@ endif
 " - indent.
 set autoindent		" (ai)
 set cindent
-"set expandtab		" Set Tab to Space.
+set expandtab		" Set Tab to Space.
 set smartindent
-set tabstop=4
-set softtabstop=4	" Set Soft tab stop.
-set shiftwidth=4	" Set Soft tab width.
+set tabstop=2
+set softtabstop=2	" Set Soft tab stop.
+set shiftwidth=2	" Set Soft tab width.
 filetype indent on
 
 " - Set Scroll setting
