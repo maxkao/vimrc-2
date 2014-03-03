@@ -130,6 +130,12 @@ NeoBundle 'scrooloose/nerdtree'
 nmap <leader>e	:<C-u>NERDTree<CR>
 nmap <F4>		:<C-u>NERDTree<CR>
 
+" ## vim-notes
+NeoBundle 'xolox/vim-notes.git'
+NeoBundle 'xolox/vim-misc.git'
+let g:notes_directories = ['~/Dropbox/notes']
+let g:notes_suffix = '.txt'
+
 " ## numbers.vim
 "NeoBundle 'myusuf3/numbers.vim'
 "nnoremap <F3> :NumbersToggle<CR>
