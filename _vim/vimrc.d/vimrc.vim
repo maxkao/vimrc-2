@@ -105,6 +105,12 @@ set lazyredraw
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
+" disable sound on errors
+set visualbell
+set noerrorbells
+set t_vb=
+set tm=500
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw
