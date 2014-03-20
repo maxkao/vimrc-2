@@ -200,6 +200,13 @@ NeoBundle 'tpope/vim-ragtag'
 " Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
 " Ctrl x Space = 同上，但不會加上斷行
 
+" ## syntastic: Syntax checking hacks for vim.
+NeoBundle 'scrooloose/syntastic.git'
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
 " ## SrcExpl 
 "NeoBundle 'wesleyche/SrcExpl'
 "map <leader>s  :<C-u>SrcExplToggle<CR>
