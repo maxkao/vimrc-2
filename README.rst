@@ -273,4 +273,4 @@ Sort list A to Z.
 #. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
 #. `Vgod <https://github.com/vgod/vimrc>`_
 #. `weitsai <https://github.com/weitsai/vim>`_
-
+#. `xinsuiyuer <https://github.com/xinsuiyuer/.vimrc>`_
