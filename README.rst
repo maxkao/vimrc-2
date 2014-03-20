@@ -121,6 +121,8 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
    - Display tags of the current file ordered by scope.
 #. [X] `surround.vim <https://github.com/tpope/vim-surround>`_
    - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
+#. [X] `syntastic <https://github.com/scrooloose/syntastic>`_
+   - Syntax checking plugins of C, C++, CSS, Go, HTML, Java, JavaScript, JSON, PHP, Python, reStructuredText, Ruby, SASS, VimL, zsh ... (`more <https://github.com/scrooloose/syntastic#introduction>`_).
 #. [ ] `SrcExpl <https://github.com/wesleyche/SrcExpl>`_
    - SrcExpl (Source Explorer) is a source code explorer (need `Trinity <https://github.com/wesleyche/Trinity>`_).
 #. [X] `vim-airline <https://github.com/bling/vim-airline>`_
