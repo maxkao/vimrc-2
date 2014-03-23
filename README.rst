@@ -37,16 +37,16 @@ This verison use NeoBundle that can get the newest vim script use eazy way.
 3. Installation
 ========================================
 
-Linux & MacOSX
+Linux & Mac OSX
 ----------------
 
-#. Get chusiang`s vimrc.
+- Get my vimrc settings with Git.
 
 ::
 
     git clone https://github.com/chusiang/vimrc.git
 
-#. Install.
+- Install.
 
 ::
 
