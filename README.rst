@@ -37,17 +37,29 @@ This verison use NeoBundle that can get the newest vim script use eazy way.
 3. Installation
 ========================================
 
-- windows
+Linux & MacOSX
+----------------
+
+#. Get chusiang`s vimrc.
+
+::
+
+    git clone https://github.com/chusiang/vimrc.git
+
+#. Install.
+
+::
+
+    cd vimrc; make install
+
+windows
+---------
 
 ::
 
     WindowsInstall.bat
 
-- Linux & MacOSX
-
-::
-    
-    make install
+.. [#] No maintained.
 
 4. HowTo
 ========================================
@@ -61,14 +73,12 @@ This verison use NeoBundle that can get the newest vim script use eazy way.
     
     NeoBundleUpdate
 
-.. #. use make, $make update [*]_\
-
 4.2. Backup
 ----------------------------------------
 
 This version can auto backup orginal config before install.
 
-Backup directory: ${HOME}/.vim_back-${data} [*]_\
+Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 ::
 
@@ -79,9 +89,9 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
 
 ::
 
-    make clean_backup_file
+    make clean-backup-file
 
-.. [*] Just support Unix-like operating-system.
+.. [#] Just support Unix-like operating-system.
 
 5. Bundled Plugins
 ========================================
@@ -246,6 +256,7 @@ Backup directory: ${HOME}/.vim_back-${data} [*]_\
     │       ├── keymap.vim                  # Custon mapping.
     │       ├── php-funclist.txt
     │       ├── themes.vim                  # GUI, Theme settings.
+    │       ├── title.vim                   # Copyright settings.
     │       └── vimrc.vim                   # Other settings.
     ├── _vimrc                              # Loading '_vim/vimrc.d/*.vim'.
     ├── _vimrc.win32                        # vimrc for Windows.
