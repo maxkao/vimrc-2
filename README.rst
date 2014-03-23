@@ -57,9 +57,7 @@ windows
 
 ::
 
-    WindowsInstall.bat
-
-.. [#] No maintained.
+    WindowsInstall.bat    # No maintained.
 
 4. HowTo
 ========================================
