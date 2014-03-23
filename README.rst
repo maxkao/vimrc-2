@@ -3,17 +3,17 @@ Vim of chusiang
 ================
 
 :Author:
-    Chu-Siang Lai (凍仁翔)
+    凍仁翔 (chusiang)
 :Build Date:
     2012/10/31
 :Version:
-    2.2
+    2.3
 :Blog:
     `<http://note.drx.tw>`_
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    46
+    49
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -267,7 +267,7 @@ Sort list A to Z.
 
 #. `Amix <https://github.com/amix/vimrc>`_
 #. `Beata Lin <https://github.com/beata/vimrc>`_
-#. `Chu-Siang Lai <https://github.com/chusiang/vimrc>`_
+#. `chusiang <https://github.com/chusiang/vimrc>`_
 #. `CrBoy <https://github.com/crboy/vimrc>`_
 #. `Denny Huang <https://github.com/denny0223/.vim>`_
 #. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
