@@ -37,6 +37,7 @@ set ic
 set showmatch
 set mouse=nv
 set nobackup
+"set noswapfile
 set nocompatible
 "set number
 set rnu
@@ -51,6 +52,10 @@ set guioptions-=L	" remove Scroll (Left of Split window).
 set guioptions-=r	" remove Scroll (Right).
 set guioptions-=R	" remove Scroll (Right of Split window).
 colorscheme fu		" Favorites Color.
+
+"Put vim files in the temp directory instead of the current directory
+set dir=E:\
+set backupdir=E:\
 
 " = keymap =
 " quick quit vim.
@@ -233,7 +238,7 @@ let g:ctrlp_user_command = {
 ""end easymotion
 
 " ## EditorConfig
-Plugin 'editorconfig/editorconfig-vim'
+"Plugin 'editorconfig/editorconfig-vim'
 
 " ## EnhCommentify.vim
 Plugin 'EnhCommentify.vim'
@@ -341,8 +346,8 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
 " ## phpfolding.vim
-Plugin 'phpfolding.vim', '3d5149e651'
-autocmd FileType php noremap <F4> :!php -l % <CR>
+"Plugin 'phpfolding.vim', '3d5149e651'
+"autocmd FileType php noremap <F4> :!php -l % <CR>
 "autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
 "autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
 "autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
