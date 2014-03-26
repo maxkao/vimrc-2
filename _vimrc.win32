@@ -37,7 +37,7 @@ set ic
 set showmatch
 set mouse=nv
 set nobackup
-"set noswapfile
+set noswapfile
 set nocompatible
 "set number
 set rnu
@@ -54,8 +54,7 @@ set guioptions-=R	" remove Scroll (Right of Split window).
 colorscheme fu		" Favorites Color.
 
 "Put vim files in the temp directory instead of the current directory
-set dir=E:\
-set backupdir=E:\
+set backupdir=C:\Windows\Temp
 
 " = keymap =
 " quick quit vim.
@@ -261,14 +260,14 @@ Plugin 'tpope/vim-fugitive'
 ""let g:gsession_non_default_mapping = 1
 
 " ## Vim Git Gutter
-Plugin 'airblade/vim-gitgutter'
+"Plugin 'airblade/vim-gitgutter'
 
 "You can explicitly turn vim-gitgutter off and on (defaults to on):
 "
 "    turn off with :GitGutterDisable
 "    turn on with :GitGutterEnable
 "    toggle with :GitGutterToggle.
-nmap <leader>d	:GitGutterToggle<CR>
+"nmap <leader>d	:GitGutterToggle<CR>
 "
 "And you can turn line highlighting on and off (defaults to off):
 "
@@ -281,8 +280,8 @@ nmap <leader>d	:GitGutterToggle<CR>
 "    jump to next hunk: ]h
 "    jump to previous hunk: [h.
 "
-nmap gh <Plug>GitGutterNextHunk
-nmap gH <Plug>GitGutterPrevHunk
+"nmap gh <Plug>GitGutterNextHunk
+"nmap gH <Plug>GitGutterPrevHunk
 
 " ## HTML5 omnicomplete and syntax
 Plugin 'othree/html5.vim'
@@ -346,7 +345,7 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
 " ## phpfolding.vim
-"Plugin 'phpfolding.vim', '3d5149e651'
+"Plugin 'phpfolding.vim'
 "autocmd FileType php noremap <F4> :!php -l % <CR>
 "autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
 "autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
