@@ -116,6 +116,9 @@ nmap <leader>d	:GitGutterToggle<CR>
 nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
 
+" ## indentLine - display the indention levels with thin vertical lines.
+NeoBundle 'Yggdroot/indentLine'
+
 " ## HTML5 omnicomplete and syntax
 NeoBundle 'othree/html5.vim'
 
@@ -257,12 +260,12 @@ let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 ""let g:SrcExpl_nextDefKey = '<F4>' 
 
 " ## Sublime Text like.
-NeoBundle 'terryma/vim-multiple-cursors'
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_prev_key='<C-m>'
-let g:multi_cursor_skip_key='<C-q>'
-let g:multi_cursor_quit_key='<Esc>'
+"NeoBundle 'terryma/vim-multiple-cursors'
+"let g:multi_cursor_use_default_mapping=0
+"let g:multi_cursor_next_key='<C-n>'
+"let g:multi_cursor_prev_key='<C-m>'
+"let g:multi_cursor_skip_key='<C-q>'
+"let g:multi_cursor_quit_key='<Esc>'
 
 " ## reStructuredText in Vim
 NeoBundle 'Rykka/riv.vim'
@@ -354,3 +357,4 @@ NeoBundle 'nginx.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'guns/xterm-color-table.vim.git'
+

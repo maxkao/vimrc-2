@@ -125,6 +125,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
    - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim <http://www.vim.org/scripts/script.php?script_id=23>`_
    - comment lines in a program.
+#. [X] `indentLine <https://github.com/Yggdroot/indentLine>`_
+   - Display the indention levels with thin vertical lines.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
    - Display tags of the current file ordered by scope.
 #. [X] `surround.vim <https://github.com/tpope/vim-surround>`_
