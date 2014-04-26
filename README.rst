@@ -207,6 +207,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 #. [X] `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_
    - The script of create calender window and don`t use the `cal`.
+#. [X] `evervim <https://github.com/kakkyz81/evervim>`_
+   - edit evernote with markdown at vim.
 #. [ ] `gsession.vim <https://github.com/c9s/gsession.vim>`_
    - Vim Session Plugin.
 #. [ ] `numbers.vim <https://github.com/myusuf3/numbers.vim>`_
