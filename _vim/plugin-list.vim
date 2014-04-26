@@ -2,14 +2,14 @@
 
 " ## vimproc
 "NeoBundle 'Shougo/vimproc'
-"NeoBundle 'Shougo/vimproc', {
-"      \ 'build' : {
-"      "\     'windows' :'make -f make_mingw32.mak',
-"      "\     'cygwin' : 'make -f make_cygwin.mak',
-"      \     'mac' : 'make -f make_mac.mak',
-"      \     'unix' : 'make -f make_unix.mak',
-"      \    },
-"      \ }
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' :'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 " ## snipMate (auto-complete)
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
@@ -43,7 +43,7 @@ nmap <leader>wc	:Calendar<CR>
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 " ## ctrlp.vim
-NeoBundle 'kien/ctrlp.vim.git'
+NeoBundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -74,6 +74,16 @@ NeoBundle 'editorconfig/editorconfig-vim'
 
 " ## EnhCommentify.vim
 NeoBundle 'EnhCommentify.vim'
+
+" ## EverVim
+NeoBundle 'kakkyz81/evervim'
+nmap <leader>ec :EvervimCreateNote<CR>
+nmap <leader>el :EvervimNotebookList<CR>
+nmap <leader>er :EvervimReloadPref<CR>
+nmap <leader>ej :EvervimPageNext<CR>
+nmap <leader>ek :EvervimPagePrev<CR>
+nmap <leader>es :EvervimSearchByQuery 
+
 
 " ## Gitv (need the fugitive plugin)
 "NeoBundle 'gitv'				
@@ -130,12 +140,12 @@ NeoBundle 'mru.vim'
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
-nmap <leader>e	:<C-u>NERDTree<CR>
-"nmap <F4>		:<C-u>NERDTree<CR>
+"nmap <leader>e	:<C-u>NERDTree<CR>
+nmap te		:<C-u>NERDTree<CR>
 
 " ## vim-notes
-NeoBundle 'xolox/vim-notes.git'
-NeoBundle 'xolox/vim-misc.git'
+NeoBundle 'xolox/vim-notes'
+NeoBundle 'xolox/vim-misc'
 let g:notes_directories = ['~/Dropbox/notes']
 let g:notes_suffix = '.txt'
 
@@ -277,7 +287,7 @@ NeoBundle 'majutsushi/tagbar'
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 nmap <leader>t :<C-u>TagbarToggle<CR>
-nnoremap <F3> :<C-u>TagbarToggle<CR>
+"nnoremap <F3> :<C-u>TagbarToggle<CR>
 
 if has('win32')
 	let g:tagbar_ctags_bin='C:\ctags.exe'
@@ -342,7 +352,7 @@ nmap <leader>lv :GraphvizShow<CR>
 nmap <leader>li :GraphvizInteractive<CR>
 
 " ## Start Syntax
-NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'scrooloose/syntastic'
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 let g:syntastic_enable_highlighting = 1
@@ -364,7 +374,7 @@ NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'guns/xterm-color-table.vim.git'
+NeoBundle 'guns/xterm-color-table.vim'
 
 
 " -----------------------------------
