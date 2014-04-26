@@ -60,8 +60,8 @@ if has('win32')
 	set backupdir=/cygdrive/e/Cache
 	set directory=/cygdrive/e/Cache
 else
-	set backupdir=/dev/shm
-	set directory=/dev/shm
+	set backupdir=/tmp
+	set directory=/tmp
 endif
 
 " - indent.
@@ -97,11 +97,17 @@ set lazyredraw
 "set noerrorbells
 
 " - Set Folding 
-"set foldenable
-"set foldmethod=indent
-"set foldcolumn=3
+set foldenable
+set foldmethod=indent
+set foldcolumn=1
+set foldlevel=6
 
-"  - auto folds.
+"  - save my folds.
+if !isdirectory("view")
+  " put view to tmp.
+  silent !mkdir /tmp/vim-view/ > /dev/null 2>&1
+  silent !ln -s /tmp/vim-view/ ~/.vim/view > /dev/null 2>&1
+endif
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
