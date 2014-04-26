@@ -116,11 +116,11 @@ nmap <leader>d	:GitGutterToggle<CR>
 nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
 
-" ## indentLine - display the indention levels with thin vertical lines.
-NeoBundle 'Yggdroot/indentLine'
-
 " ## HTML5 omnicomplete and syntax
 NeoBundle 'othree/html5.vim'
+
+" ## indentLine
+NeoBundle 'Yggdroot/indentLine'
 
 " ## Matchit
 NeoBundle 'matchit.zip'
@@ -131,7 +131,7 @@ NeoBundle 'mru.vim'
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
 nmap <leader>e	:<C-u>NERDTree<CR>
-nmap <F4>		:<C-u>NERDTree<CR>
+"nmap <F4>		:<C-u>NERDTree<CR>
 
 " ## vim-notes
 NeoBundle 'xolox/vim-notes.git'
@@ -203,13 +203,6 @@ NeoBundle 'tpope/vim-ragtag'
 " Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
 " Ctrl x Space = 同上，但不會加上斷行
 
-" ## syntastic: Syntax checking hacks for vim.
-NeoBundle 'scrooloose/syntastic.git'
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_enable_highlighting = 1
-let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-
 " ## SrcExpl 
 "NeoBundle 'wesleyche/SrcExpl'
 "map <leader>s  :<C-u>SrcExplToggle<CR>
@@ -260,12 +253,12 @@ let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 ""let g:SrcExpl_nextDefKey = '<F4>' 
 
 " ## Sublime Text like.
-"NeoBundle 'terryma/vim-multiple-cursors'
-"let g:multi_cursor_use_default_mapping=0
-"let g:multi_cursor_next_key='<C-n>'
-"let g:multi_cursor_prev_key='<C-m>'
-"let g:multi_cursor_skip_key='<C-q>'
-"let g:multi_cursor_quit_key='<Esc>'
+NeoBundle 'terryma/vim-multiple-cursors'
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-m>'
+let g:multi_cursor_skip_key='<C-q>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " ## reStructuredText in Vim
 NeoBundle 'Rykka/riv.vim'
@@ -339,7 +332,22 @@ autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
 NeoBundle 'VST'
 let g:vst_write_export=1	" plugin of vst default export html.
 
+" ## wmgraphviz.vim
+NeoBundle 'wannesm/wmgraphviz.vim'
+let g:WMGraphviz_viewer='xdg-open'
+let g:WMGraphviz_output="png" 
+nmap <leader>lp :GraphvizCompile<CR>
+nmap <leader>ll :GraphvizCompilePDF<CR>
+nmap <leader>lv :GraphvizShow<CR>
+nmap <leader>li :GraphvizInteractive<CR>
+
 " ## Start Syntax
+NeoBundle 'scrooloose/syntastic.git'
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css3'
@@ -357,4 +365,16 @@ NeoBundle 'nginx.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'guns/xterm-color-table.vim.git'
+
+
+" -----------------------------------
+
+"NeoBundle 'joonty/vdebug'
+
+"NeoBundle 'nathanaelkane/vim-indent-guides'
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+"hi IndentGuidesOdd  guibg=red   ctermbg=3
+"hi IndentGuidesEven guibg=green ctermbg=4
+"let g:indent_guides_guide_size = 1
 

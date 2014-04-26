@@ -227,8 +227,11 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
    - Vim reStructured Text.
 #. [X] `riv.vim <https://github.com/Rykka/riv.vim>`_
    - reStructured Text in Vim.
+#. [X] `wmgraphviz.vim <https://github.com/wannesm/wmgraphviz.vim>`_
+   - Vim plugin for Graphviz dot.
 #. [X] `xterm-color-table.vim <https://github.com/guns/xterm-color-table.vim>`_
    - All 256 xterm colors with their RGB equivalents, right in Vim!
+
 
 6. File Structure
 ========================================
