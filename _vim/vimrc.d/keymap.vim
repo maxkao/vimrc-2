@@ -26,13 +26,7 @@ cnoremap <c-d> <del>
 
 " - move one line down and up.
 nmap <A-j> :.m.+1<cr>
-nmap <C-n> :.m.+1<cr>
-"nmap <a-up> :.m.-2<cr>
-
-nmap <C-m> :.m.-2<cr>
 nmap <A-k> :.m.-2<cr>
-"nmap <a-down> :.m.+1<cr>
-
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -148,14 +142,15 @@ nmap <leader>cj	:colorscheme jellybeans <CR>
 " - local.drx.tw (PHP)
 nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+
 " - current file (Ex: html, txt) 
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
 
 " - 80 column layout.
-nmap <leader>l :call HightLightOverLength()<CR>
-nnoremap <leader>r :set columns=80<CR>
+"nmap <leader>l :call HightLightOverLength()<CR>
+"nnoremap <leader>r :set columns=80<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
