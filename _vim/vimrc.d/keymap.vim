@@ -26,7 +26,11 @@ cnoremap <c-d> <del>
 
 " - move one line down and up.
 nmap <A-j> :.m.+1<cr>
+nmap <a-up> :.m.-2<cr>
+
 nmap <A-k> :.m.-2<cr>
+nmap <a-down> :.m.+1<cr>
+
 
 " Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
@@ -92,8 +96,8 @@ xnoremap <s-tab> <gv
 "nmap -b		:set guioptions-=b <CR>
 "nmap -l		:set guioptions-=L <CR>
 "nmap -r		:set guioptions-=r <CR>
-nmap <F7>		:set guioptions+=m <CR>
-nmap <F8>		:set guioptions-=m <CR>
+nmap <F7>		:set guioptions+=mT <CR>
+nmap <F8>		:set guioptions-=mT <CR>
 
 " == Split ==
 nmap <C-tab>	<C-w>w
@@ -102,10 +106,12 @@ nmap <C-h>		<C-w>h
 nmap <C-l>		<C-w>l
 
 " == Folding ==
-inoremap <F2> <C-o>za
-nnoremap <F2> za
-onoremap <F2> <C-c>za
+"inoremap <F2> <C-o>za
+"nnoremap <F2> za
+"onoremap <F2> <C-c>za
 "vnoremap <F9> zf
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+vnoremap <space> zf
 
 " == Font Size ==
 nmap <leader>f0	:set guifont=Monospace\ 14 <CR>
