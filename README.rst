@@ -205,6 +205,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.5. Other
 ----------------------------------------
 
+#. [X] `Apprentice <https://github.com/romainl/Apprentice>`_
+   - A dark, low-contrast, Vim colorscheme.
 #. [X] `calendar.vim <https://github.com/vim-scripts/calendar.vim>`_
    - The script of create calender window and don`t use the `cal`.
 #. [X] `evervim <https://github.com/kakkyz81/evervim>`_
