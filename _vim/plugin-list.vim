@@ -77,13 +77,13 @@ NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'EnhCommentify.vim'
 
 " ## EverVim
-NeoBundle 'kakkyz81/evervim'
-nmap <leader>ec :EvervimCreateNote<CR>
-nmap <leader>el :EvervimNotebookList<CR>
-nmap <leader>er :EvervimReloadPref<CR>
-nmap <leader>ej :EvervimPageNext<CR>
-nmap <leader>ek :EvervimPagePrev<CR>
-nmap <leader>es :EvervimSearchByQuery 
+"NeoBundle 'kakkyz81/evervim'
+"nmap <leader>ec :EvervimCreateNote<CR>
+"nmap <leader>el :EvervimNotebookList<CR>
+"nmap <leader>er :EvervimReloadPref<CR>
+"nmap <leader>ej :EvervimPageNext<CR>
+"nmap <leader>ek :EvervimPagePrev<CR>
+"nmap <leader>es :EvervimSearchByQuery 
 
 
 " ## Gitv (need the fugitive plugin)
