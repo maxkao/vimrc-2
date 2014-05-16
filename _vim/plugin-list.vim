@@ -76,6 +76,13 @@ NeoBundle 'editorconfig/editorconfig-vim'
 " ## EnhCommentify.vim
 NeoBundle 'EnhCommentify.vim'
 
+" ## Emmet
+NeoBundle 'mattn/emmet-vim'
+let g:user_emmet_install_global = 0
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key='<C-Q>'
+autocmd FileType html,css EmmetInstall
+
 " ## EverVim
 "NeoBundle 'kakkyz81/evervim'
 "nmap <leader>ec :EvervimCreateNote<CR>
