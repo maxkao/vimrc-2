@@ -115,18 +115,18 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.3. Development
 ----------------------------------------
 
+#. [X] `vim-snipmate <https://github.com/garbas/vim-snipmate>`_
+   - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
 #. [X] `Vim Auto Complete Popup <https://github.com/othree/vim-autocomplpop>`_
    - Automatic trigger complete popup menu (need `L9 <https://github.com/vim-scripts/L9>`_).
-#. [X] `c.vim <http://www.vim.org/scripts/script.php?script_id=213>`_
-   - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
+#. [X] `emmet-vim <https://github.com/mattn/emmet-vim>`_
+   - `emmet <http://emmet.io>`_ for vim.
 #. [X] `matchit.zip <https://github.com/vim-scripts/matchit.zip>`_
    - allows you to configure % to match more than just single characters.
 #. [X] `EditorConfig Vim Plugin <https://github.com/editorconfig/editorconfig-vim>`_
    - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim <http://www.vim.org/scripts/script.php?script_id=23>`_
    - comment lines in a program.
-#. [X] `indentLine <https://github.com/Yggdroot/indentLine>`_
-   - Display the indention levels with thin vertical lines.
 #. [X] `tagbar <https://github.com/majutsushi/tagbar>`_ 
    - Display tags of the current file ordered by scope.
 #. [X] `surround.vim <https://github.com/tpope/vim-surround>`_
@@ -139,8 +139,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
    - Lean & mean status/tabline for vim that's light as air.
 #. [ ] `vim-powerline <https://github.com/Lokaltog/vim-powerline>`_
    - better-looking, more functional vim statuslines.
-#. [X] `vim-snipmate <https://github.com/garbas/vim-snipmate>`_
-   - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
+#. [X] `indentLine <https://github.com/Yggdroot/indentLine>`_
+   - Display the indention levels with thin vertical lines.
 #. [X] `vim-ragtag <https://github.com/tpope/vim-ragtag>`_
    - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
 #. [X] `taglist.vim <https://github.com/vim-scripts/taglist.vim>`_
@@ -179,6 +179,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.4. Syntax
 ----------------------------------------
 
+#. [X] `c.vim <http://www.vim.org/scripts/script.php?script_id=213>`_
+   - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3 <https://github.com/vim-scripts/css3>`_
    - css3 syntax for vim.
 #. [X] `vim-css3-syntax <https://github.com/hail2u/vim-css3-syntax>`_
