@@ -185,8 +185,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
    - css3 syntax for vim.
 #. [X] `vim-css3-syntax <https://github.com/hail2u/vim-css3-syntax>`_
    - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
-#. [X] `css_color.vim <http://www.vim.org/scripts/script.php?script_id=2150>`_
-   - CSS color preview.
+#. [X] `vim-css-color <https://github.com/skammer/vim-css-color>`_     
+   - Highlight colors in css files.
 #. [X] `vim-coloresque <https://github.com/gorodinskiy/vim-coloresque>`_
    - css/less/sass/html color preview for vim.
 #. [X] `django.vim <https://github.com/jgb/django.vim>`_
