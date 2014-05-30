@@ -370,7 +370,10 @@ NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css3'
 NeoBundle 'hail2u/vim-css3-syntax'
+
 NeoBundle 'skammer/vim-css-color'
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'jQuery'
 NeoBundle 'php.vim'
