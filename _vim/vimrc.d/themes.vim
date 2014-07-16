@@ -20,11 +20,12 @@ if has('gui')
 	set guioptions-=e	" remove Tab-Page.
 	set guioptions-=T	" remove Toolbar.
 	set guioptions-=b	" remove Scroll (Below).
-	set guioptions-=l 	" remove Scroll (Left of Split window).
-	set guioptions-=L 	" remove Scroll (Left).
-	set guioptions-=r 	" remove Scroll (Right of Split window).
-	set guioptions-=R 	" remove Scroll (Right).
-	set t_Co=256		" support 256 color.
+	set guioptions-=l " remove Scroll (Left of Split window).
+	set guioptions-=L " remove Scroll (Left).
+	set guioptions-=r " remove Scroll (Right of Split window).
+	set guioptions-=R " remove Scroll (Right).
+  set columns=80 lines=38 " width x high size
+	set t_Co=256		  " support 256 color.
 
 	" == Favorites Color ==
 	colorscheme fu
