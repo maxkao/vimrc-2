@@ -162,6 +162,8 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 "nmap <leader>l :call HightLightOverLength()<CR>
 "nnoremap <leader>r :set columns=80<CR>
 
+" == Quick open $HOME ==
+nmap <leader>h		:tabnew <CR>:e $HOME/ <CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
