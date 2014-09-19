@@ -8,6 +8,11 @@ let mapleader = ","
 "imap <C-O>	<ESC>
 inoremap jj <ESC>
 
+" == ~ ==
+cmap <S-ESC> ~
+cmap <S-ESC> ~
+inoremap <S-ESC> ~
+
 " == Cursor Move ==
 " - insert mode
 imap <C-h> <left>
@@ -70,15 +75,15 @@ nmap tt		:tabnew <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
 nmap te		:Texplore <CR>
-map <A-1>	:tabn1 <CR>
-map <A-2>	:tabn2 <CR>
-map <A-3>	:tabn3 <CR>
-map <A-4>	:tabn4 <CR>
-map <A-5>	:tabn5 <CR>
-map <A-6>	:tabn6 <CR>
-map <A-7>	:tabn7 <CR>
-map <A-8>	:tabn8 <CR>
-map <A-9>	:tabn9 <CR>
+nmap <A-1>	:tabn1 <CR>
+nmap <A-2>	:tabn2 <CR>
+nmap <A-3>	:tabn3 <CR>
+nmap <A-4>	:tabn4 <CR>
+nmap <A-5>	:tabn5 <CR>
+nmap <A-6>	:tabn6 <CR>
+nmap <A-7>	:tabn7 <CR>
+nmap <A-8>	:tabn8 <CR>
+nmap <A-9>	:tabn9 <CR>
 
 " == Indent ==
 imap <S-tab> <esc>m`<<``i
@@ -153,10 +158,10 @@ nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?htt
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
-
-" - 80 column layout.
+" == 80 column layout ==
 "nmap <leader>l :call HightLightOverLength()<CR>
 "nnoremap <leader>r :set columns=80<CR>
+
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
