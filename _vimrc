@@ -16,15 +16,20 @@ else
 endif
 
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
-NeoBundle 'Shougo/neobundle.vim'
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
 
+" My Bundles here:
 source ${HOME}/.vim/plugin-list.vim
 
+call neobundle#end()
 
-filetype plugin indent on     " Required!
+" Required:
+filetype plugin indent on     
+
 "
 " Brief help
 " :NeoBundleList          - list configured bundles
