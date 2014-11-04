@@ -52,8 +52,8 @@ cmap WW	:w <CR>
 " - Copy the characters under the cursor until the end
 imap <leader>y	<C-o>y$<ESC>
 nmap <leader>y	y$
-vmap <C-c>	y <CR>
-vmap <S-c>	"+y <CR>
+vmap <C-c>	"+y
+vmap <leader>y	"+y
 
 " == Command Mode ==
 "cmap <C-e> <end>
