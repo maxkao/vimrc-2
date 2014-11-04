@@ -148,8 +148,7 @@ NeoBundle 'mru.vim'
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
-"nmap <leader>e	:<C-u>NERDTree<CR>
-nmap te		:<C-u>NERDTree<CR>
+nmap <leader>e	:NERDTreeToggle<CR>
 
 " ## vim-notes
 NeoBundle 'xolox/vim-notes'
