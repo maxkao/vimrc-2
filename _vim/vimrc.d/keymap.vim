@@ -52,6 +52,7 @@ cmap WW	:w <CR>
 " - Copy the characters under the cursor until the end
 imap <leader>y	<C-o>y$<ESC>
 nmap <leader>y	y$
+nmap <C-c>	V"+y
 vmap <C-c>	"+y
 vmap <leader>y	"+y
 
@@ -163,7 +164,7 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 "nnoremap <leader>r :set columns=80<CR>
 
 " == Quick open $HOME ==
-nmap <leader>h		:tabnew <CR>:e $HOME/ <CR>
+nmap <leader>h		:tabnew <CR>:e $HOME<CR>
 
 " -----------------------------------
 "  Author : Chu-Siang Lai
