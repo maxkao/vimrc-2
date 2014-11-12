@@ -145,10 +145,12 @@ NeoBundle 'matchit.zip'
 
 " ## mru.vim
 NeoBundle 'mru.vim'
+let MRU_Max_Entries = 1000
+nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
-nmap <leader>e	:NERDTreeToggle<CR>
+nmap <leader>e  :NERDTreeToggle<CR>
 
 " ## vim-notes
 NeoBundle 'xolox/vim-notes'
