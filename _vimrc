@@ -40,8 +40,8 @@ filetype plugin indent on
 NeoBundleCheck
 
 "set wrap
-source ~/.vim/vimrc.d/im-switch.vim
 source ~/.vim/vimrc.d/keymap.vim
+source ~/.vim/vimrc.d/im-switch.vim
 
 
 " ------------------------------------
