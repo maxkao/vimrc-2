@@ -281,6 +281,9 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " ## reStructuredText in Vim
 NeoBundle 'Rykka/riv.vim'
+NeoBundle 'Rykka/clickable.vim'
+NeoBundle 'Rykka/clickable-things'
+NeoBundle 'Rykka/os.vim'
 
 " ## surround
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
