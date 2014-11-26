@@ -280,10 +280,12 @@ let g:multi_cursor_skip_key='<C-q>'
 let g:multi_cursor_quit_key='<Esc>'
 
 " ## reStructuredText in Vim
-NeoBundle 'Rykka/riv.vim'
-NeoBundle 'Rykka/clickable.vim'
-NeoBundle 'Rykka/clickable-things'
-NeoBundle 'Rykka/os.vim'
+"NeoBundle 'Rykka/riv.vim'
+"NeoBundle 'Rykka/clickable.vim'
+"let g:clickable_browser='/usr/bin/firefox'
+"let g:clickable_extensions='txt,js,css,html,py,vim,java,jade,c,cpp,rst,php,rb'
+"NeoBundle 'Rykka/clickable-things'
+"NeoBundle 'Rykka/os.vim'
 
 " ## surround
 " ex. [chusiang] → 'chusiang', <b>chusiang</b> → <u>chusiang</u>
