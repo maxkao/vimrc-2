@@ -1,3 +1,12 @@
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: _vimrc.win32
+"  Modified: 2014-12-30 17:07
+"  Description: vimrc for win32.
+"  Reference: 
+" =========================================================== 
+
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -522,9 +531,3 @@ Plugin 'guns/xterm-color-table.vim.git'
 
 filetype plugin indent on     " required
 
-
-" ------------------------------------
-" Author : Chu-Siang Lai
-" E-mail : jonny (at) drx.tw
-" Blog : http://note.drx.tw
-" ------------------------------------

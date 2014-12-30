@@ -1,11 +1,18 @@
-" = Cutsom Abbreveviation =
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: abbreviation.vim
+"  Modified: 2014-12-30 17:13
+"  Description: Cutsom the abbreveviation for Myself.
+"  Reference: 
+" =========================================================== 
 
-" == command mode ==
+" - command mode
 cabbrev	gitv	Gitv
 cabbrev	troute	!traceroute
 cabbrev	wi		!whois
 
-" == insert mode ==
+" - insert mode
 iabbrev addons	Add-ons
 iabbrev app		application
 iabbrev apti	aptitude
@@ -49,9 +56,3 @@ iabbrev winxp	WindowsXP
 iabbrev 凍		凍仁
 
 iabbrev inst	instance
-
-" -----------------------------------
-"  Author : Chu-Siang Lai
-"  E-mail : jonny (at) drx.tw
-"  Blog : http://note.drx.tw
-" -----------------------------------

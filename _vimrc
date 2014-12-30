@@ -1,3 +1,12 @@
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: _vimrc
+"  Modified: 2014-12-30 17:08
+"  Description: vimrc for GNU/Linux.
+"  Reference: 
+" =========================================================== 
+
 " Source a global configuration file if available
 for CONFIG in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
    exe 'source' CONFIG
@@ -42,10 +51,3 @@ NeoBundleCheck
 "set wrap
 source ~/.vim/vimrc.d/im-switch.vim
 source ~/.vim/vimrc.d/keymap.vim
-
-
-" ------------------------------------
-" Author : Chu-Siang Lai
-" E-mail : jonny (at) drx.tw
-" Blog : http://note.drx.tw
-" ------------------------------------

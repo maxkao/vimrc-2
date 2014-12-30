@@ -1,4 +1,11 @@
-" fold <table>, </table> at HTML.
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: folding-html-php.vim.bak
+"  Modified: 2014-12-30 17:23
+"  Description: fold <table>, </table> at HTML, PHP.
+"  Reference: 
+" =========================================================== 
 
 syntax on
 

@@ -1,4 +1,11 @@
-" = Themes Environment =
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: themes.vim
+"  Modified: 2014-12-30 17:21
+"  Description: Themes Environment setting.
+"  Reference: 
+" =========================================================== 
 
 set cursorline		"highlight line.
 set cursorcolumn	"highlight colimn.
@@ -119,10 +126,4 @@ function! MyTabLine()
   endif
   return s
 endfunction
-
-" -----------------------------------
-"  Author : Chu-Siang Lai
-"  E-mail : jonny (at) drx.tw
-"  Blog : http://note.drx.tw
-" -----------------------------------
 

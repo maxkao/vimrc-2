@@ -1,4 +1,11 @@
-" vim`s function. 
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: function.vim
+"  Modified: 2014-12-30 17:22
+"  Description: vim function sandbox. 
+"  Reference: 
+" =========================================================== 
 
 function! SetTimeOfDayColors()
 	let currenHour = strftime("%H")
@@ -18,4 +25,4 @@ function! SetTimeOfDayColors()
 	execute "colorscheme " . colorScheme
 endfunction
 
- set dictionary-=~/.vim/vimrc.d/php-funclist.txt"
+set dictionary-=~/.vim/vimrc.d/php-funclist.txt"
