@@ -1,4 +1,11 @@
-" = 80 column layout =
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: 80-column-layout.vim
+"  Modified: 2014-12-30 17:12
+"  Description: 80 column layout setting.
+"  Reference: 
+" =========================================================== 
 
 "set columns=80
 ""set textwidth=80

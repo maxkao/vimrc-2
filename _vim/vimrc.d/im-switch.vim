@@ -1,4 +1,11 @@
-" = IM switch Environment =
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: im-switch.vim
+"  Modified: 2014-12-30 17:22
+"  Description: IM switch Environment
+"  Reference: 
+" =========================================================== 
 
 if has('gui')
 	" disable IM while leaving insert mode
@@ -6,8 +13,3 @@ if has('gui')
 	autocmd InsertLeave * set imdisable
 endif
 
-" -----------------------------------
-"  Author : Chu-Siang Lai
-"  E-mail : jonny (at) drx.tw
-"  Blog : http://note.drx.tw
-" -----------------------------------
