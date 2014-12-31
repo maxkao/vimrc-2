@@ -4,7 +4,7 @@ FILE_GVIMRC=${HOME}/.gvimrc
 DIR_VIM=${HOME}/.vim
 DIR_VIM_BAK=${HOME}/.vim.bak-${TIMESTAMP}
 
-.PHONY: all backup install update-config clean-backup-file
+.PHONY: all backup install update clean-backup-file
 
 all: backup install
 	@echo '--Install success!--'
@@ -31,11 +31,9 @@ install:
 	@echo ''
 	vim
 
-#update:
-	#vim -c InitENV
-
 # sync vimrc from git to home.
-update-config:
+update:
+	cp -a README.rst ${DIR_VIM}/
 	cp -a _vimrc ${FILE_VIMRC}
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
 	cp -a _vim/plugin-list.vim ${DIR_VIM}/
