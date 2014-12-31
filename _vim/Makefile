@@ -1,4 +1,11 @@
-# sync vimrc from home to git.
+# ============================================================
+#  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+#  Blog: http://note.drx.tw
+#  Filename: Makefile
+#  Modified: 2014-12-30 17:11
+#  Description: sync vimrc from home to git.
+#  Reference: 
+# =========================================================== 
 
 TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
 
@@ -22,8 +29,4 @@ sync:
 	cp -a ${DIR_VIM}/plugin-list.vim  ${DIR_VIM_GIT}/_vim/
 
 clean:
-
-
-
-
 

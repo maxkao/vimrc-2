@@ -1,26 +1,33 @@
-" = Cutsom Hotkey =
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: keymap.vim
+"  Modified: 2014-12-30 17:14
+"  Description: Cutsom the shortcut-key / hot-key/ keymap for Myself.
+"  Reference: 
+" =========================================================== 
 
-" == <leader> ==
+" - <leader>
 let mapleader = ","
 
-" == ESC ==
+" - ESC
 "imap <C-I>	<ESC>
 "imap <C-O>	<ESC>
 inoremap jj <ESC>
 
-" == ~ ==
+" - ~ 
 cmap <S-ESC> ~
 cmap <S-ESC> ~
 inoremap <S-ESC> ~
 
-" == Cursor Move ==
-" - insert mode
+" - Cursor Move
+"  - insert mode
 imap <C-h> <left>
 imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
 
-" - command mode
+"  - command mode
 cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
@@ -29,7 +36,7 @@ cmap <C-0> <home>
 cmap <C-e> <end>
 cnoremap <c-d> <del>
 
-" - move one line down and up.
+"  - move one line down and up.
 nmap <A-j> :.m.+1<cr>
 nmap <a-up> :.m.-2<cr>
 
@@ -37,31 +44,32 @@ nmap <A-k> :.m.-2<cr>
 nmap <a-down> :.m.+1<cr>
 
 
-" Re-Read vim Configure.
+" - Re-Read vim Configure.
 nmap <leader>s		:source $HOME/.vimrc <CR>
 
-" quick quit vim.
+" - quick quit vim.
 nmap <C-d>	:x <CR>
 
-" == Save ==
+" - Save
 "imap <C-S> <ESC>:w <CR>i
 "nmap <C-S> :w <CR>
 cmap WW	:w <CR>
 
-" == Copy ==
-" - Copy the characters under the cursor until the end
-imap <leader>y	<C-o>y$<ESC>
+" - Copy
 nmap <leader>y	y$
 nmap <C-c>	V"+y
 vmap <C-c>	"+y
 vmap <leader>y	"+y
 
-" == Command Mode ==
+"  - Copy the characters under the cursor until the end
+imap <leader>y	<C-o>y$<ESC>
+
+" - Command Mode
 "cmap <C-e> <end>
 "cnoremap <C-b> <home>
 "cnoremap <C-f> (history)
 
-" == Paste ==
+" - Paste
 "imap <C-B>	<ESC>p
 "nmap <S-V>	<ESC>"+gp
 nmap <leader>v	<ESC>"+gp
@@ -70,7 +78,7 @@ nmap <leader>V	<ESC>"+gP
 nmap <leader>p	:set paste <CR>
 nmap <leader>np	:set nopaste <CR>
 
-" == Tabs ==
+" - Tabs
 nmap tt		:tabnew <CR>
 "nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
@@ -86,7 +94,7 @@ nmap <A-7>	:tabn7 <CR>
 nmap <A-8>	:tabn8 <CR>
 nmap <A-9>	:tabn9 <CR>
 
-" == Indent ==
+" - Indent
 imap <S-tab> <esc>m`<<``i
 nmap <TAB> v>
 nmap <S-TAB> v<
@@ -94,8 +102,8 @@ xnoremap <tab> >gv
 vmap <tab> >gv
 xnoremap <s-tab> <gv
 
-" == Scroll ==
-" - hide scroll of split windows mode.
+" - Scroll
+"  - hide scroll of split windows mode.
 "nmap +b		:set guioptions+=b <CR>
 "nmap +l		:set guioptions+=L <CR>
 "nmap +r		:set guioptions+=r <CR>
@@ -105,13 +113,13 @@ xnoremap <s-tab> <gv
 nmap <F7>		:set guioptions+=mT <CR>
 nmap <F8>		:set guioptions-=mT <CR>
 
-" == Split ==
+"  - Split
 nmap <C-tab>	<C-w>w
 imap <C-tab>	<C-o><C-w>w
 nmap <C-h>		<C-w>h
 nmap <C-l>		<C-w>l
 
-" == Folding ==
+" - Folding
 "inoremap <F2> <C-o>za
 "nnoremap <F2> za
 "onoremap <F2> <C-c>za
@@ -119,7 +127,7 @@ nmap <C-l>		<C-w>l
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vnoremap <space> zf
 
-" == Font Size ==
+" - Font Size
 nmap <leader>f0	:set guifont=Monospace\ 14 <CR>
 nmap <leader>f`	:set guifont=Monospace\ 10 <CR>
 nmap <leader>f1	:set guifont=Monospace\ 12 <CR>
@@ -127,10 +135,10 @@ nmap <leader>f2	:set guifont=Monospace\ 14 <CR>
 nmap <leader>f3	:set guifont=Monospace\ 16 <CR>
 nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
 
-" == 自動補齊 ==
+" - 自動補齊
 inoremap  <leader><tab> <C-x><C-p>
 
-" - 自動補齊括弧
+"  - 自動補齊括弧
 " inoremap  triger_char  mapping_str
 " 映射指令     觸發字元     映射字串
 "
@@ -142,32 +150,27 @@ inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
-" == Quick Search ==
+" - Quick Search
 "nnoremap <F3> :NumbersToggle<CR>
 nmap <F3>	/<C-r>0<CR>
 
-" == Color Scheme ==
+" - Color Scheme
 nmap <leader>cf	:colorscheme fu <CR>
 nmap <leader>cj	:colorscheme jellybeans <CR>
 
-" == Preview current HTML file ==
-" - local.drx.tw (PHP)
+" - Preview current HTML file
+"  - local.drx.tw (PHP)
 nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 
-" - current file (Ex: html, txt) 
+"  - current file (Ex: html, txt) 
 nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
 nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
-" == 80 column layout ==
+" - 80 column layout
 "nmap <leader>l :call HightLightOverLength()<CR>
 "nnoremap <leader>r :set columns=80<CR>
 
-" == Quick open $HOME ==
+" - Quick open $HOME
 nmap <leader>h		:tabnew <CR>:e $HOME<CR>
 
-" -----------------------------------
-"  Author : Chu-Siang Lai
-"  E-mail : jonny (at) drx.tw
-"  Blog : http://note.drx.tw
-" -----------------------------------
