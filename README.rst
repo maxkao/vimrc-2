@@ -1,3 +1,13 @@
+..
+  ============================================================
+   Author: 凍仁翔 / chusiang.lai (at) gmail.com
+   Blog: http://note.drx.tw
+   Filename: README.rst
+   Modified: 2014-12-30 17:27
+   Description: 
+   Reference: 
+  =========================================================== 
+
 ================
 Vim of chusiang
 ================
@@ -13,7 +23,7 @@ Vim of chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    49
+    53
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -278,19 +288,20 @@ Sort list A to Z.
 
 #. `Amix <https://github.com/amix/vimrc>`_
 #. `Beata Lin <https://github.com/beata/vimrc>`_
-#. `chusiang <https://github.com/chusiang/vimrc>`_
+#. `Chu-Siang Lai <https://github.com/chusiang/vimrc>`_
 #. `CrBoy <https://github.com/crboy/vimrc>`_
 #. `Denny Huang <https://github.com/denny0223/.vim>`_
 #. `Eddie Kao <https://github.com/kaochenlong/eddie-vim>`_
 #. `Jerry Lee <https://github.com/akitaonrails/vimfiles>`_
-#. `joe di castro <https://github.com/joedicastro/dotfiles/tree/master/vim>`_
 #. `Josephj <https://github.com/josephj/vimrc>`_
-#. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
 #. `Kang-min Wang <https://github.com/aminzai/vimrc>`_
 #. `Mosky <https://github.com/moskytw/mosky.vim>`_
 #. `Muki Wu <https://github.com/mukiwu/vim-setting>`_
-#. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `Sammy Lin <https://github.com/SammyLin/vimrc>`_
 #. `Vgod <https://github.com/vgod/vimrc>`_
+#. `joe di castro <https://github.com/joedicastro/dotfiles/tree/master/vim>`_
+#. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
+#. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `weitsai <https://github.com/weitsai/vim>`_
 #. `xinsuiyuer <https://github.com/xinsuiyuer/.vimrc>`_
+

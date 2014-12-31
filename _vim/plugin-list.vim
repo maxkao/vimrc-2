@@ -1,3 +1,12 @@
+" ============================================================
+"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Blog: http://note.drx.tw
+"  Filename: plugin-list.vim
+"  Modified: 2014-12-30 17:10
+"  Description: Vim plugin manage with NeoBundle.
+"  Reference: 
+" =========================================================== 
+
 " # Bundle List
 
 " ## vimproc

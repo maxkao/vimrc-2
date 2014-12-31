@@ -7,9 +7,10 @@ function! AddTitle()
   call append(2,"#  Author: 凍仁翔 / chusiang.lai (at) gmail.com")
   call append(3,"#  Blog: http://note.drx.tw")
   call append(4,"#  Filename: ".expand("%:t"))
-  call append(5,"#  Description: ")
-  call append(6,"#  Last modified: ".strftime("%Y-%m-%d %H:%M"))
-  call append(7,"# =========================================================== ")
+  call append(5,"#  Modified: ".strftime("%Y-%m-%d %H:%M"))
+  call append(6,"#  Description: ")
+  call append(7,"#  Reference: ")
+  call append(8,"# =========================================================== ")
   echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 
