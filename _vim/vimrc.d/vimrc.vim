@@ -117,6 +117,9 @@ set noerrorbells
 set t_vb=
 set tm=500
 
+" 在 fish 裡相容 Vim 裡的 Neobundle。
+set shell=/bin/bash
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw
