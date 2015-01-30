@@ -57,8 +57,8 @@ set ruler	"Show Row & Colume position
 
 " - move swap and backup files from your working directory
 if has('win32')
-	set backupdir=/cygdrive/e/Cache
-	set directory=/cygdrive/e/Cache
+	set backupdir=.,$TEMP
+	set directory=.,$TEMP
 else
 	set backupdir=/dev/shm
 	set directory=/dev/shm
