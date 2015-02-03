@@ -48,7 +48,7 @@ nmap <a-down> :.m.+1<cr>
 nmap <leader>s		:source $HOME/.vimrc <CR>
 
 " - quick quit vim.
-nmap <leader>x	:x <CR>
+nmap <leader>w	:x <CR>
 
 " - Save
 "imap <C-S> <ESC>:w <CR>i
