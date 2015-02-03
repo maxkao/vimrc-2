@@ -34,7 +34,7 @@ cmap <C-k> <up>
 cmap <C-l> <right>
 cmap <C-0> <home>
 cmap <C-e> <end>
-cnoremap <c-x> <del>
+cnoremap <C-x> <del>
 
 "  - move one line down and up.
 nmap <A-j> :.m.+1<cr>
@@ -48,7 +48,7 @@ nmap <a-down> :.m.+1<cr>
 nmap <leader>s		:source $HOME/.vimrc <CR>
 
 " - quick quit vim.
-nmap <C-x>	:x <CR>
+nmap <C-w>	:x <CR>
 
 " - Save
 "imap <C-S> <ESC>:w <CR>i
