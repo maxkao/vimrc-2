@@ -301,7 +301,7 @@ Sort list A to Z.
 #. `Vgod <https://github.com/vgod/vimrc>`_
 #. `joe di castro <https://github.com/joedicastro/dotfiles/tree/master/vim>`_
 #. `jsleetw <https://github.com/jsleetw/MyDotFiles/tree/master/.vim>`_
+#. `mrmoneyc <https://github.com/mrmoneyc/vimcfg>`_
 #. `othree <https://github.com/othree/rc/blob/master/home/.vimrc>`_
 #. `weitsai <https://github.com/weitsai/vim>`_
 #. `xinsuiyuer <https://github.com/xinsuiyuer/.vimrc>`_
-
