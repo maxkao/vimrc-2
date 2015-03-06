@@ -37,11 +37,17 @@ cmap <C-e> <end>
 cnoremap <C-x> <del>
 
 "  - move one line down and up.
-nmap <A-j> :.m.+1<cr>
-nmap <a-up> :.m.-2<cr>
-
-nmap <A-k> :.m.-2<cr>
-nmap <a-down> :.m.+1<cr>
+if has('gui_macvim')
+  nmap <D-j>    :.m.+1<cr>
+  nmap <D-k>    :.m.-2<cr>
+  nmap <D-down> :.m.+1<cr>
+  nmap <D-up>   :.m.-2<cr>
+else
+  nmap <A-j>    :.m.+1<cr>
+  nmap <A-k>    :.m.-2<cr>
+  nmap <A-down> :.m.+1<cr>
+  nmap <A-up>   :.m.-2<cr>
+endif
 
 
 " - Re-Read vim Configure.
@@ -84,15 +90,29 @@ nmap tt		:tabnew <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
 nmap te		:Texplore <CR>
-nmap <A-1>	:tabn1 <CR>
-nmap <A-2>	:tabn2 <CR>
-nmap <A-3>	:tabn3 <CR>
-nmap <A-4>	:tabn4 <CR>
-nmap <A-5>	:tabn5 <CR>
-nmap <A-6>	:tabn6 <CR>
-nmap <A-7>	:tabn7 <CR>
-nmap <A-8>	:tabn8 <CR>
-nmap <A-9>	:tabn9 <CR>
+
+if has('gui_macvim')
+  nmap <D-1>	:tabn1 <CR>
+  nmap <D-2>	:tabn2 <CR>
+  nmap <D-3>	:tabn3 <CR>
+  nmap <D-4>	:tabn4 <CR>
+  nmap <D-5>	:tabn5 <CR>
+  nmap <D-6>	:tabn6 <CR>
+  nmap <D-7>	:tabn7 <CR>
+  nmap <D-8>	:tabn8 <CR>
+  nmap <D-9>	:tabn9 <CR>
+else
+  nmap <A-1>	:tabn1 <CR>
+  nmap <A-2>	:tabn2 <CR>
+  nmap <A-3>	:tabn3 <CR>
+  nmap <A-4>	:tabn4 <CR>
+  nmap <A-5>	:tabn5 <CR>
+  nmap <A-6>	:tabn6 <CR>
+  nmap <A-7>	:tabn7 <CR>
+  nmap <A-8>	:tabn8 <CR>
+  nmap <A-9>	:tabn9 <CR>
+endif
+
 
 " - Indent
 imap <S-tab> <esc>m`<<``i
