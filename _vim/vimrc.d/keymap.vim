@@ -151,12 +151,12 @@ vnoremap <space> zf
 
 " - Font Size
 if has('gui_macvim')
-  nmap <leader>f0	:set guifont=Monaco:14 <CR>
-  nmap <leader>f`	:set guifont=Monaco:10 <CR>
-  nmap <leader>f1	:set guifont=Monaco:12 <CR>
-  nmap <leader>f2	:set guifont=Monaco:14 <CR>
-  nmap <leader>f3	:set guifont=Monaco:16 <CR>
-  nmap <leader>f4	:set guifont=Monaco:20 <CR>
+  nmap <leader>f0	:set guifont=Monaco:h14 <CR>
+  nmap <leader>f`	:set guifont=Monaco:h10 <CR>
+  nmap <leader>f1	:set guifont=Monaco:h12 <CR>
+  nmap <leader>f2	:set guifont=Monaco:h14 <CR>
+  nmap <leader>f3	:set guifont=Monaco:h16 <CR>
+  nmap <leader>f4	:set guifont=Monaco:h20 <CR>
 elseif has('win32')
   nmap <leader>f0	:set guifont=Consolas:h14 <CR>
   nmap <leader>f`	:set guifont=Consolas:h10 <CR>
