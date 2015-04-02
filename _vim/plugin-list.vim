@@ -400,6 +400,7 @@ NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
 
 
