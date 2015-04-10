@@ -403,6 +403,8 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
 
+" Dash.app for OSX.
+NeoBundle 'rizzatti/dash.vim.git'
 
 " -----------------------------------
 
