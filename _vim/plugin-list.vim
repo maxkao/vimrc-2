@@ -75,9 +75,8 @@ let g:ctrlp_user_command = {
 	\ 'fallback': 'find %s -type f'
 \ }
 
-" ## easymotion
-"NeoBundle 'Lokaltog/vim-easymotion'
-""end easymotion
+" ## Vim EasyMotion
+NeoBundle 'easymotion/vim-easymotion'
 
 " ## EditorConfig
 NeoBundle 'editorconfig/editorconfig-vim'
