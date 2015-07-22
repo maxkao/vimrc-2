@@ -31,7 +31,7 @@ iabbrev goo		Google
 iabbrev HL		Herbalife
 iabbrev Init	Initialization
 iabbrev lap		laptop
-iabbrev lin		Linux
+"iabbrev lin		Linux
 iabbrev Lin		Linux
 iabbrev lis		license
 iabbrev mic		Microsoft
