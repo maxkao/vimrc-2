@@ -9,7 +9,7 @@
 
 set cursorline		"highlight line.
 set cursorcolumn	"highlight colimn.
-set nocompatible	" 不要向下相同。
+set nocompatible	" 不要向下相容。
 "set number
 set relativenumber	" 絕對行號。
 
