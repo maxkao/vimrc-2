@@ -158,6 +158,7 @@ nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
+let NERDTreeWinPos=1                " Open NERDTree at right window.
 nmap <leader>e  :NERDTreeToggle<CR>
 
 " ## vim-notes
