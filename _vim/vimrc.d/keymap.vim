@@ -58,6 +58,9 @@ nmap <leader>s		:source $HOME/.vimrc <CR>
 " - quick quit vim.
 nmap Z	:x <CR>
 
+" - list buffers files.
+nmap <leader>l	:ls
+
 " - Save
 "imap <C-S> <ESC>:w <CR>i
 "nmap <C-S> :w <CR>
@@ -181,7 +184,7 @@ inoremap  <leader><tab> <C-x><C-p>
 " 映射指令     觸發字元     映射字串
 "
 " 註：<LEFT> 為向右鍵字元。
-inoremap ( ()<LEFT>
+"inoremap ( ()<LEFT>
 "inoremap < <><LEFT>
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
@@ -202,8 +205,13 @@ nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://loc
 nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 
 "  - current file (Ex: html, txt) 
-nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
-nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+
+if has('gui_macvim')
+  nnoremap <F6> :!open /Applications/Firefox.app %<CR>
+else
+  nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
+  nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+endif
 
 " - 80 column layout
 "nmap <leader>l :call HightLightOverLength()<CR>
