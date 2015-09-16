@@ -26,13 +26,15 @@ imap <C-h> <left>
 imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
+imap <C-a> <home>
+imap <C-e> <end>
 
 "  - command mode
 cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
-cmap <C-0> <home>
+cmap <C-a> <home>
 cmap <C-e> <end>
 cnoremap <C-x> <del>
 
@@ -55,6 +57,9 @@ nmap <leader>s		:source $HOME/.vimrc <CR>
 
 " - quick quit vim.
 nmap Z	:x <CR>
+
+" - list buffers files.
+nmap <leader>l	:ls
 
 " - Save
 "imap <C-S> <ESC>:w <CR>i
@@ -148,12 +153,28 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vnoremap <space> zf
 
 " - Font Size
-nmap <leader>f0	:set guifont=Monospace\ 14 <CR>
-nmap <leader>f`	:set guifont=Monospace\ 10 <CR>
-nmap <leader>f1	:set guifont=Monospace\ 12 <CR>
-nmap <leader>f2	:set guifont=Monospace\ 14 <CR>
-nmap <leader>f3	:set guifont=Monospace\ 16 <CR>
-nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
+if has('gui_macvim')
+  nmap <leader>f0	:set guifont=Monaco:h14 <CR>
+  nmap <leader>f`	:set guifont=Monaco:h10 <CR>
+  nmap <leader>f1	:set guifont=Monaco:h12 <CR>
+  nmap <leader>f2	:set guifont=Monaco:h14 <CR>
+  nmap <leader>f3	:set guifont=Monaco:h16 <CR>
+  nmap <leader>f4	:set guifont=Monaco:h20 <CR>
+elseif has('win32')
+  nmap <leader>f0	:set guifont=Consolas:h14 <CR>
+  nmap <leader>f`	:set guifont=Consolas:h10 <CR>
+  nmap <leader>f1	:set guifont=Consolas:h12 <CR>
+  nmap <leader>f2	:set guifont=Consolas:h14 <CR>
+  nmap <leader>f3	:set guifont=Consolas:h16 <CR>
+  nmap <leader>f4	:set guifont=Consolas:h20 <CR>
+else
+  nmap <leader>f0	:set guifont=Monospace\ 14 <CR>
+  nmap <leader>f`	:set guifont=Monospace\ 10 <CR>
+  nmap <leader>f1	:set guifont=Monospace\ 12 <CR>
+  nmap <leader>f2	:set guifont=Monospace\ 14 <CR>
+  nmap <leader>f3	:set guifont=Monospace\ 16 <CR>
+  nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
+endif
 
 " - 自動補齊
 inoremap  <leader><tab> <C-x><C-p>
@@ -163,7 +184,7 @@ inoremap  <leader><tab> <C-x><C-p>
 " 映射指令     觸發字元     映射字串
 "
 " 註：<LEFT> 為向右鍵字元。
-inoremap ( ()<LEFT>
+"inoremap ( ()<LEFT>
 "inoremap < <><LEFT>
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
@@ -184,8 +205,13 @@ nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://loc
 nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 
 "  - current file (Ex: html, txt) 
-nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
-nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+
+if has('gui_macvim')
+  nnoremap <F6> :!open /Applications/Firefox.app %<CR>
+else
+  nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
+  nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+endif
 
 " - 80 column layout
 "nmap <leader>l :call HightLightOverLength()<CR>
@@ -194,3 +220,28 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 " - Quick open $HOME
 nmap <leader>h		:tabnew <CR>:e $HOME<CR>
 
+" - HTML
+"
+"  - b
+autocmd FileType html,markdown imap <C-s-b> <ESC>bi<b><ESC>ea</b><ESC>F<i
+"
+"  - i
+"imap <C-s-i> <ESC>bi<i><ESC>ea</i><ESC>F/hi
+"
+"  - a
+"imap <C-a> <ESC>bi<a href=""><ESC>ea</a><ESC>F>hi
+"autocmd FileType html,markdown imap <C-s-a> <ESC>bi<a target="_blank" href=""><ESC>ea</a><ESC>F>hi
+"
+"  - strike
+autocmd FileType html,markdown imap <C-s-d> <ESC>bi<strike><ESC>ea</strike><ESC>F<i
+"
+"  - center
+autocmd FileType html,markdown imap <C-s-r> <ESC>bi<center><ESC>ea</center><ESC>F<i
+"
+"  - #
+autocmd FileType html,markdown imap <C-s-g> <ESC>bi<span class="Comment"><ESC>ea</span><ESC>F>a# <ESC>f<i
+"
+autocmd FileType html,markdown imap <C-s-z> <!--more-->
+
+
+"imap <C-i> <ESC>bi<i><ESC>ea</i> 
