@@ -214,7 +214,15 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vim-markdown <https://github.com/plasticboy/vim-markdown>`_ 
    - Syntax highlighting and matching rules for Markdown.
 
-5.5. Other
+5.5. Themes
+----------------------------------------
+
+#. [X] `Tomorrow Theme <https://github.com/chriskempson/tomorrow-theme>`_
+   - The precursor to Base16 Theme.
+#. [ ] `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`_
+   - one stop shop for vim colorschemes.
+
+5.6. Other
 ----------------------------------------
 
 #. [X] `Apprentice <https://github.com/romainl/Apprentice>`_
@@ -229,18 +237,14 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
    -  a plugin for intelligently toggling line numbers.
 #. [X] `vimwiki <http://code.google.com/p/vimwiki/>`_ 
    - Personal Wiki for Vim.
-#. [ ] `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`_
-   - one stop shop for vim colorschemes.
+#. [X] `vim-easymotion <https://github.com/easymotion/vim-easymotion>`_
+   - It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target.
 #. [X] `vim-multiple-cursors <https://github.com/terryma/vim-multiple-cursors>`_
    - use multiple cursors like Sublime Text editor.
 #. [X] `vimcdoc-tw <https://github.com/chusiang/vimcdoc-tw>`_ 
    - Vimcdoc of Traditional Chinese.
 #. [X] `vim-sdcv <https://github.com/chusiang/vim-sdcv>`_ 
    - Searching word with sdcv at Vim.
-#. [X] `Tomorrow Theme <https://github.com/chriskempson/tomorrow-theme>`_
-   - Tomorrow Theme the precursor to Base16 Theme.
-#. [X] `VST <https://github.com/vim-scripts/vst>`_ 
-   - Vim reStructured Text.
 #. [X] `riv.vim <https://github.com/Rykka/riv.vim>`_
    - reStructured Text in Vim.
 #. [X] `wmgraphviz.vim <https://github.com/wannesm/wmgraphviz.vim>`_

@@ -75,9 +75,8 @@ let g:ctrlp_user_command = {
 	\ 'fallback': 'find %s -type f'
 \ }
 
-" ## easymotion
-"NeoBundle 'Lokaltog/vim-easymotion'
-""end easymotion
+" ## Vim EasyMotion
+NeoBundle 'easymotion/vim-easymotion'
 
 " ## EditorConfig
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -159,6 +158,7 @@ nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
+let NERDTreeWinPos=1                " Open NERDTree at right window.
 nmap <leader>e  :NERDTreeToggle<CR>
 
 " ## vim-notes
@@ -400,8 +400,11 @@ NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
 
+" Dash.app for OSX.
+NeoBundle 'rizzatti/dash.vim.git'
 
 " -----------------------------------
 
