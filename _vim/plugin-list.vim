@@ -54,7 +54,7 @@ NeoBundle 'romainl/Apprentice'
 
 " ## ctrlp.vim
 NeoBundle 'kien/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
@@ -74,6 +74,9 @@ let g:ctrlp_user_command = {
 	\ },
 	\ 'fallback': 'find %s -type f'
 \ }
+
+" integration the MRU
+nmap <C-m>   :CtrlPMRU<cr>
 
 " ## Vim EasyMotion
 NeoBundle 'easymotion/vim-easymotion'
@@ -160,6 +163,9 @@ nmap <leader>m  :MRU<CR>
 NeoBundle 'scrooloose/nerdtree'
 let NERDTreeWinPos=1                " Open NERDTree at right window.
 nmap <leader>e  :NERDTreeToggle<CR>
+
+" ## nerdtree-git-plugin
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 " ## vim-notes
 NeoBundle 'xolox/vim-notes'
