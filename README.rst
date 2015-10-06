@@ -107,9 +107,10 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.1. Plugins Management
 ----------------------------------------
 
-#. [X] `neobundle.vim`_ - It`s a Vim plugin manager based on `Vundle <https://github.com/gmarik/vundle>`_
+#. [X] `neobundle.vim`_ - It`s a Vim plugin manager based on `Vundle`_.
 #. [X] `vimproc.vim`_ - setup eobundle.vim with *make -f Makefile*.
 
+.. _Vundle: https://github.com/gmarik/vundle
 .. _neobundle.vim: https://github.com/Shougo/eobundle.vim
 .. _vimproc.vim: https://github.com/Shougo/vimproc.vim
 
@@ -131,8 +132,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 #. [X] `EditorConfig Vim Plugin`_ - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim`_ - comment lines in a program.
-#. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity <https://github.com/wesleyche/Trinity>`_).
-#. [X] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9 <https://github.com/vim-scripts/L9>`_).
+#. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity`_).
+#. [X] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
 #. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
@@ -141,8 +142,10 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `tagbar`_ - Display tags of the current file ordered by scope.
 #. [X] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
 #. [X] `vim-ragtag`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
-#. [X] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils <https://github.com/MarcWeber/vim-addon-mw-utils>`_, `tlib_vim <https://github.com/tomtom/tlib_vim>`_, `vim-snippets <https://github.com/honza/vim-snippets>`_)
+#. [X] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
 
+.. _Trinity: https://github.com/wesleyche/Trinity
+.. _L9: https://github.com/vim-scripts/L9
 .. _EditorConfig Vim Plugin: https://github.com/editorconfig/editorconfig-vim
 .. _EnhCommentify.vim: http://www.vim.org/scripts/script.php?script_id=23
 .. _SrcExpl: https://github.com/wesleyche/SrcExpl
@@ -154,8 +157,11 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _syntastic: https://github.com/scrooloose/syntastic
 .. _tagbar: https://github.com/majutsushi/tagbar
 .. _taglist.vim: https://github.com/vim-scripts/taglist.vim
+.. _tlib_vim: https://github.com/tomtom/tlib_vim
+.. _vim-addon-mw-utils: https://github.com/MarcWeber/vim-addon-mw-utils
 .. _vim-ragtag: https://github.com/tpope/vim-ragtag
 .. _vim-snipmate: https://github.com/garbas/vim-snipmate
+.. _vim-snippets: https://github.com/honza/vim-snippets
 
 5.3.3. F2E (Front End Engineer)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,7 +174,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. [X] `fugitive.vim`_ - a Git wrapper so awesome.
-#. [ ] `gitv`_ - gitv is a 'gitk clone' plugin for the text editor Vim. (need `fugitive.vim <https://github.com/tpope/vim-fugitive>`_)
+#. [ ] `gitv`_ - gitv is a 'gitk clone' plugin for the text editor Vim. (need `fugitive.vim`_)
 #. [X] `vim-gitgutter`_ - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
 
 .. _fugitive.vim: https://github.com/tpope/vim-fugitive
@@ -206,9 +212,10 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vim-css-color`_ - Highlight colors in css files.
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
 #. [X] `vim-javascript-syntax`_ - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
-#. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown.
+#. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown. (need `Tabular`_)
 
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
+.. _Tabular: https://github.com/godlygeek/tabular
 .. _c.vim: https://github.com/vim-scripts/c.vim
 .. _css3: https://github.com/vim-scripts/css3
 .. _django.vim: https://github.com/jgb/django.vim
