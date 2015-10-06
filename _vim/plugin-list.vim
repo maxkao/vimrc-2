@@ -401,11 +401,15 @@ NeoBundle 'php.vim'
 "NeoBundle 'cpp.vim'
 "NeoBundle 'django.vim'
 NeoBundle 'jgb/django.vim'
-NeoBundle 'Python-Syntax'
+NeoBundle 'python.vim--Vasiliev'
 NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
+
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'godlygeek/tabular'
+let g:vim_markdown_folding_disabled=1
+
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
 
