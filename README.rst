@@ -23,7 +23,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    57
+    59
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -201,6 +201,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 ----------------------------------------
 
 #. [X] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
+#. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3`_ - css3 syntax for vim.
 #. [X] `django.vim`_ - Syntax highlighting for Django templates.
@@ -216,6 +217,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
 .. _Tabular: https://github.com/godlygeek/tabular
+.. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
 .. _css3: https://github.com/vim-scripts/css3
 .. _django.vim: https://github.com/jgb/django.vim
