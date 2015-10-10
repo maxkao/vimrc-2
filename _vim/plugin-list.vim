@@ -405,6 +405,7 @@ NeoBundle 'python.vim--Vasiliev'
 NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
+NeoBundle 'xu-cheng/brew.vim'
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
