@@ -67,10 +67,10 @@ nmap <leader>l	:ls
 cmap WW	:w <CR>
 
 " - Copy
+if !has('gui_macvim')
+  vmap <A-c>	"+y
+endif
 nmap <leader>y	y$
-nmap <C-c>	V"+y
-vmap <C-c>	"+y
-vmap <leader>y	"+y
 
 "  - Copy the characters under the cursor until the end
 imap <leader>y	<C-o>y$<ESC>
@@ -81,11 +81,10 @@ imap <leader>y	<C-o>y$<ESC>
 "cnoremap <C-f> (history)
 
 " - Paste
-"imap <C-B>	<ESC>p
-"nmap <S-V>	<ESC>"+gp
-nmap <leader>v	<ESC>"+gp
-nmap <leader>V	<ESC>"+gP
-"nmap <S-B>	<ESC>"+gP
+if !has('gui_macvim')
+  imap <A-v>	<ESC>"+pa
+  nmap <A-v>	"+pa
+endif
 nmap <leader>p	:set paste <CR>
 nmap <leader>np	:set nopaste <CR>
 
