@@ -406,6 +406,8 @@ NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'xu-cheng/brew.vim'
+NeoBundle 'vadv/vim-chef'
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
