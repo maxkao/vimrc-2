@@ -209,6 +209,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `nginx.vim`_ - highlights configuration files for nginx.
 #. [X] `python.vim--Vasiliev`_ - Enhanced version of the python syntax highlighting script.
 #. [ ] `rest.vim`_ - A reStructuredText syntax mode.
+#. [X] `vim-chef`_ - Vim plugins for chef.
 #. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
 #. [X] `vim-css-color`_ - Highlight colors in css files.
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
@@ -225,6 +226,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _nginx.vim: https://github.com/vim-scripts/nginx.vim
 .. _python.vim--Vasiliev: https://github.com/vim-scripts/python.vim--Vasiliev
 .. _rest.vim: http://www.vim.org/scripts/script.php?script_id=973
+.. _vim-chef: https://github.com/vadv/vim-chef
 .. _vim-coloresque: https://github.com/gorodinskiy/vim-coloresque
 .. _vim-css-color: https://github.com/skammer/vim-css-color
 .. _vim-css3-syntax: https://github.com/hail2u/vim-css3-syntax
