@@ -17,7 +17,7 @@ backup:
 	mv ${FILE_GVIMRC} ${DIR_VIM_BAK}/
 	mv ${DIR_VIM} ${DIR_VIM_BAK}/
 	@echo '--backup setting success!--'
-	@echo ''
+	@echo
 
 install:
 	@echo '--Starting install vim setting...--'
@@ -28,7 +28,7 @@ install:
 	@#vim -c InitENV
 	@echo " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile"
 	@echo '--Done!--'
-	@echo ''
+	@echo
 	vim
 
 # sync vimrc from git to home.
@@ -37,9 +37,10 @@ update:
 	cp -a _vimrc ${FILE_VIMRC}
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
 	cp -a _vim/plugin-list.vim ${DIR_VIM}/
+	@echo
 
 clean-backup-file:
 	@echo "--Starting cleaning vim's backup file...--"
 	rm -rf ${HOME}/.vim_bak*
-	@echo ''
+	@echo
 
