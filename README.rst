@@ -60,7 +60,7 @@ Linux & Mac OSX
 
 ::
 
-    cd vimrc; make install
+    cd vimrc && make
 
 windows
 ---------
@@ -193,7 +193,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.3.4. Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. [ ] `pythoncomplete`_ - Python Omni Completion.
+#. [X] `pythoncomplete`_ - Python Omni Completion.
 
 .. _pythoncomplete: https://github.com/vim-scripts/pythoncomplete
 
