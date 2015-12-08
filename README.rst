@@ -334,6 +334,7 @@ Sort list A to Z.
 #. `mrmoneyc`_
 #. `othree`_
 #. `weitsai`_
+#. `wi1d5ky`_
 #. `xinsuiyuer`_
 
 .. _Amix: https://github.com/amix/vimrc
@@ -354,5 +355,6 @@ Sort list A to Z.
 .. _mrmoneyc: https://github.com/mrmoneyc/vimcfg
 .. _othree: https://github.com/othree/rc/blob/master/home/.vimrc
 .. _weitsai: https://github.com/weitsai/vim
+.. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
 
