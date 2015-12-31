@@ -22,18 +22,22 @@ inoremap <S-ESC> ~
 
 " - Cursor Move
 "  - insert mode
-imap <C-h> <left>
+"imap <C-h> <left>
+imap <C-b> <left>
 imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
+imap <C-f> <right>
 imap <C-a> <home>
 imap <C-e> <end>
 
 "  - command mode
-cmap <C-h> <left>
+"cmap <C-h> <left>
+cmap <C-b> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
+cmap <C-f> <right>
 cmap <C-a> <home>
 cmap <C-e> <end>
 cnoremap <C-x> <del>
@@ -85,8 +89,8 @@ if !has('gui_macvim')
   imap <A-v>	<ESC>"+pa
   nmap <A-v>	"+pa
 endif
-nmap <leader>p	:set paste <CR>
-nmap <leader>np	:set nopaste <CR>
+"nmap <leader>p	:set paste <CR>
+"nmap <leader>np	:set nopaste <CR>
 
 " - Tabs
 nmap tt		:tabnew <CR>
@@ -153,7 +157,7 @@ vnoremap <space> zf
 
 " - Font Size
 if has('gui_macvim')
-  nmap <leader>f0	:set guifont=Monaco:h14 <CR>
+  nmap <leader>f0	:set guifont=Monaco:h15 <CR>
   nmap <leader>f`	:set guifont=Monaco:h10 <CR>
   nmap <leader>f1	:set guifont=Monaco:h12 <CR>
   nmap <leader>f2	:set guifont=Monaco:h14 <CR>
