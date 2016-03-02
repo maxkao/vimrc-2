@@ -1,5 +1,5 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: _vimrc.win32
 "  Modified: 2014-12-30 17:07
@@ -372,8 +372,6 @@ Plugin 'pythoncomplete'
 
 " ## Ragtag
 Plugin 'tpope/vim-ragtag'
-" Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
-" Ctrl x Space = 同上，但不會加上斷行
 
 " ## syntastic: Syntax checking hacks for vim.
 Plugin 'scrooloose/syntastic.git'
@@ -476,8 +474,6 @@ Plugin 'chusiang/vimcdoc-tw'
 
 " ## vim-indent-object
 "Plugin 'michaeljsmith/vim-indent-object'
-" v i i - 選取相同縮排層級的文字
-" v a i - 同上，但會連帶上一層級也一併選取
 
 " ## Vimwiki
 Plugin 'vimwiki'

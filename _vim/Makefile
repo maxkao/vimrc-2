@@ -1,10 +1,9 @@
 # ============================================================
-#  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+#  Author: chusiang / chusiang.lai (at) gmail.com
 #  Blog: http://note.drx.tw
 #  Filename: Makefile
 #  Modified: 2014-12-30 17:11
 #  Description: sync vimrc from home to git.
-#  Reference: 
 # =========================================================== 
 
 TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
