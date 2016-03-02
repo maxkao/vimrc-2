@@ -35,14 +35,14 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
-set showcmd		" Show (partial) command in status line.
-set showmode	" Show '-insert-' Mode at the lower left.
-"set showmatch		" Show matching brackets.
-"set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-set incsearch		" Incremental search (is), 使用隨打即找的搜尋功能。預設 off。
-"set autowrite		" Automatically save before commands like :next and :make
-"set hidden         " Hide buffers when they are abandoned
+set showcmd		  " Show (partial) command in status line.
+set showmode	  " Show '-insert-' Mode at the lower left.
+"set showmatch	" Show matching brackets.
+"set ignorecase	" Do case insensitive matching
+"set smartcase	" Do smart case matching
+set incsearch		" Incremental search (is), with the fight that is looking to use search features . Default off
+"set autowrite	" Automatically save before commands like :next and :make
+"set hidden     " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set mouse=nv		" Enable mouse usage (Normal + Visual modes)
 
@@ -51,9 +51,9 @@ set mouse=nv		" Enable mouse usage (Normal + Visual modes)
 set autochdir		" auto cd curent dir.
 set fileencodings=utf8
 set hlsearch		" (hls) Hightlight in Search
-set ignorecase		" (ic) Case sensitive searches
+set ignorecase	" (ic) Case sensitive searches
 "set nobackup
-set ruler	"Show Row & Colume position
+set ruler	      "Show Row & Colume position
 
 " - move swap and backup files from your working directory
 if has('win32')
@@ -81,14 +81,13 @@ set scrolloff=3		" We keep 3 lines when scrolling .
 " - Wild Mode
 "set wildmode=full,list
 "set wildmode=list:full
-set wildmode=longest,list	" 類似 bash 的自動補齊，有相同開頭才補，而不是自動填上第一個完整名稱。
+set wildmode=longest,list	" like bash completion. There was the same at the beginning of complement, rather than automatically fill in the name of the first complete.
 set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
 " set wildoptions
 "set  winaltkeys=no
 
-" - 自動換行
-set wrap
+set wrap  " auto line break.
 
 " - Do not redraw while running macros (much faster).
 set lazyredraw
@@ -117,7 +116,7 @@ set noerrorbells
 set t_vb=
 set tm=500
 
-" 在 fish 裡相容 Vim 裡的 Neobundle。
+" support Vim with Neobundle in fish.
 set shell=/bin/bash
 
 " -----------------------------------

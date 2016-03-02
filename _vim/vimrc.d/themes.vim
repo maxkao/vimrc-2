@@ -1,5 +1,5 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: themes.vim
 "  Modified: 2014-12-30 17:21
@@ -7,11 +7,11 @@
 "  Reference: 
 " =========================================================== 
 
-set cursorline		"highlight line.
-set cursorcolumn	"highlight colimn.
-set nocompatible	" 不要向下相容。
+set cursorline		  "highlight line.
+set cursorcolumn	  "highlight colimn.
+set nocompatible	  "do not backward compatible.
 "set number
-set relativenumber	" 絕對行號。
+set relativenumber	"number of relative.
 
 " - always show the tab bar.
 "set showtabline=2
