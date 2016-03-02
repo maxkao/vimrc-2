@@ -1,5 +1,5 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: 80-column-layout.vim
 "  Modified: 2014-12-30 17:12
