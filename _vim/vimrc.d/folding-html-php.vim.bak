@@ -1,5 +1,5 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: folding-html-php.vim.bak
 "  Modified: 2014-12-30 17:23
@@ -9,11 +9,11 @@
 
 syntax on
 
-let php_folding = 1 " 只折疊 { class } 與函數(funtion)
+let php_folding = 1 " Only fold { class } and ( function ).
 
 set foldmarker=<table,</table>
 set foldmethod=marker
-set foldlevel=0 " 預設全部關閉
+set foldlevel=0 " Default fold all.
 set foldnestmax=5 
 
 

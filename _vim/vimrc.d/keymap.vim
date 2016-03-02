@@ -1,10 +1,9 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: keymap.vim
 "  Modified: 2014-12-30 17:14
 "  Description: Cutsom the shortcut-key / hot-key/ keymap for Myself.
-"  Reference: 
 " =========================================================== 
 
 " - <leader>
@@ -179,14 +178,12 @@ else
   nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
 endif
 
-" - 自動補齊
+" - auto completion
 inoremap  <leader><tab> <C-x><C-p>
 
-"  - 自動補齊括弧
+"  - auto completion the brackets
 " inoremap  triger_char  mapping_str
-" 映射指令     觸發字元     映射字串
 "
-" 註：<LEFT> 為向右鍵字元。
 "inoremap ( ()<LEFT>
 "inoremap < <><LEFT>
 inoremap [ []<LEFT>
