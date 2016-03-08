@@ -21,7 +21,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    66
+    67
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -204,6 +204,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 #. [X] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
 #. [ ] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
+#. [X] `ansible-vim`_ - Ansible syntax highlighting and common filetypes.
 #. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3`_ - css3 syntax for vim.
@@ -212,7 +213,6 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `nginx.vim`_ - highlights configuration files for nginx.
 #. [X] `python.vim--Vasiliev`_ - Enhanced version of the python syntax highlighting script.
 #. [ ] `rest.vim`_ - A reStructuredText syntax mode.
-#. [X] `vim-ansible-yaml`_ - Add additional support for Ansible in Vim.
 #. [ ] `vim-chef`_ - Vim plugins for chef.
 #. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
 #. [X] `vim-css-color`_ - Highlight colors in css files.
@@ -223,6 +223,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
 .. _Dockerfile.vim: https://github.com/ekalinin/Dockerfile.vim
 .. _Tabular: https://github.com/godlygeek/tabular
+.. _ansible-vim: https://github.com/pearofducks/ansible-vim
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
 .. _css3: https://github.com/vim-scripts/css3
@@ -231,7 +232,6 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _nginx.vim: https://github.com/vim-scripts/nginx.vim
 .. _python.vim--Vasiliev: https://github.com/vim-scripts/python.vim--Vasiliev
 .. _rest.vim: http://www.vim.org/scripts/script.php?script_id=973
-.. _vim-ansible-yaml: https://github.com/chase/vim-ansible-yaml
 .. _vim-chef: https://github.com/vadv/vim-chef
 .. _vim-coloresque: https://github.com/gorodinskiy/vim-coloresque
 .. _vim-css-color: https://github.com/skammer/vim-css-color
