@@ -420,6 +420,7 @@ NeoBundle 'xu-cheng/brew.vim'
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 NeoBundle 'rking/ag.vim'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'chase/vim-ansible-yaml'
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
