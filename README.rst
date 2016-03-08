@@ -23,7 +23,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    59
+    66
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -134,6 +134,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `EnhCommentify.vim`_ - comment lines in a program.
 #. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity`_).
 #. [X] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
+#. [X] `ag.vim`_ - run ag in vim.
+#. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
@@ -150,6 +152,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _EnhCommentify.vim: http://www.vim.org/scripts/script.php?script_id=23
 .. _SrcExpl: https://github.com/wesleyche/SrcExpl
 .. _Vim Auto Complete Popup: https://github.com/othree/vim-autocomplpop
+.. _ag.vim: https://github.com/rking/ag.vim
+.. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
 .. _indentLine: https://github.com/Yggdroot/indentLine
 .. _matchit.zip: https://github.com/vim-scripts/matchit.zip
@@ -201,6 +205,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 ----------------------------------------
 
 #. [X] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
+#. [ ] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
 #. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3`_ - css3 syntax for vim.
@@ -209,7 +214,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `nginx.vim`_ - highlights configuration files for nginx.
 #. [X] `python.vim--Vasiliev`_ - Enhanced version of the python syntax highlighting script.
 #. [ ] `rest.vim`_ - A reStructuredText syntax mode.
-#. [X] `vim-chef`_ - Vim plugins for chef.
+#. [ ] `vim-chef`_ - Vim plugins for chef.
 #. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
 #. [X] `vim-css-color`_ - Highlight colors in css files.
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
@@ -217,6 +222,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown. (need `Tabular`_)
 
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
+.. _Dockerfile.vim: https://github.com/ekalinin/Dockerfile.vim
 .. _Tabular: https://github.com/godlygeek/tabular
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim

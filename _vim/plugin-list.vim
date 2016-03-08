@@ -406,8 +406,10 @@ NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'xu-cheng/brew.vim'
-NeoBundle 'vadv/vim-chef'
-autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+"NeoBundle 'vadv/vim-chef'
+"autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+NeoBundle 'rking/ag.vim'
+NeoBundle 'ekalinin/Dockerfile.vim'
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
@@ -418,6 +420,8 @@ NeoBundle 'guns/xterm-color-table.vim'
 
 " Dash.app for OSX.
 NeoBundle 'rizzatti/dash.vim.git'
+
+
 
 " -----------------------------------
 
