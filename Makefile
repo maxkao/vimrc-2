@@ -4,7 +4,7 @@ FILE_GVIMRC=${HOME}/.gvimrc
 DIR_VIM=${HOME}/.vim
 DIR_VIM_BAK=${HOME}/.vim.bak-${TIMESTAMP}
 
-.PHONY: all backup install update clean-backup-file
+.PHONY: all backup install update clean clean-backup-file
 
 all: backup install
 	@echo '--Install success!--'
@@ -37,10 +37,19 @@ update:
 	cp -a _vimrc ${FILE_VIMRC}
 	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
 	cp -a _vim/plugin-list.vim ${DIR_VIM}/
+	@echo '--Done!--'
+	@echo
+
+clean:
+	@echo "--Starting cleaning vim' file...--"
+	rm -rf ${HOME}/.gvimrc
+	rm -rf ${HOME}/.vim*
+	@echo '--Done!--'
 	@echo
 
 clean-backup-file:
 	@echo "--Starting cleaning vim's backup file...--"
 	rm -rf ${HOME}/.vim_bak*
+	@echo '--Done!--'
 	@echo
 
