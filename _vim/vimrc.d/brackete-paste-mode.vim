@@ -1,12 +1,12 @@
 
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: brackete-paste-mode.vim
 "  Description: Auto change to the paste mode at paste text from clipboard.
 "  Modified: 2014-12-25 09:41
 "  Reference: 
-"   1. Vim 於 Linux、Mac、Putty 貼上時自動切換成 Paste 模式 - Tsung's blog
+"   1. Auto change the Vim to paste mode in Linux, Mac, Putty | Tsung's blog
 "     - http://blog.longwin.com.tw/2014/12/vim-linux-mac-putty-paste-mode-change-2014/'
 " =========================================================== 
 
