@@ -1,5 +1,5 @@
 " ============================================================
-"  Author: 凍仁翔 / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
 "  Filename: plugin-list.vim
 "  Modified: 2014-12-30 17:10
@@ -233,9 +233,13 @@ autocmd FileType php noremap <F4> :!php -l % <CR>
 NeoBundle 'pythoncomplete'
 
 " ## Ragtag
+" - https://github.com/tpope/vim-ragtag/blob/master/doc/ragtag.txt
+"
+" Mapping       Changed to  (cursors = ^)   ~
+" <C-X><Space>  <foo>^</foo>              *ragtag-CTRL-X_<Space>*
+" <C-X><CR>     <foo>\n^\n</foo>          *ragtag-CTRL-X_<CR>*
+"
 NeoBundle 'tpope/vim-ragtag'
-" Ctrl x Enter = 產生對應的 tag，而且中間會加上斷行
-" Ctrl x Space = 同上，但不會加上斷行
 
 " ## SrcExpl 
 "NeoBundle 'wesleyche/SrcExpl'
@@ -334,9 +338,15 @@ NeoBundle 'chusiang/vimcdoc-tw'
 "set helplang=tw
 
 " ## vim-indent-object
+" - https://github.com/michaeljsmith/vim-indent-object/blob/master/doc/indent-object.txt
+"
+" Key Mapping       Description     ~
+" <count>ai         (A)n (I)ndentation level and line above.
+" <count>ii         (I)nner (I)ndentation level (no line above).
+" <count>aI         (A)n (I)ndentation level and lines above/below.
+" <count>iI         (I)nner (I)ndentation level (no lines above/below).
+"
 "NeoBundle 'michaeljsmith/vim-indent-object'
-" v i i - 選取相同縮排層級的文字
-" v a i - 同上，但會連帶上一層級也一併選取
 
 " ## Vimwiki
 NeoBundle 'vimwiki'

@@ -4,8 +4,6 @@
    Blog: http://note.drx.tw
    Filename: README.rst
    Modified: 2015-10-06 11:15
-   Description: 
-   Reference: 
   =========================================================== 
 
 ================
