@@ -76,7 +76,7 @@ let g:ctrlp_user_command = {
 \ }
 
 " integration the MRU
-nmap <C-m>   :CtrlPMRU<cr>
+"nmap <C-m>   :CtrlPMRU<cr>
 
 " ## Vim EasyMotion
 NeoBundle 'easymotion/vim-easymotion'
