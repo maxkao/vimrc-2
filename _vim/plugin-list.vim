@@ -428,6 +428,7 @@ let g:vim_markdown_folding_disabled=1
 
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
+NeoBundle 'nanotech/jellybeans.vim'
 
 " Dash.app for OSX.
 NeoBundle 'rizzatti/dash.vim.git'
