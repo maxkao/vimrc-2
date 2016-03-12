@@ -109,7 +109,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vimproc.vim`_ - setup eobundle.vim with *make -f Makefile*.
 
 .. _Vundle: https://github.com/gmarik/vundle
-.. _neobundle.vim: https://github.com/Shougo/eobundle.vim
+.. _neobundle.vim: https://github.com/Shougo/neobundle.vim
 .. _vimproc.vim: https://github.com/Shougo/vimproc.vim
 
 5.2. File Management
