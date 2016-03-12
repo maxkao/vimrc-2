@@ -109,7 +109,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vimproc.vim`_ - setup eobundle.vim with *make -f Makefile*.
 
 .. _Vundle: https://github.com/gmarik/vundle
-.. _neobundle.vim: https://github.com/Shougo/eobundle.vim
+.. _neobundle.vim: https://github.com/Shougo/neobundle.vim
 .. _vimproc.vim: https://github.com/Shougo/vimproc.vim
 
 5.2. File Management
@@ -242,6 +242,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 5.5. Themes
 ----------------------------------------
 
+#. [ ] `Amy.vim`_ - A colorscheme based on 'amy' sublime text 2 color theme.
 #. [X] `Apprentice`_ - A dark, low-contrast, Vim colorscheme.
 #. [X] `Tomorrow Theme`_ - The precursor to Base16 Theme.
 #. [X] `vim-airline`_ - Lean & mean status/tabline for vim that's light as air.
@@ -249,6 +250,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [ ] `vim-powerline`_ - better-looking, more functional vim statuslines.
 #. [ ] `vim-tomorrow-night`_ - Tomorrow Theme mirror.
 
+.. _Amy.vim: https://github.com/awinecki/amy-vim-coloscheme
 .. _Apprentice: https://github.com/romainl/Apprentice
 .. _Tomorrow Theme: https://github.com/chriskempson/tomorrow-theme
 .. _vim-airline: https://github.com/bling/vim-airline
