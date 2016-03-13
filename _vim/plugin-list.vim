@@ -421,6 +421,7 @@ NeoBundle 'xu-cheng/brew.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'pearofducks/ansible-vim'
+NeoBundle 'Glench/Vim-Jinja2-Syntax'
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'

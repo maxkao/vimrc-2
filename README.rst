@@ -14,14 +14,12 @@ Vimrc #chusiang
     凍仁翔 (chusiang)
 :Build Date:
     2012/10/31
-:Version:
-    2.4
 :Blog:
     `<http://note.drx.tw>`_
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    67
+    68
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -203,7 +201,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 ----------------------------------------
 
 #. [X] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
-#. [ ] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
+#. [X] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
+#. [X] `Vim-Jinja2-Syntax`_ - The Jinja2 syntax file for vim with the ability to detect either HTML or Jinja.
 #. [X] `ansible-vim`_ - Ansible syntax highlighting and common filetypes.
 #. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
@@ -223,6 +222,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
 .. _Dockerfile.vim: https://github.com/ekalinin/Dockerfile.vim
 .. _Tabular: https://github.com/godlygeek/tabular
+.. _Vim-Jinja2-Syntax: https://github.com/Glench/Vim-Jinja2-Syntax
 .. _ansible-vim: https://github.com/pearofducks/ansible-vim
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
