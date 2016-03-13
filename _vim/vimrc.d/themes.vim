@@ -4,7 +4,6 @@
 "  Filename: themes.vim
 "  Modified: 2014-12-30 17:21
 "  Description: Themes Environment setting.
-"  Reference: 
 " =========================================================== 
 
 set cursorline		  "highlight line.
@@ -35,13 +34,13 @@ if has('gui')
 	set t_Co=256		  " support 256 color.
 
 	" == Favorites Color ==
-	colorscheme fu
+	colorscheme jellybeans
+	"colorscheme fu
 	"colorscheme ir_black
 	"colorscheme peaksea
 	"colorscheme risto
-	"colorscheme zenburn
 	"colorscheme xterm16
-
+	"colorscheme zenburn
 endif
 
 " If using a dark background within the editing area and syntax highlighting
