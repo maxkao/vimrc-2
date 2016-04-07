@@ -339,6 +339,7 @@ Sort list A to Z.
 #. `Muki Wu`_
 #. `Sammy Lin`_
 #. `Vgod`_
+#. `headhsu2568`_
 #. `joe di`_
 #. `jsleetw`_
 #. `mrmoneyc`_
@@ -360,6 +361,7 @@ Sort list A to Z.
 .. _Muki Wu: https://github.com/mukiwu/vim-setting
 .. _Sammy Lin: https://github.com/SammyLin/vimrc
 .. _Vgod: https://github.com/vgod/vimrc
+.. _headhsu2568: https://github.com/headhsu2568/vimrc/tree/mba
 .. _joe di: https://github.com/joedicastro/dotfiles/tree/master/vim
 .. _jsleetw: https://github.com/jsleetw/MyDotFiles/tree/master/.vim
 .. _mrmoneyc: https://github.com/mrmoneyc/vimcfg
