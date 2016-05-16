@@ -338,6 +338,7 @@ Sort list A to Z.
 #. `Mosky`_
 #. `Muki Wu`_
 #. `Sammy Lin`_
+#. `ssarcandy`_
 #. `Vgod`_
 #. `headhsu2568`_
 #. `joe di`_
@@ -360,6 +361,7 @@ Sort list A to Z.
 .. _Mosky: https://github.com/moskytw/mosky.vim
 .. _Muki Wu: https://github.com/mukiwu/vim-setting
 .. _Sammy Lin: https://github.com/SammyLin/vimrc
+.. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
 .. _Vgod: https://github.com/vgod/vimrc
 .. _headhsu2568: https://github.com/headhsu2568/vimrc/tree/mba
 .. _joe di: https://github.com/joedicastro/dotfiles/tree/master/vim
