@@ -130,6 +130,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `EnhCommentify.vim`_ - comment lines in a program.
 #. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity`_).
 #. [X] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
+#. [ ] `YouCompleteMe`_ - A code-completion engine for Vim.
 #. [X] `ag.vim`_ - run ag in vim.
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
@@ -141,6 +142,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
 #. [X] `vim-ragtag`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
 #. [X] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
+#. [ ] `zeavim.vim`_ - Zeavim allows to use the offline documentation browser Zeal from Vim.
 
 .. _Trinity: https://github.com/wesleyche/Trinity
 .. _L9: https://github.com/vim-scripts/L9
@@ -148,6 +150,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _EnhCommentify.vim: http://www.vim.org/scripts/script.php?script_id=23
 .. _SrcExpl: https://github.com/wesleyche/SrcExpl
 .. _Vim Auto Complete Popup: https://github.com/othree/vim-autocomplpop
+.. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
 .. _ag.vim: https://github.com/rking/ag.vim
 .. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
@@ -162,6 +165,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _vim-ragtag: https://github.com/tpope/vim-ragtag
 .. _vim-snipmate: https://github.com/garbas/vim-snipmate
 .. _vim-snippets: https://github.com/honza/vim-snippets
+.. _zeavim.vim: https://github.com/KabbAmine/zeavim.vim
 
 5.3.3. F2E (Front End Engineer)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -324,7 +328,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 7. Vimrc List
 ========================================
 
-Sort list A to Z.
+Sort list (A-Z, a-z).
 
 #. `Amix`_
 #. `Beata Lin`_
@@ -338,13 +342,14 @@ Sort list A to Z.
 #. `Mosky`_
 #. `Muki Wu`_
 #. `Sammy Lin`_
-#. `ssarcandy`_
 #. `Vgod`_
+#. `defionscode`_
 #. `headhsu2568`_
 #. `joe di`_
 #. `jsleetw`_
 #. `mrmoneyc`_
 #. `othree`_
+#. `ssarcandy`_
 #. `weitsai`_
 #. `wi1d5ky`_
 #. `xinsuiyuer`_
@@ -361,13 +366,14 @@ Sort list A to Z.
 .. _Mosky: https://github.com/moskytw/mosky.vim
 .. _Muki Wu: https://github.com/mukiwu/vim-setting
 .. _Sammy Lin: https://github.com/SammyLin/vimrc
-.. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
 .. _Vgod: https://github.com/vgod/vimrc
+.. _defionscode: https://github.com/defionscode/dotfiles/blob/master/.vimrc
 .. _headhsu2568: https://github.com/headhsu2568/vimrc/tree/mba
 .. _joe di: https://github.com/joedicastro/dotfiles/tree/master/vim
 .. _jsleetw: https://github.com/jsleetw/MyDotFiles/tree/master/.vim
 .. _mrmoneyc: https://github.com/mrmoneyc/vimcfg
 .. _othree: https://github.com/othree/rc/blob/master/home/.vimrc
+.. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
 .. _weitsai: https://github.com/weitsai/vim
 .. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
