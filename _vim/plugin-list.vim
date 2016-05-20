@@ -10,7 +10,7 @@
 " # Bundle List
 
 " ## vimproc
-"NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc'
 "NeoBundle 'Shougo/vimproc', {
 "      \ 'build' : {
 "      \     'windows' :'make -f make_mingw32.mak',
@@ -19,6 +19,9 @@
 "      \     'unix' : 'make -f make_unix.mak',
 "      \    },
 "      \ }
+
+" ## vimshell.vim
+NeoBundle 'Shougo/vimshell.vim'
 
 " ## snipMate (auto-complete)
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
