@@ -78,8 +78,9 @@ let g:ctrlp_user_command = {
 	\ 'fallback': 'find %s -type f'
 \ }
 
-" integration the MRU
-"nmap <C-m>   :CtrlPMRU<cr>
+" integration the Buffer and MRU.
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>m :CtrlPMRU<CR>
 
 " ## Vim EasyMotion
 NeoBundle 'easymotion/vim-easymotion'
@@ -160,7 +161,7 @@ NeoBundle 'matchit.zip'
 " ## mru.vim
 NeoBundle 'mru.vim'
 let MRU_Max_Entries = 1000
-nmap <leader>m  :MRU<CR>
+"nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
