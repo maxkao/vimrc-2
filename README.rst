@@ -350,6 +350,7 @@ Sort list (A-Z, a-z).
 #. `mrmoneyc`_
 #. `othree`_
 #. `ssarcandy`_
+#. `toomore`_
 #. `weitsai`_
 #. `wi1d5ky`_
 #. `xinsuiyuer`_
@@ -374,6 +375,7 @@ Sort list (A-Z, a-z).
 .. _mrmoneyc: https://github.com/mrmoneyc/vimcfg
 .. _othree: https://github.com/othree/rc/blob/master/home/.vimrc
 .. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
+.. _toomore: https://github.com/toomore/toomore.vim
 .. _weitsai: https://github.com/weitsai/vim
 .. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
