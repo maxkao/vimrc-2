@@ -222,6 +222,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
 #. [X] `vim-javascript-syntax`_ - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
 #. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown. (need `Tabular`_)
+#. [X] `vim-tmux`_ - vim plugin for tmux.conf.
 
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
 .. _Dockerfile.vim: https://github.com/ekalinin/Dockerfile.vim
@@ -242,6 +243,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _vim-css3-syntax: https://github.com/hail2u/vim-css3-syntax
 .. _vim-javascript-syntax: https://github.com/othree/vim-javascript-syntax
 .. _vim-markdown: https://github.com/plasticboy/vim-markdown
+.. _vim-tmux: https://github.com/tmux-plugins/vim-tmux
 
 5.5. Themes
 ----------------------------------------

@@ -417,6 +417,7 @@ NeoBundle 'php.vim'
 NeoBundle 'jgb/django.vim'
 NeoBundle 'python.vim--Vasiliev'
 NeoBundle 'nginx.vim'
+NeoBundle 'tmux-plugins/vim-tmux'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'xu-cheng/brew.vim'
