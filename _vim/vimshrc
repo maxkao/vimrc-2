@@ -1,0 +1,41 @@
+# ~/.vimshrc
+
+alias cl='clear'
+
+# reload
+alias reload='vimsh ~/.vim/vimshrc'
+
+# cd
+alias cd.='cd ..'
+alias cd..='cd ../..'
+alias cd...='cd ../../..'
+alias cd....='cd ../../../..'
+
+#
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+# ls
+alias la='ls -A'
+alias ll='ls -lh'
+alias lla='ls -Al'
+alias lh='ls -lh'
+alias lt='tree'
+
+
+# Git
+alias gco='git checkout'
+alias gcd='git checkout develop'
+alias gcm='git commit'
+alias grecm='git commit --amend'
+alias gdf='git diff --name-only'
+alias gst='git status'
+alias gbr='git branch'
+alias glg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gmg='mg = merge --no-ff''
+
+# for OSX.
+alias cal='/usr/local/bin/gcal'
+alias j='/usr/local/bin/autojump'
+
