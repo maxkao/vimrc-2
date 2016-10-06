@@ -1,8 +1,8 @@
 # ============================================================
-#  Author: chusiang / chusiang.lai (at) gmail.com
+#  Author: chusiang / chusiang (at) drx.tw
 #  Blog: http://note.drx.tw
 #  Filename: Makefile
-#  Modified: 2014-12-30 17:11
+#  Modified: 2016-10-06 19:00
 #  Description: sync vimrc from home to git.
 # =========================================================== 
 

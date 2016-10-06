@@ -1,9 +1,9 @@
 ..
   ============================================================
-   Author: 凍仁翔 / chusiang.lai (at) gmail.com
+   Author: 凍仁翔 / chusiang (at) drx.tw
    Blog: http://note.drx.tw
    Filename: README.rst
-   Modified: 2015-10-06 11:15
+   Modified: 2016-10-06 18:56
   =========================================================== 
 
 ================
