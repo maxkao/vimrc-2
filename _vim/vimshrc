@@ -33,7 +33,7 @@ alias gdf='git diff --name-only'
 alias gst='git status'
 alias gbr='git branch'
 alias glg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gmg='mg = merge --no-ff''
+alias gmg='mg = merge --no-ff'
 
 # for OSX.
 alias cal='/usr/local/bin/gcal'
