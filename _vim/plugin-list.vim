@@ -1,8 +1,8 @@
 " ============================================================
-"  Author: chusiang / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang (at) drx.tw
 "  Blog: http://note.drx.tw
 "  Filename: plugin-list.vim
-"  Modified: 2014-12-30 17:10
+"  Modified: 2016-10-06 19:00
 "  Description: Vim plugin manage with NeoBundle.
 "  Reference: 
 " =========================================================== 
@@ -10,7 +10,7 @@
 " # Bundle List
 
 " ## vimproc
-"NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc'
 "NeoBundle 'Shougo/vimproc', {
 "      \ 'build' : {
 "      \     'windows' :'make -f make_mingw32.mak',
@@ -19,6 +19,9 @@
 "      \     'unix' : 'make -f make_unix.mak',
 "      \    },
 "      \ }
+
+" ## vimshell.vim
+NeoBundle 'Shougo/vimshell.vim'
 
 " ## snipMate (auto-complete)
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
@@ -75,8 +78,9 @@ let g:ctrlp_user_command = {
 	\ 'fallback': 'find %s -type f'
 \ }
 
-" integration the MRU
-"nmap <C-m>   :CtrlPMRU<cr>
+" integration the Buffer and MRU.
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>m :CtrlPMRU<CR>
 
 " ## Vim EasyMotion
 NeoBundle 'easymotion/vim-easymotion'
@@ -157,7 +161,7 @@ NeoBundle 'matchit.zip'
 " ## mru.vim
 NeoBundle 'mru.vim'
 let MRU_Max_Entries = 1000
-nmap <leader>m  :MRU<CR>
+"nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
@@ -413,6 +417,7 @@ NeoBundle 'php.vim'
 NeoBundle 'jgb/django.vim'
 NeoBundle 'python.vim--Vasiliev'
 NeoBundle 'nginx.vim'
+NeoBundle 'tmux-plugins/vim-tmux'
 "NeoBundle 'rest.vim'
 "set syntax=rest
 NeoBundle 'xu-cheng/brew.vim'

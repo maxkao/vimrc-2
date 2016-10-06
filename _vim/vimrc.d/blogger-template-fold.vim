@@ -1,8 +1,8 @@
 " ============================================================
-"  Author: chusiang / chusiang.lai (at) gmail.com
+"  Author: chusiang / chusiang (at) drx.tw
 "  Blog: http://note.drx.tw
 "  Filename: blogger-template-fold.vim
-"  Modified: 2014-12-30 17:24
+"  Modified: 2016-10-06 19:00
 "  Description: Blogger Template Fold
 "  Reference: 
 " =========================================================== 
