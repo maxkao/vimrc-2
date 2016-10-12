@@ -3,7 +3,7 @@
    Author: 凍仁翔 / chusiang (at) drx.tw
    Blog: http://note.drx.tw
    Filename: README.rst
-   Modified: 2016-10-06 18:56
+   Modified: 2016-10-12 10:57
   =========================================================== 
 
 ================
@@ -19,7 +19,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    68
+    69
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -208,6 +208,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
 #. [X] `Vim-Jinja2-Syntax`_ - The Jinja2 syntax file for vim with the ability to detect either HTML or Jinja.
 #. [X] `ansible-vim`_ - Ansible syntax highlighting and common filetypes.
+#. [X] `bats.vim`_ - Syntax highlighting for Bats (Bash Automated Testing System).
 #. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3`_ - css3 syntax for vim.
@@ -229,6 +230,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _Tabular: https://github.com/godlygeek/tabular
 .. _Vim-Jinja2-Syntax: https://github.com/Glench/Vim-Jinja2-Syntax
 .. _ansible-vim: https://github.com/pearofducks/ansible-vim
+.. _bats.vim: https://github.com/vim-scripts/bats.vim
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
 .. _css3: https://github.com/vim-scripts/css3

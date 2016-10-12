@@ -420,6 +420,7 @@ NeoBundle 'nginx.vim'
 NeoBundle 'tmux-plugins/vim-tmux'
 "NeoBundle 'rest.vim'
 "set syntax=rest
+NeoBundle 'vim-scripts/bats.vim'
 NeoBundle 'xu-cheng/brew.vim'
 "NeoBundle 'vadv/vim-chef'
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
