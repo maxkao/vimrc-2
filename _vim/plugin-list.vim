@@ -155,6 +155,10 @@ NeoBundle 'othree/html5.vim'
 " ## indentLine
 NeoBundle 'Yggdroot/indentLine'
 
+" ## livedown 
+NeoBundle 'shime/vim-livedown'
+nmap gm :LivedownToggle<CR>
+
 " ## Matchit
 NeoBundle 'matchit.zip'
 
