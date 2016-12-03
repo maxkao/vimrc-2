@@ -4,7 +4,7 @@
 map <leader>a :call TitleDet()<cr>'s
 function! AddTitle()
   call append(1,"# ============================================================")
-  call append(2,"#  Author: chusiang / chusiang (at) drx.tw")
+  call append(2,"#  Author: Chu-Siang Lai / chusiang (at) drx.tw")
   call append(3,"#  Blog: http://note.drx.tw")
   call append(4,"#  Filename: ".expand("%:t"))
   call append(5,"#  Modified: ".strftime("%Y-%m-%d %H:%M"))
