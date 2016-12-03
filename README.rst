@@ -135,6 +135,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
+#. [X] `livedown.vim`_ - Vim plugin for `livedown_` (Live Markdown previews for your favorite editor).
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
 #. [X] `surround.vim`_ - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
 #. [X] `syntastic`_ - Syntax checking plugins of C, C++, CSS, Go, HTML, Java, JavaScript, JSON, PHP, Python, reStructuredText, Ruby, SASS, VimL, zsh ... `more <https://github.com/scrooloose/syntastic#introduction>`_.
@@ -155,6 +156,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
 .. _indentLine: https://github.com/Yggdroot/indentLine
+.. _livedown.vim: https://github.com/shime/vim-livedown
+.. _livedown: https://github.com/shime/livedown
 .. _matchit.zip: https://github.com/vim-scripts/matchit.zip
 .. _surround.vim: https://github.com/tpope/vim-surround
 .. _syntastic: https://github.com/scrooloose/syntastic
