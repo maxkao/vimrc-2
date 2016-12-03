@@ -3,7 +3,7 @@
    Author: 凍仁翔 / chusiang (at) drx.tw
    Blog: http://note.drx.tw
    Filename: README.rst
-   Modified: 2016-10-06 18:56
+   Modified: 2016-10-12 10:57
   =========================================================== 
 
 ================
@@ -19,7 +19,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    68
+    69
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -135,6 +135,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
+#. [X] `livedown.vim`_ - Vim plugin for `livedown_` (Live Markdown previews for your favorite editor).
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
 #. [X] `surround.vim`_ - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
 #. [X] `syntastic`_ - Syntax checking plugins of C, C++, CSS, Go, HTML, Java, JavaScript, JSON, PHP, Python, reStructuredText, Ruby, SASS, VimL, zsh ... `more <https://github.com/scrooloose/syntastic#introduction>`_.
@@ -155,6 +156,8 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
 .. _indentLine: https://github.com/Yggdroot/indentLine
+.. _livedown.vim: https://github.com/shime/vim-livedown
+.. _livedown: https://github.com/shime/livedown
 .. _matchit.zip: https://github.com/vim-scripts/matchit.zip
 .. _surround.vim: https://github.com/tpope/vim-surround
 .. _syntastic: https://github.com/scrooloose/syntastic
@@ -208,6 +211,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
 #. [X] `Vim-Jinja2-Syntax`_ - The Jinja2 syntax file for vim with the ability to detect either HTML or Jinja.
 #. [X] `ansible-vim`_ - Ansible syntax highlighting and common filetypes.
+#. [X] `bats.vim`_ - Syntax highlighting for Bats (Bash Automated Testing System).
 #. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
 #. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
 #. [X] `css3`_ - css3 syntax for vim.
@@ -229,6 +233,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _Tabular: https://github.com/godlygeek/tabular
 .. _Vim-Jinja2-Syntax: https://github.com/Glench/Vim-Jinja2-Syntax
 .. _ansible-vim: https://github.com/pearofducks/ansible-vim
+.. _bats.vim: https://github.com/vim-scripts/bats.vim
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
 .. _css3: https://github.com/vim-scripts/css3
