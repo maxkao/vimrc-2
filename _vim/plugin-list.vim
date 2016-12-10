@@ -434,6 +434,8 @@ NeoBundle 'pearofducks/ansible-vim'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 
 NeoBundle 'plasticboy/vim-markdown'
+let g:vim_markdown_conceal = 0
+
 NeoBundle 'godlygeek/tabular'
 let g:vim_markdown_folding_disabled=1
 
