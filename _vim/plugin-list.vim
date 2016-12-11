@@ -412,10 +412,8 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" for disable Ansible Roles.
-let g:syntastic_quiet_messages = {
-  \ "file:p":  ['\m^roles/']
-}
+" ignore files of Ansible Roles.
+let g:syntastic_ignore_files = ['\m^roles/']
 
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
