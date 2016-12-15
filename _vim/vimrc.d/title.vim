@@ -9,8 +9,8 @@ function! AddTitle()
   call append(4,"#  Filename: ".expand("%:t"))
   call append(5,"#  Modified: ".strftime("%Y-%m-%d %H:%M"))
   call append(6,"#  Description: ")
-  call append(7,"#  Reference: ")
-  call append(8,"# =========================================================== ")
+  call append(7,"#  Reference:")
+  call append(8,"# ============================================================")
   echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 
