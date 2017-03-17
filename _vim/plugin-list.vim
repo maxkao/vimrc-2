@@ -415,6 +415,8 @@ set statusline+=%*
 " ignore files of Ansible Roles.
 let g:syntastic_ignore_files = ['\m^roles/']
 
+nmap <leader>q :SyntasticToggleMode<CR>
+
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
 NeoBundle 'css3'
