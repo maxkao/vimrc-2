@@ -48,7 +48,8 @@ endif
 if !has('gui')
 	"set background=dark
 	set t_Co=256		" support 256 color.
-	colorscheme jellybeans
+  "colorscheme jellybeans
+	colorscheme Tomorrow-Night-Eighties
 endif
 
 " - font type and size setting.
