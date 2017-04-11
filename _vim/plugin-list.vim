@@ -4,7 +4,6 @@
 "  Filename: plugin-list.vim
 "  Modified: 2016-10-06 19:00
 "  Description: Vim plugin manage with NeoBundle.
-"  Reference: 
 " =========================================================== 
 
 " # Bundle List
@@ -23,22 +22,39 @@ NeoBundle 'Shougo/vimproc'
 " ## vimshell.vim
 NeoBundle 'Shougo/vimshell.vim'
 
-" ## snipMate (auto-complete)
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
+" ## YouCompleteMe (code-completion)
+NeoBundle 'Valloric/YouCompleteMe'
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar' : 1,
+      \ 'qf' : 1,
+      \ 'notes' : 1,
+      \ 'markdown' : 1,
+      \ 'unite' : 1,
+      \ 'text' : 1,
+      \ 'vimwiki' : 1,
+      \ 'gitcommit' : 1,
+      \}
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" ## UltiSnips (auto-complete)
+NeoBundle 'sirver/ultisnips'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsListSnippets="<c-s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "ultisnips_my"]
+
+" snippets for UltiSnips.
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'garbas/vim-snipmate'
 
 " ## vim-airline
 " replace 'vim-powerline'.
 NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
-
-" ## Vim Auto Complete Popup (need L9)
-NeoBundle 'othree/vim-autocomplpop'
-NeoBundle 'L9'
-" autocomplete with snippets.
-let g:acp_behaviorSnipmateLength = 1
 
 " ## c.vim
 NeoBundleLazy 'c.vim'
@@ -52,6 +68,7 @@ nmap <leader>wc	:Calendar<CR>
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'chriskempson/vim-tomorrow-theme'
+"NeoBundle 'nanotech/jellybeans.vim'
 
 " ## ctrlp.vim
 NeoBundle 'kien/ctrlp.vim'
@@ -451,7 +468,6 @@ let g:vim_markdown_folding_disabled=1
 
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
-"NeoBundle 'nanotech/jellybeans.vim'
 
 " Dash.app for OSX.
 NeoBundle 'rizzatti/dash.vim.git'
