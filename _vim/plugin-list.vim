@@ -51,9 +51,7 @@ nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
-"NeoBundle 'mukiwu/vim-tomorrow-night'
 "NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'romainl/Apprentice'
 
 " ## ctrlp.vim
 NeoBundle 'kien/ctrlp.vim'

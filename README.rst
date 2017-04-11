@@ -255,10 +255,11 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 #. [ ] `Amy.vim`_ - A colorscheme based on 'amy' sublime text 2 color theme.
 #. [X] `jellybeans.vim`_ - A colorful, dark color scheme for vim.
+#. [ ] `vim-colorscheme-primary`_ - Primary, a Vim color scheme based on Google's colors.
 #. [ ] `vim-colorschemes`_ - one stop shop for vim colorschemes.
 #. [ ] `vim-powerline`_ - better-looking, more functional vim statuslines.
-#. [ ] `vim-tomorrow-night`_ - Tomorrow Theme mirror.
-#. [X] `Apprentice`_ - A dark, low-contrast, Vim colorscheme.
+#. [X] `vim-tomorrow-night`_ - Tomorrow Theme mirror.
+#. [ ] `Apprentice`_ - A dark, low-contrast, Vim colorscheme.
 #. [X] `Tomorrow Theme`_ - The precursor to Base16 Theme.
 #. [X] `vim-airline`_ - Lean & mean status/tabline for vim that's light as air.
 
@@ -267,6 +268,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _Tomorrow Theme: https://github.com/chriskempson/tomorrow-theme
 .. _jellybeans.vim: https://github.com/nanotech/jellybeans.vim
 .. _vim-airline: https://github.com/bling/vim-airline
+.. _vim-colorscheme-primary: https://github.com/google/vim-colorscheme-primary
 .. _vim-colorschemes: https://github.com/flazz/vim-colorschemes
 .. _vim-powerline: https://github.com/Lokaltog/vim-powerline
 .. _vim-tomorrow-night: https://github.com/mukiwu/vim-tomorrow-night
