@@ -37,7 +37,7 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 " ## UltiSnips (auto-complete)
-NeoBundle 'sirver/ultisnips'
+NeoBundle 'SirVer/ultisnips'
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger="<c-tab>"
