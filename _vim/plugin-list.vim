@@ -376,12 +376,15 @@ NeoBundle 'vimwiki'
 
 " - g:vimwiki_list* *vimwiki-multiple-wikies*.
 let g:vimwiki_list = [
-			\ {'path': '~/vimwiki/', 'index': 'index', 'path_html': '~/vimwiki/public_html/'},
-			\ {'path': '~/vimwiki/diary/', 'index': 'gtd'},
-			\ {'path': '~/vimwiki/csu/', 'index': 'index_csu'},
-			\ {'path': '/media/data_ext3/home.d/vim/vimwiki-secret', 'index': 'secret'},
-			\ {'path': '~/vimwiki/vim-like/', 'index': 'vim-like'},
-			\ {'path': '~/vimwiki/radtek/',	'index': 'radtek'} ]
+      \ { 'path': '~/vimwiki/',
+      \   'index': 'index',
+      \   'path_html': '~/vimwiki/public_html/',
+      \   'syntax': 'markdown', 'ext': '.md'
+      \ },
+			\ { 'path': '~/vimwiki/diary/',
+      \   'syntax': 'markdown',
+      \   'ext': '.md'
+      \ }]
 
 " - Header level color.
 :hi VimwikiHeader1 guifg=#FF0000	" Red
@@ -395,10 +398,10 @@ let g:vimwiki_list = [
 let g:vimwiki_browsers=['/usr/bin/firefox']
 
 " - Keymap
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
+autocmd BufRead,BufNewFile *.md noremap	<leader>wtb	:VimwikiTable <CR>
+autocmd BufRead,BufNewFile *.md noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
+autocmd BufRead,BufNewFile *.md noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
+autocmd BufRead,BufNewFile *.md noremap	<leader>wo	<C-Space> <CR>
 
 " ## VST (Vim reStructured Text)
 NeoBundle 'VST'
