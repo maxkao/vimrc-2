@@ -19,7 +19,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    65
+    64
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -133,7 +133,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `YouCompleteMe`_ - A code-completion engine for Vim. (need `ultisnips`_)
 #. [X] `ag.vim`_ - run ag in vim.
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
-#. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
+#. [ ] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
 #. [X] `livedown.vim`_ - Vim plugin for `livedown_` (Live Markdown previews for your favorite editor).
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
