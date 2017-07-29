@@ -389,3 +389,8 @@ Sort list (A-Z, a-z).
 .. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
 
+8. License
+========================================
+
+Copyright (c) chusiang from 2011 under the MIT license.
+
