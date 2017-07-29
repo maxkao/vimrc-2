@@ -37,7 +37,7 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 " ## UltiSnips (auto-complete)
-NeoBundle 'sirver/ultisnips'
+NeoBundle 'SirVer/ultisnips'
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger="<c-tab>"
@@ -53,7 +53,7 @@ NeoBundle 'honza/vim-snippets'
 
 " ## vim-airline
 " replace 'vim-powerline'.
-NeoBundle 'bling/vim-airline'
+"NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
 
 " ## c.vim
@@ -107,11 +107,11 @@ NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'EnhCommentify.vim'
 
 " ## Emmet
-NeoBundle 'mattn/emmet-vim'
-let g:user_emmet_install_global = 0
-let g:user_emmet_mode='n'
-let g:user_emmet_leader_key='<C-Q>'
-autocmd FileType html,css EmmetInstall
+"NeoBundle 'mattn/emmet-vim'
+"let g:user_emmet_install_global = 0
+"let g:user_emmet_mode='n'
+"let g:user_emmet_leader_key='<C-Q>'
+"autocmd FileType html,css EmmetInstall
 
 " ## EverVim
 "NeoBundle 'kakkyz81/evervim'

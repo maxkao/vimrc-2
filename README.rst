@@ -19,7 +19,7 @@ Vimrc #chusiang
 :forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
 :plugins count:
-    69
+    64
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -35,7 +35,7 @@ This verison use NeoBundle that can get the newest vim script use eazy way.
 ========================================
 
 #. Git
-#. Network
+#. Internet
 #. make (Unix Link Only)
 #. Vim
 #. Curl
@@ -129,11 +129,11 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `EditorConfig Vim Plugin`_ - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim`_ - comment lines in a program.
 #. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity`_).
-#. [X] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
-#. [ ] `YouCompleteMe`_ - A code-completion engine for Vim.
+#. [ ] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
+#. [X] `YouCompleteMe`_ - A code-completion engine for Vim. (need `ultisnips`_)
 #. [X] `ag.vim`_ - run ag in vim.
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
-#. [X] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
+#. [ ] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
 #. [X] `livedown.vim`_ - Vim plugin for `livedown_` (Live Markdown previews for your favorite editor).
 #. [X] `matchit.zip`_ - allows you to configure % to match more than just single characters.
@@ -142,7 +142,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `tagbar`_ - Display tags of the current file ordered by scope.
 #. [X] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
 #. [X] `vim-ragtag`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
-#. [X] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
+#. [ ] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
 #. [ ] `zeavim.vim`_ - Zeavim allows to use the offline documentation browser Zeal from Vim.
 
 .. _Trinity: https://github.com/wesleyche/Trinity
@@ -169,6 +169,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _vim-snipmate: https://github.com/garbas/vim-snipmate
 .. _vim-snippets: https://github.com/honza/vim-snippets
 .. _zeavim.vim: https://github.com/KabbAmine/zeavim.vim
+.. _ultisnips: https://github.com/SirVer/ultisnips
 
 5.3.3. F2E (Front End Engineer)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -277,10 +278,10 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 ----------------------------------------
 
 #. [X] `calendar.vim`_ - The script of create calender window and don`t use the `cal`.
-#. [X] `evervim`_ - edit evernote with markdown at vim.
+#. [ ] `evervim`_ - edit evernote with markdown at vim.
 #. [ ] `gsession.vim`_ - Vim Session Plugin.
 #. [ ] `numbers.vim`_ - a plugin for intelligently toggling line numbers.
-#. [X] `riv.vim`_ - reStructured Text in Vim.
+#. [ ] `riv.vim`_ - reStructured Text in Vim.
 #. [X] `vim-easymotion`_ - It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target.
 #. [X] `vim-multiple-cursors`_ - use multiple cursors like Sublime Text editor.
 #. [X] `vim-sdcv`_ - Searching word with sdcv at Vim.
