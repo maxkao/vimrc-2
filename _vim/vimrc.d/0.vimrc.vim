@@ -120,6 +120,9 @@ set tm=500
 " support Vim with Neobundle in fish.
 set shell=/bin/bash
 
+" support crontab on macOS.
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw
