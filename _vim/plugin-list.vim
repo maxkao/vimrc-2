@@ -53,7 +53,7 @@ NeoBundle 'honza/vim-snippets'
 
 " ## vim-airline
 " replace 'vim-powerline'.
-NeoBundle 'bling/vim-airline'
+"NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
 
 " ## c.vim
