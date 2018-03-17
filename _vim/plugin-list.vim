@@ -434,7 +434,6 @@ nmap <leader>q :SyntasticToggleMode<CR>
 
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
-NeoBundle 'css3'
 NeoBundle 'hail2u/vim-css3-syntax'
 
 NeoBundle 'skammer/vim-css-color'
