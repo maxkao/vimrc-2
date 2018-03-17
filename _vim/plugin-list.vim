@@ -462,10 +462,11 @@ NeoBundle 'xu-cheng/brew.vim'
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 
 NeoBundle 'mileszs/ack.vim'
-cnoreabbrev ag Ack
-cnoreabbrev aG Ack
-cnoreabbrev Ag Ack
-cnoreabbrev AG Ack
+cnoreabbrev Ack Ack!
+cnoreabbrev ag Ack!
+cnoreabbrev aG Ack!
+cnoreabbrev Ag Ack!
+cnoreabbrev AG Ack!
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
