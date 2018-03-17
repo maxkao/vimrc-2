@@ -423,14 +423,20 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+if has('gui')
+  let g:syntastic_check_on_open = 1
+else
+  let g:syntastic_check_on_open = 0
+endif
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-nmap <leader>q :SyntasticToggleMode<CR>
+nmap <leader>q :SyntasticCheck<CR>
+nmap <leader>r :SyntasticReset<CR>
 
 NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
