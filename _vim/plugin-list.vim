@@ -460,7 +460,16 @@ NeoBundle 'vim-scripts/bats.vim'
 NeoBundle 'xu-cheng/brew.vim'
 "NeoBundle 'vadv/vim-chef'
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
-NeoBundle 'rking/ag.vim'
+
+NeoBundle 'mileszs/ack.vim'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
+
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'pearofducks/ansible-vim'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
