@@ -1,31 +1,17 @@
-# ============================================================
-#  Author: chusiang / chusiang (at) drx.tw
+# =============================================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
 #  Blog: http://note.drx.tw
 #  Filename: Makefile
-#  Modified: 2016-10-06 19:00
+#  Modified: 2018-03-19 00:16
 #  Description: sync vimrc from home to git.
-# =========================================================== 
-
-TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
-
-# vimrc at home.
-FILE_VIMRC=${HOME}/.vimrc
-FILE_GVIMRC=${HOME}/.gvimrc
-DIR_VIM=${HOME}/.vim
-DIR_VIM_BAK=${HOME}/.vim.bak-${TIMESTAMP}
-
-# vimrc at git.
-DIR_VIM_GIT=${HOME}/vcs/vimrc
-FILE_VIMRC_GIT=${HOME}/vcs/vimrc/_vimrc
+#  Reference: https://github.com/chusiang/vimrc/blob/master/_vim/Makefile
+# =============================================================================
 
 .PHONY: all sync clean
 
-all: sync
+main: sync
 
 sync:
-	cp -a ${FILE_VIMRC} ${FILE_VIMRC_GIT}
-	cp -a ${DIR_VIM}/vimrc.d/* ${DIR_VIM_GIT}/_vim/vimrc.d/
-	cp -a ${DIR_VIM}/plugin-list.vim  ${DIR_VIM_GIT}/_vim/
-
-clean:
+	cp -a ${HOME}/.vimrc ${HOME}/vcs/vimrc/_vimrc
+	cp -a ${HOME}/.vim/* ${HOME}/vcs/vimrc/_vim/
 
