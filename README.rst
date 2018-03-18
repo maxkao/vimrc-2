@@ -1,25 +1,28 @@
 ..
-  ============================================================
-   Author: 凍仁翔 / chusiang (at) drx.tw
+  =============================================================================
+   Author: Chu-Siang Lai / chusiang (at) drx.tw
    Blog: http://note.drx.tw
    Filename: README.rst
-   Modified: 2016-10-12 10:57
-  =========================================================== 
+   Modified: 2018-03-19 01:28
+   Reference: https://github.com/chusiang/vimrc/blob/master/README.rst
+  =============================================================================
 
-================
-Vimrc #chusiang
-================
+=================
+vimrc of chusiang
+=================
 
 :Author:
-    凍仁翔 (chusiang)
+    Chu-Siang Lai (凍仁翔)
 :Build Date:
     2012/10/31
 :Blog:
     `<http://note.drx.tw>`_
-:forked from:
+:Forked from:
     `@Aminzai <https://github.com/aminzai>`_/`vimrc <https://github.com/aminzai/vimrc>`_
-:plugins count:
-    64
+:Requirements:
+    Vim 7.4 or above.
+:Plugins Count:
+    38
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -27,91 +30,94 @@ Vimrc #chusiang
    :scale: 100
 
 1. Introduction
-========================================
+===============
 
-This verison use NeoBundle that can get the newest vim script use eazy way.
+This verison use `dein.vim` that can get the newest vim script use eazy way.
 
 2. Require
-========================================
+==========
 
+#. Curl
 #. Git
 #. Internet
-#. make (Unix Link Only)
 #. Vim
-#. Curl
+#. make (Unix/Linux Only)
 
 3. Installation
-========================================
+===============
 
 Linux & Mac OSX
 ----------------
 
-- Get my vimrc settings with Git.
+* Get my vimrc settings with Git.
+
+  ::
+
+      git clone https://github.com/chusiang/vimrc.git
+
+* Install.
+
+  ::
+
+      cd vimrc && make install
+
+windows (No maintained)
+-----------------------
 
 ::
 
-    git clone https://github.com/chusiang/vimrc.git
-
-- Install.
-
-::
-
-    cd vimrc && make
-
-windows
----------
-
-::
-
-    WindowsInstall.bat    # No maintained.
+    WindowsInstall.bat
 
 4. HowTo
-========================================
+========
 
-4.1. Update
-----------------------------------------
+4.1. Update Plugins
+-------------------
 
-#. run command at Vim (command mode).
+* Run command at Vim (command mode).
 
-::
+  ::
+
+      :call dein#update()
+
+* Run `make update` at Shell.
+
+  ::
     
-    NeoBundleUpdate
+      make update
 
 4.2. Backup
-----------------------------------------
+-----------
 
 This version can auto backup orginal config before install.
 
-Backup directory: ${HOME}/.vim_back-${data} [#]_
+Backup directory: `${HOME}/.vim_back-${data}` [#]_
 
 ::
 
     make backup
 
 4.2.1. Clean backup 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 ::
 
     make clean-backup-file
 
-.. [#] Just support Unix-like operating-system.
-
-5. Bundled Plugins
-========================================
+5. Plugins
+==========
 
 5.1. Plugins Management
-----------------------------------------
+-----------------------
 
-#. [X] `neobundle.vim`_ - It`s a Vim plugin manager based on `Vundle`_.
-#. [X] `vimproc.vim`_ - setup eobundle.vim with *make -f Makefile*.
+#. [X] `dein.vim`_ - Dark powered Vim/Neovim plugin manager.
+#. [ ] `vimproc.vim`_ - setup eobundle.vim with *make -f Makefile*.
 
-.. _Vundle: https://github.com/gmarik/vundle
-.. _neobundle.vim: https://github.com/Shougo/neobundle.vim
+.. _dein.vim: https://github.com/Shougo/dein.vim
 .. _vimproc.vim: https://github.com/Shougo/vimproc.vim
 
 5.2. File Management
-----------------------------------------
+--------------------
 
 #. [X] `ctrlp.vim`_ - Full path fuzzy file, buffer, mru, tag, ...... finder for Vim.
 #. [X] `mru.vim`_ - provides an easy access to a list of recently opened/edited files.
@@ -124,14 +130,14 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _nerdtree-git-plugin: https://github.com/Xuyuanp/nerdtree-git-plugin
 
 5.3. Development
-----------------------------------------
+----------------
 
 #. [X] `EditorConfig Vim Plugin`_ - `EditorConfig <http://editorconfig.org/>`_ plugin for Vim.
 #. [X] `EnhCommentify.vim`_ - comment lines in a program.
 #. [ ] `SrcExpl`_ - SrcExpl (Source Explorer) is a source code explorer (need `Trinity`_).
 #. [ ] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
 #. [X] `YouCompleteMe`_ - A code-completion engine for Vim. (need `ultisnips`_)
-#. [X] `ag.vim`_ - run ag in vim.
+#. [X] `ack.vim`_ - run ack in vim.
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [ ] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
@@ -140,7 +146,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [X] `surround.vim`_ - Delete/change/add parentheses/quotes/XML-tags/much more with ease.
 #. [X] `syntastic`_ - Syntax checking plugins of C, C++, CSS, Go, HTML, Java, JavaScript, JSON, PHP, Python, reStructuredText, Ruby, SASS, VimL, zsh ... `more <https://github.com/scrooloose/syntastic#introduction>`_.
 #. [X] `tagbar`_ - Display tags of the current file ordered by scope.
-#. [X] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
+#. [ ] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
 #. [X] `vim-ragtag`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
 #. [ ] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
 #. [ ] `zeavim.vim`_ - Zeavim allows to use the offline documentation browser Zeal from Vim.
@@ -152,7 +158,7 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _SrcExpl: https://github.com/wesleyche/SrcExpl
 .. _Vim Auto Complete Popup: https://github.com/othree/vim-autocomplpop
 .. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
-.. _ag.vim: https://github.com/rking/ag.vim
+.. _ack.vim: https://github.com/mileszs/ack.vim
 .. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
 .. _indentLine: https://github.com/Yggdroot/indentLine
@@ -172,16 +178,16 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _ultisnips: https://github.com/SirVer/ultisnips
 
 5.3.3. F2E (Front End Engineer)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. [X] `html5.vim`_ - HTML5 + inline SVG omnicomplete funtion, indent and syntax for Vim.
 
 .. _html5.vim: https://github.com/othree/html5.vim
 
 5.3.1. Git
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
-#. [X] `fugitive.vim`_ - a Git wrapper so awesome.
+#. [ ] `fugitive.vim`_ - a Git wrapper so awesome.
 #. [ ] `gitv`_ - gitv is a 'gitk clone' plugin for the text editor Vim. (need `fugitive.vim`_)
 #. [X] `vim-gitgutter`_ - which shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
 
@@ -190,44 +196,41 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _vim-gitgutter: https://github.com/airblade/vim-gitgutter
 
 5.3.2. PHP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
-#. [X] `php.vim`_ - Indent for php.
-#. [X] `phpfolding.vim`_ - fold PHP functions and/or classes.
+#. [ ] `php.vim`_ - Indent for php.
+#. [ ] `phpfolding.vim`_ - fold PHP functions and/or classes.
 
 .. _php.vim: http://www.vim.org/scripts/script.php?script_id=346>
 .. _phpfolding.vim: https://github.com/vim-scripts/phpfolding.vim
 
 5.3.4. Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
-#. [X] `pythoncomplete`_ - Python Omni Completion.
+#. [ ] `pythoncomplete`_ - Python Omni Completion.
 
 .. _pythoncomplete: https://github.com/vim-scripts/pythoncomplete
 
 5.4. Syntax
 ----------------------------------------
 
-#. [X] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
+#. [ ] `BBCode--Dahn`_ - Syntax highlighting for BBCode.
 #. [X] `Dockerfile.vim`_ - Vim syntax file & snippets for Docker's Dockerfile.
 #. [X] `Vim-Jinja2-Syntax`_ - The Jinja2 syntax file for vim with the ability to detect either HTML or Jinja.
 #. [X] `ansible-vim`_ - Ansible syntax highlighting and common filetypes.
-#. [X] `bats.vim`_ - Syntax highlighting for Bats (Bash Automated Testing System).
-#. [X] `brew.vim`_ - Vim Syntax for Homebrew formulae.
-#. [X] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
-#. [X] `css3`_ - css3 syntax for vim.
-#. [X] `django.vim`_ - Syntax highlighting for Django templates.
+#. [ ] `bats.vim`_ - Syntax highlighting for Bats (Bash Automated Testing System).
+#. [ ] `brew.vim`_ - Vim Syntax for Homebrew formulae.
+#. [ ] `c.vim`_ - C/C++ IDE - Write and run programs. Insert statements, idioms, comments etc.
+#. [ ] `django.vim`_ - Syntax highlighting for Django templates.
 #. [X] `jQuery`_ - Syntax file for jQuery.
 #. [X] `nginx.vim`_ - highlights configuration files for nginx.
-#. [X] `python.vim--Vasiliev`_ - Enhanced version of the python syntax highlighting script.
-#. [ ] `rest.vim`_ - A reStructuredText syntax mode.
 #. [ ] `vim-chef`_ - Vim plugins for chef.
 #. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
-#. [X] `vim-css-color`_ - Highlight colors in css files.
+#. [ ] `vim-css-color`_ - Highlight colors in css files.
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
-#. [X] `vim-javascript-syntax`_ - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
 #. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown. (need `Tabular`_)
 #. [X] `vim-tmux`_ - vim plugin for tmux.conf.
+#. [X] `yajs.vim`_ - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
 
 .. _BBCode--Dahn: https://github.com/vim-scripts/BBCode--Dahn
 .. _Dockerfile.vim: https://github.com/ekalinin/Dockerfile.vim
@@ -237,19 +240,16 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 .. _bats.vim: https://github.com/vim-scripts/bats.vim
 .. _brew.vim: https://github.com/xu-cheng/brew.vim
 .. _c.vim: https://github.com/vim-scripts/c.vim
-.. _css3: https://github.com/vim-scripts/css3
 .. _django.vim: https://github.com/jgb/django.vim
 .. _jQuery: http://www.vim.org/scripts/script.php?script_id=2416
 .. _nginx.vim: https://github.com/vim-scripts/nginx.vim
-.. _python.vim--Vasiliev: https://github.com/vim-scripts/python.vim--Vasiliev
-.. _rest.vim: http://www.vim.org/scripts/script.php?script_id=973
 .. _vim-chef: https://github.com/vadv/vim-chef
 .. _vim-coloresque: https://github.com/gorodinskiy/vim-coloresque
 .. _vim-css-color: https://github.com/skammer/vim-css-color
 .. _vim-css3-syntax: https://github.com/hail2u/vim-css3-syntax
-.. _vim-javascript-syntax: https://github.com/othree/vim-javascript-syntax
 .. _vim-markdown: https://github.com/plasticboy/vim-markdown
 .. _vim-tmux: https://github.com/tmux-plugins/vim-tmux
+.. _yajs.vim: https://github.com/othree/yajs.vim
 
 5.5. Themes
 ----------------------------------------
@@ -283,12 +283,12 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 #. [ ] `numbers.vim`_ - a plugin for intelligently toggling line numbers.
 #. [ ] `riv.vim`_ - reStructured Text in Vim.
 #. [X] `vim-easymotion`_ - It takes the <number> out of <number>w or <number>f{char} by highlighting all possible choices and allowing you to press one key to jump directly to the target.
-#. [X] `vim-multiple-cursors`_ - use multiple cursors like Sublime Text editor.
+#. [ ] `vim-multiple-cursors`_ - use multiple cursors like Sublime Text editor.
 #. [X] `vim-sdcv`_ - Searching word with sdcv at Vim.
 #. [X] `vimcdoc-tw`_ - Vimcdoc of Traditional Chinese.
 #. [X] `vimwiki`_ - Personal Wiki for Vim.
-#. [X] `wmgraphviz.vim`_ - Vim plugin for Graphviz dot.
-#. [X] `xterm-color-table.vim`_ - All 256 xterm colors with their RGB equivalents, right in Vim!
+#. [ ] `wmgraphviz.vim`_ - Vim plugin for Graphviz dot.
+#. [ ] `xterm-color-table.vim`_ - All 256 xterm colors with their RGB equivalents, right in Vim!
 
 .. _calendar.vim: https://github.com/vim-scripts/calendar.vim
 .. _evervim: https://github.com/kakkyz81/evervim
@@ -308,37 +308,43 @@ Backup directory: ${HOME}/.vim_back-${data} [#]_
 
 ::
 
-    ├── ctags.exe                           # ctags.exe for Windows.
-    ├── _gvimrc                             # GVim setting (ln to _vimrc).
-    ├── Makefile                            # Setup on GNU/Linux.
+    $ tree .
+    .
+    ├── LICENSE
+    ├── Makefile
     ├── README.rst
+    ├── WindowsInstall.bat
+    ├── _gvimrc
     ├── _vim
+    │   ├── 01.vimrc.vim
+    │   ├── 02.themes.vim
+    │   ├── 03.keymap.vim
+    │   ├── 04.abbreviation.vim
+    │   ├── 05.copyright_header.vim
+    │   ├── 09.plugins.vim
+    │   ├── Makefile
+    │   ├── brackete-paste-mode.vim.bak
     │   ├── colors
-    │   │   ├── ......
-    │   │   ├── fu.vim                      # Default colorschemes.
-    │   │   ├── ......
-    │   │   ├── jellybeans.vim
-    │   │   └── ......
-    │   ├── plugin-list.vim                 # NeoBundle settings.
-    │   └── vimrc.d
-    │       ├── abbreviation.vim            # Abbreviation list.
-    │       ├── blogger-template-fold.vim
-    │       ├── folding-html-php.vim.bak
-    │       ├── function.vim                # Custon function.
-    │       ├── im-switch.vim.bak
-    │       ├── keymap.vim                  # Custon mapping.
-    │       ├── php-funclist.txt
-    │       ├── themes.vim                  # GUI, Theme settings.
-    │       ├── title.vim                   # Copyright settings.
-    │       └── vimrc.vim                   # Other settings.
-    ├── _vimrc                              # Loading '_vim/vimrc.d/*.vim'.
-    ├── _vimrc.win32                        # vimrc for Windows.
-    └── WindowsInstall.bat                  # Setup on Windows. 
+    │   │   ├── Tomorrow-Night-Eighties.vim
+    │   │   ├── Tomorrow.vim
+    │   │   ├── fu.vim
+    │   │   └── jellybeans.vim
+    │   ├── folding-html-php.vim.bak
+    │   ├── function.vim.bak
+    │   ├── php-funclist.txt
+    │   └── vimshrc
+    ├── _vimrc
+    ├── _vimrc.win32
+    ├── ctags.exe
+    └── doc
+        └── xterm-color-table.html
 
-7. Vimrc List
-========================================
+    3 directories, 25 files
 
-Sort list (A-Z, a-z).
+7. Other vimrc list
+===================
+
+Sort by `:sort`.
 
 #. `Amix`_
 #. `Beata Lin`_
@@ -391,7 +397,9 @@ Sort list (A-Z, a-z).
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
 
 8. License
-========================================
+==========
 
-Copyright (c) chusiang from 2011 under the MIT license.
+Copyright (c) chusiang from 2011-2018 under the MIT license.
 
+
+.. [#] Just support Unix-like operating-system.
