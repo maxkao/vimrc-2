@@ -1,52 +1,117 @@
-" ============================================================
-"  Author: chusiang / chusiang.lai (at) gmail.com
+" =============================================================================
+"  Author: Chu-Siang Lai / chusiang (at) drx.tw
 "  Blog: http://note.drx.tw
 "  Filename: _vimrc
-"  Modified: 2014-12-30 17:08
-"  Description: vimrc for GNU/Linux.
-"  Reference: 
-" =========================================================== 
+"  Modified: 2018-03-18 22:36
+"  Description: main vimrc.
+"  Reference: https://github.com/chusiang/vimrc/blob/master/_vimrc
+" =============================================================================
 
-" Source a global configuration file if available
-for CONFIG in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
-   exe 'source' CONFIG
-endfor
+" Support the Python 3
+" --------------------
 
-" = NeoBundle (Vim plugin manager) =
-filetype off                   " required!
-
-"use git:// as bundle default protocal
-"let g:vundle_default_git_proto = 'git'
-
-if has('win32')
-    set rtp+=%UserProfile%\vimfiles/bundle/neobundle.vim/
+if has('python3')
+  command! -nargs=1 Py py3 <args>
+  set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.6/Python
+  set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.6
 else
-    set rtp+=~/.vim/bundle/neobundle.vim/
+  command! -nargs=1 Py py <args>
+  set pythondll=/usr/local/Frameworks/Python.framework/Versions/2.7/Python
+  set pythonhome=/usr/local/Frameworks/Python.framework/Versions/2.7
 endif
 
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" dein Scripts
+" ------------
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-source ${HOME}/.vim/plugin-list.vim
-
-call neobundle#end()
+if &compatible
+  set nocompatible                                            " Be iMproved
+endif
 
 " Required:
-filetype plugin indent on     
+set runtimepath+=/Users/jonny/.vim/bundles/repos/github.com/Shougo/dein.vim
 
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" Required:
+if dein#load_state('/Users/jonny/.vim/bundles')
+  call dein#begin('/Users/jonny/.vim/bundles')
 
-" Installation check.
-NeoBundleCheck
+  " Let dein manage dein
+  " Required:
+  call dein#add('/Users/jonny/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
-"set wrap
-source ~/.vim/vimrc.d/keymap.vim
+  " Add or remove your plugins here
+  " -------------------------------
+
+  "call dein#add('Shougo/vimshell.vim')
+  "call dein#add('chriskempson/vim-tomorrow-theme')
+  "call dein#add('flazz/vim-colorschemes')
+  "call dein#add('mattn/emmet-vim')
+  "call dein#add('nanotech/jellybeans.vim')
+  "call dein#add('terryma/vim-multiple-cursors')
+  "call dein#add('vadv/vim-chef')
+  "call dein#add('vim-scripts/BBCode--Dahn')
+  "call dein#add('vim-scripts/VST')
+  "call dein#add('vim-scripts/bats.vim')
+  "call dein#add('vim-scripts/phpfolding.vim', { 'rev': '3d5149e651' })"
+  "call dein#add('vim-scripts/pythoncomplete')
+  "call dein#add('wannesm/wmgraphviz.vim')
+  "call dein#add('xu-cheng/brew.vim')
+  call dein#add('Glench/Vim-Jinja2-Syntax')
+  call dein#add('Valloric/YouCompleteMe')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('Yggdroot/indentLine')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('chr4/nginx.vim')
+  call dein#add('chusiang/vim-sdcv')
+  call dein#add('chusiang/vimcdoc-tw')
+  call dein#add('easymotion/vim-easymotion')
+  call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('ekalinin/Dockerfile.vim')
+  call dein#add('gko/vim-coloresque')
+  call dein#add('godlygeek/tabular')
+  call dein#add('hail2u/vim-css3-syntax')
+  call dein#add('honza/vim-snippets')
+  call dein#add('itspriddle/vim-jquery')
+  call dein#add('kien/ctrlp.vim')
+  call dein#add('majutsushi/tagbar')
+  call dein#add('mileszs/ack.vim')
+  call dein#add('othree/html5.vim')
+  call dein#add('othree/yajs.vim')
+  call dein#add('pearofducks/ansible-vim')
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('rizzatti/dash.vim')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('shime/vim-livedown')
+  call dein#add('sirver/ultisnips')
+  call dein#add('timcharper/textile.vim')
+  call dein#add('tpope/vim-ragtag')
+  call dein#add('tpope/vim-surround')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-scripts/EnhCommentify.vim')
+  call dein#add('vim-scripts/calendar.vim--Matsumoto')
+  call dein#add('vim-scripts/matchit.zip')
+  call dein#add('vim-scripts/mru.vim')
+  call dein#add('vim-scripts/vimwiki')
+  call dein#add('vim-syntastic/syntastic')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+
+
+" Read other vim script, if available
+" -----------------------------------
+
+for CONFIG in split(glob('~/.vim/*.vim'), '\n')
+   exe 'source' CONFIG
+endfor
