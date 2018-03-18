@@ -1,36 +1,21 @@
-" = Origin Environment =
+" =============================================================================
+"  Author: Chu-Siang Lai / chusiang (at) drx.tw
+"  Blog: http://note.drx.tw
+"  Filename: 01.vimrc.vim
+"  Modified: 2018-03-18 22:46
+"  Description: uncategorized config.
+"  Reference: https://github.com/chusiang/vimrc/blob/master/_vim/01.vimrc.vim
+" =============================================================================
 
-" All system-wide defaults are set in $VIMRUNTIME/debian.vim (usually just
-" /usr/share/vim/vimcurrent/debian.vim) and sourced by the call to :runtime
-" you can find below.  If you wish to change any of those settings, you should
-" do it in this file (/etc/vim/vimrc), since debian.vim will be overwritten
-" everytime an upgrade of the vim packages is performed.  It is recommended to
-" make changes after sourcing debian.vim since it alters the value of the
-" 'compatible' option.
+" Built-in
+" ========
 
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
-" Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
-" options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
-
-" Vim5 and later versions support syntax highlighting. Uncommenting the
-" following enables syntax highlighting by default.
 if has("syntax")
   syntax on
 endif
 
-" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
-
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
 if has("autocmd")
   filetype plugin indent on
 endif
@@ -40,15 +25,22 @@ set showmode	  " Show '-insert-' Mode at the lower left.
 "set showmatch	" Show matching brackets.
 "set ignorecase	" Do case insensitive matching
 "set smartcase	" Do smart case matching
-set incsearch		" Incremental search (is), with the fight that is looking to use search features . Default off
+
+" Incremental search (is), with the fight that is looking to use search
+" features. Default off
+set incsearch
+
 "set autowrite	" Automatically save before commands like :next and :make
 "set hidden     " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set mouse=nv		" Enable mouse usage (Normal + Visual modes)
 
-" = Cutsom Main Environment =
 
-autocmd BufEnter * silent! lcd %:p:h  " auto cd curent dir. (for support some plugin #22)
+" Other
+" =====
+
+" auto cd curent dir. (for support some plugin #22)
+autocmd BufEnter * silent! lcd %:p:h
 
 set fileencodings=utf8
 set hlsearch		" (hls) Hightlight in Search
@@ -56,7 +48,7 @@ set ignorecase	" (ic) Case sensitive searches
 "set nobackup
 set ruler	      "Show Row & Colume position
 
-" - move swap and backup files from your working directory
+" move swap and backup files from your working directory.
 if has('win32')
 	set backupdir=/cygdrive/e/Cache
 	set directory=/cygdrive/e/Cache
@@ -65,7 +57,9 @@ else
 	set directory=/tmp
 endif
 
-" - indent.
+" indent
+" ------
+
 set autoindent		" (ai)
 set cindent
 set expandtab		" Set Tab to Space.
@@ -75,11 +69,15 @@ set softtabstop=2	" Set Soft tab stop.
 set shiftwidth=2	" Set Soft tab width.
 filetype indent on
 
-" - Set Scroll setting
+" Scroll
+" ------
+
 set scrolloff=3		" We keep 3 lines when scrolling .
 "set scrolljump=5	" Jump 5 lines when scrolling.
 
-" - Wild Mode
+" Wild Mode
+" ---------
+
 "set wildmode=full,list
 "set wildmode=list:full
 set wildmode=longest,list	" like bash completion. There was the same at the beginning of complement, rather than automatically fill in the name of the first complete.
@@ -96,13 +94,15 @@ set lazyredraw
 " - Don't make noise
 "set noerrorbells
 
-" - Set Folding 
+" Folding 
+" -------
+
 set foldenable
 set foldmethod=indent
 set foldcolumn=1
 set foldlevel=6
 
-"  - save my folds.
+" save folds
 if !isdirectory("view")
   " put view to tmp.
   silent !mkdir /tmp/vim-view/ > /dev/null 2>&1
@@ -112,19 +112,14 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
 " disable sound on errors
+" -----------------------
+
 set visualbell
 set noerrorbells
 set t_vb=
 set tm=500
 
-" support Vim with Neobundle in fish.
+" support Neobundle in fish
+" -------------------------
+
 set shell=/bin/bash
-
-" support crontab on macOS.
-autocmd filetype crontab setlocal nobackup nowritebackup
-
-" -----------------------------------
-"  Author : Chu-Siang Lai
-"  E-mail : jonny (at) drx.tw
-"  Blog : http://note.drx.tw
-" -----------------------------------

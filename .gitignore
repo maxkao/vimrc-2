@@ -1,4 +1,3 @@
 tags
 README.html
-
-_vim/vimrc.d/evervim.vim
+dein_installer.sh

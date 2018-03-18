@@ -1,55 +1,65 @@
+# =============================================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: Makefile
+#  Modified: 2018-03-19 00:23
+#  Description: Install this with Make.
+#  Reference: https://github.com/chusiang/vimrc/blob/master/Makefile
+# =============================================================================
+
+.PHONY: all main backup install update clean clean-backup-file
+
 TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
 FILE_VIMRC=${HOME}/.vimrc
 FILE_GVIMRC=${HOME}/.gvimrc
 DIR_VIM=${HOME}/.vim
 DIR_VIM_BAK=${HOME}/.vim.bak-${TIMESTAMP}
 
-.PHONY: all backup install update clean clean-backup-file
+main: update
 
 all: backup install
-	@echo '--Install success!--'
 
 backup:
-	@echo '--Starting backup original vim setting...--'
-	rm -rf ${HOME}/.vim_bak/
+	@echo '==> Backup original vimrc ...'
 	mkdir ${DIR_VIM_BAK}
-	mv ${FILE_VIMRC} ${DIR_VIM_BAK}/
-	mv ${FILE_GVIMRC} ${DIR_VIM_BAK}/
-	mv ${DIR_VIM} ${DIR_VIM_BAK}/
-	@echo '--backup setting success!--'
-	@echo
+	mv    ${FILE_VIMRC}   ${DIR_VIM_BAK}/
+	mv    ${FILE_GVIMRC}  ${DIR_VIM_BAK}/
+	mv    ${DIR_VIM}      ${DIR_VIM_BAK}/
+
+	@echo '==> Backup setting success.'
 
 install:
-	@echo '--Starting install vim setting...--'
-	cat _vimrc > ${FILE_VIMRC}
+	@echo '==> Copy vimrc ...'
+	cat _vimrc  > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
-	cp -a _vim ${DIR_VIM} 
-	git clone git://github.com/Shougo/neobundle.vim ${DIR_VIM}/bundle/neobundle.vim
-	@#vim -c InitENV
-	@vim +NeoBundleInstall +qall
-	@echo " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile"
-	@echo '--Done!--'
-	@echo
+	cp -a _vim    ${DIR_VIM}
 
-# sync vimrc from git to home.
+	@echo '==> Install dein.vim ...'
+	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
+	sh ./dein_installer.sh ${DIR_VIM}/bundle/
+	rm -f dein_installer.sh
+
+	@echo '==> Install plugins ...'
+	vim -c "try | call dein#install() | finally | qall! | endtry" -Ne
+
+	@echo '==> Done.'
+
 update:
-	cp -a README.rst ${DIR_VIM}/
-	cp -a _vimrc ${FILE_VIMRC}
-	cp -a _vim/vimrc.d/* ${DIR_VIM}/vimrc.d/
-	cp -a _vim/plugin-list.vim ${DIR_VIM}/
-	@echo '--Done!--'
-	@echo
+	@echo '==> Update plugins ...'
+	vim -c "try | call dein#update() | finally | qall! | endtry" -Ne
 
-clean:
-	@echo "--Starting cleaning vim' file...--"
-	rm -rf ${HOME}/.gvimrc
-	rm -rf ${HOME}/.vim*
-	@echo '--Done!--'
-	@echo
+	@echo '==> Done.'
+
+clean: clean-backup-file
+	@echo "==> Starting cleaning vim file ..."
+	rm -f ${HOME}/.gvimrc
+	rm -f ${HOME}/.vimrc
+	rm -rf ${HOME}/.vim/
+
+	@echo '==> Done.'
 
 clean-backup-file:
-	@echo "--Starting cleaning vim's backup file...--"
+	@echo "==> Starting cleaning vim's backup file ..."
 	rm -rf ${HOME}/.vim_bak*
-	@echo '--Done!--'
-	@echo
 
+	@echo '==> Done.'

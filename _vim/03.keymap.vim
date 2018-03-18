@@ -1,47 +1,29 @@
-" ============================================================
-"  Author: chusiang / chusiang.lai (at) gmail.com
+" =============================================================================
+"  Author: Chu-Siang Lai / chusiang (at) drx.tw
 "  Blog: http://note.drx.tw
-"  Filename: keymap.vim
-"  Modified: 2014-12-30 17:14
-"  Description: Cutsom the shortcut-key / hot-key/ keymap for Myself.
-" =========================================================== 
+"  Filename: 03.keymap.vim
+"  Modified: 2018-03-18 23:15
+"  Description: Cutsom the shortcut-key and keymap.
+"  Reference: https://github.com/chusiang/vimrc/blob/master/_vim/03.keymap.vim
+" =============================================================================
 
-" - <leader>
+" <leader>
+" --------
+
 let mapleader = ","
 
-" - ESC
+
+" ESC
+" ---
+
 "imap <C-I>	<ESC>
 "imap <C-O>	<ESC>
 inoremap jj <ESC>
 
-" - ~ 
-cmap <S-ESC> ~
-cmap <S-ESC> ~
-inoremap <S-ESC> ~
 
-" - Cursor Move
-"  - insert mode
-"imap <C-h> <left>
-imap <C-b> <left>
-imap <C-j> <down>
-imap <C-k> <up>
-imap <C-l> <right>
-imap <C-f> <right>
-imap <C-a> <home>
-imap <C-e> <end>
+" Move one line to down and up
+" ----------------------------
 
-"  - command mode
-"cmap <C-h> <left>
-cmap <C-b> <left>
-cmap <C-j> <down>
-cmap <C-k> <up>
-cmap <C-l> <right>
-cmap <C-f> <right>
-cmap <C-a> <home>
-cmap <C-e> <end>
-cnoremap <C-x> <del>
-
-"  - move one line down and up.
 if has('gui_macvim')
   nmap <D-j>    :.m.+1<cr>
   nmap <D-k>    :.m.-2<cr>
@@ -55,35 +37,53 @@ else
 endif
 
 
-" - Re-Read vim Configure.
+" Re-read vim Configure
+" ---------------------
+
 nmap <leader>s		:source $HOME/.vimrc <CR>
 
-" - quick quit vim.
+
+" quick quit vim
+" --------------
+
 nmap Z	:x <CR>
 
-" - list buffers files.
-nmap <leader>l	:ls
 
-" - Save
-"imap <C-S> <ESC>:w <CR>i
-"nmap <C-S> :w <CR>
+" list buffers files
+" ------------------
+
+"nmap <leader>l	:ls
+
+
+" Save
+" ----
+
 cmap WW	:w <CR>
 
-" - Copy
+
+" Command mode
+" ------------
+
+"cmap <C-e> <end>
+"cnoremap <C-b> <home>
+"cnoremap <C-f> (history)
+
+
+" Copy
+" ----
+
 if !has('gui_macvim')
   vmap <A-c>	"+y
 endif
 nmap <leader>y	y$
 
-"  - Copy the characters under the cursor until the end
+" Copy the characters under the cursor until the end.
 imap <leader>y	<C-o>y$<ESC>
 
-" - Command Mode
-"cmap <C-e> <end>
-"cnoremap <C-b> <home>
-"cnoremap <C-f> (history)
 
-" - Paste
+" Paste
+" -----
+
 if !has('gui_macvim')
   imap <A-v>	<ESC>"+pa
   nmap <A-v>	"+pa
@@ -91,9 +91,11 @@ endif
 "nmap <leader>p	:set paste <CR>
 "nmap <leader>np	:set nopaste <CR>
 
-" - Tabs
+
+" Tabs
+" ----
+
 nmap tt		:tabnew <CR>
-"nmap td		:tabclose <CR>
 nmap tj		:tabnext <CR>
 nmap tk	 	:tabprev <CR>
 nmap te		:Texplore <CR>
@@ -121,7 +123,9 @@ else
 endif
 
 
-" - Indent
+" Indent
+" ------
+
 imap <S-tab> <esc>m`<<``i
 nmap <TAB> v>
 nmap <S-TAB> v<
@@ -129,7 +133,10 @@ xnoremap <tab> >gv
 vmap <tab> >gv
 xnoremap <s-tab> <gv
 
-" - Scroll
+
+" Scroll
+" ------
+
 "  - hide scroll of split windows mode.
 "nmap +b		:set guioptions+=b <CR>
 "nmap +l		:set guioptions+=L <CR>
@@ -140,13 +147,21 @@ xnoremap <s-tab> <gv
 nmap <F7>		:set guioptions+=mT <CR>
 nmap <F8>		:set guioptions-=mT <CR>
 
-"  - Split
+
+" Switch the split window
+" -----------------------
+
 nmap <C-tab>	<C-w>w
 imap <C-tab>	<C-o><C-w>w
 nmap <C-h>		<C-w>h
+nmap <C-j>		<C-w>j
+nmap <C-k>		<C-w>k
 nmap <C-l>		<C-w>l
 
-" - Folding
+
+" Folding
+" -------
+
 "inoremap <F2> <C-o>za
 "nnoremap <F2> za
 "onoremap <F2> <C-c>za
@@ -154,7 +169,10 @@ nmap <C-l>		<C-w>l
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vnoremap <space> zf
 
-" - Font Size
+
+" Font Size
+" ---------
+
 if has('gui_macvim')
   nmap <leader>f0	:set guifont=Monaco:h15 <CR>
   nmap <leader>f`	:set guifont=Monaco:h10 <CR>
@@ -178,70 +196,77 @@ else
   nmap <leader>f4	:set guifont=Monospace\ 20 <CR>
 endif
 
-" - auto completion
+
+" Auto Completion
+" ---------------
+
 inoremap  <leader><tab> <C-x><C-p>
 
-"  - auto completion the brackets
-" inoremap  triger_char  mapping_str
-"
+" auto completion the brackets
 "inoremap ( ()<LEFT>
 "inoremap < <><LEFT>
-inoremap [ []<LEFT>
+"inoremap [ []<LEFT>
 inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
-" - Quick Search
-"nnoremap <F3> :NumbersToggle<CR>
-nmap <F3>	/<C-r>0<CR>
 
-" - Color Scheme
-nmap <leader>cf	:colorscheme fu <CR>
-nmap <leader>cj	:colorscheme jellybeans <CR>
+" HTML
+" ====
 
-" - Preview current HTML file
-"  - local.drx.tw (PHP)
-nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
-nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+" bold.
+"autocmd FileType html,markdown imap <C-s-b> <ESC>bi<b><ESC>ea</b><ESC>F<i
 
-"  - current file (Ex: html, txt) 
-
-if has('gui_macvim')
-  nnoremap <F6> :!open /Applications/Firefox.app %<CR>
-else
-  nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
-  nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
-endif
-
-" - 80 column layout
-"nmap <leader>l :call HightLightOverLength()<CR>
-"nnoremap <leader>r :set columns=80<CR>
-
-" - Quick open $HOME
-nmap <leader>h		:tabnew <CR>:e $HOME<CR>
-
-" - HTML
-"
-"  - b
-autocmd FileType html,markdown imap <C-s-b> <ESC>bi<b><ESC>ea</b><ESC>F<i
-"
-"  - i
+" italic.
 "imap <C-s-i> <ESC>bi<i><ESC>ea</i><ESC>F/hi
-"
-"  - a
+
+" link.
 "imap <C-a> <ESC>bi<a href=""><ESC>ea</a><ESC>F>hi
 "autocmd FileType html,markdown imap <C-s-a> <ESC>bi<a target="_blank" href=""><ESC>ea</a><ESC>F>hi
-"
-"  - strike
-autocmd FileType html,markdown imap <C-s-d> <ESC>bi<strike><ESC>ea</strike><ESC>F<i
-"
-"  - center
-autocmd FileType html,markdown imap <C-s-r> <ESC>bi<center><ESC>ea</center><ESC>F<i
-"
-"  - #
-autocmd FileType html,markdown imap <C-s-g> <ESC>bi<span class="Comment"><ESC>ea</span><ESC>F>a# <ESC>f<i
-"
-autocmd FileType html,markdown imap <C-s-z> <!--more-->
+
+" strike.
+"autocmd FileType html,markdown imap <C-s-d> <ESC>bi<strike><ESC>ea</strike><ESC>F<i
+
+" center.
+"autocmd FileType html,markdown imap <C-s-r> <ESC>bi<center><ESC>ea</center><ESC>F<i
+
+" Comment.
+"autocmd FileType html,markdown imap <C-s-g> <ESC>bi<span class="Comment"><ESC>ea</span><ESC>F>a# <ESC>f<i
+
+" more of blogger.
+"autocmd FileType html,markdown imap <C-s-z> <!--more-->
 
 
-"imap <C-i> <ESC>bi<i><ESC>ea</i> 
+" Support the HHKB
+" ================
+
+" ~ 
+cmap <S-ESC> ~
+cmap <S-ESC> ~
+inoremap <S-ESC> ~
+
+" Cursor Move
+" -----------
+
+" insert mode
+"imap <C-h> <left>
+imap <C-b> <left>
+imap <C-j> <down>
+imap <C-k> <up>
+imap <C-l> <right>
+imap <C-f> <right>
+imap <C-a> <home>
+imap <C-e> <end>
+
+" Command mode
+" ------------
+
+"cmap <C-h> <left>
+cmap <C-b> <left>
+cmap <C-j> <down>
+cmap <C-k> <up>
+cmap <C-l> <right>
+cmap <C-f> <right>
+cmap <C-a> <home>
+cmap <C-e> <end>
+cnoremap <C-x> <del>
