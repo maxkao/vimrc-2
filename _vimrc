@@ -29,15 +29,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/jonny/.vim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=/Users/jonny/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/jonny/.vim/bundles')
-  call dein#begin('/Users/jonny/.vim/bundles')
+if dein#load_state('/Users/jonny/.vim/bundle')
+  call dein#begin('/Users/jonny/.vim/bundle')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/jonny/.vim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add('/Users/jonny/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here
   " -------------------------------
@@ -57,7 +57,7 @@ if dein#load_state('/Users/jonny/.vim/bundles')
   "call dein#add('wannesm/wmgraphviz.vim')
   "call dein#add('xu-cheng/brew.vim')
   call dein#add('Glench/Vim-Jinja2-Syntax')
-  call dein#add('Valloric/YouCompleteMe')
+  call dein#add('Valloric/YouCompleteMe', {'build': './install.py'})
   call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('Yggdroot/indentLine')
   call dein#add('airblade/vim-gitgutter')
