@@ -1,27 +1,60 @@
-" ============================================================
+" =============================================================================
 "  Author: chusiang / chusiang.lai (at) gmail.com
 "  Blog: http://note.drx.tw
-"  Filename: themes.vim
-"  Modified: 2014-12-30 17:21
-"  Description: Themes Environment setting.
-" =========================================================== 
+"  Filename: 02.themes.vim
+"  Modified: 2018-3-18 22:16
+"  Description: Custon the themes like Cursor, GUI and title.
+"  Reference: https://github.com/chusiang/vimrc/blob/master/_vim/02.themes.vim
+" =============================================================================
+
+" Color Scheme
+" -------------
+
+colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow
+"colorscheme jellybeans
+"colorscheme fu
+"colorscheme ir_black
+
+" Cursor
+" ------
 
 set cursorline		  "highlight line.
 set cursorcolumn	  "highlight colimn.
+
 set nocompatible	  "do not backward compatible.
-"set number
+
+" Line Number
+" -----------
+
+set number
 set relativenumber	"number of relative.
 
-" - always show the tab bar.
-"set showtabline=2
+" Status Line
+" -----------
 
-" - Status Line
 "set laststatus=2
 " - [filetype] filename \t encoding file-format AscII Hex Line
 "set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [Hex=\%02.2B]\ [LINE=%L]\ [Pos=%l,%v,%p%%]
 "set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [LINE=%L]\ [Pos=%l,%v,%p%%]
 
+" Font
+" ----
+
+if has('win32')
+	set guifont=Consolas:h14
+elseif has('gui_macvim')
+  set guifont=Monaco:h14
+else
+	set guifont=Monospace\ 14
+endif
+
+" GUI
+" ---
+
 if has('gui')
+	set t_Co=256		  " support 256 color.
+
 	set guioptions-=m	" remove Menu.
 	set guioptions-=e	" remove Tab-Page.
 	set guioptions-=T	" remove Toolbar.
@@ -30,38 +63,22 @@ if has('gui')
 	set guioptions-=L " remove Scroll (Left).
 	set guioptions-=r " remove Scroll (Right of Split window).
 	set guioptions-=R " remove Scroll (Right).
-  set columns=80 lines=38 " width x high size
-	set t_Co=256		  " support 256 color.
 
-	" == Favorites Color ==
-	colorscheme jellybeans
-	"colorscheme fu
-	"colorscheme ir_black
-	"colorscheme peaksea
-	"colorscheme risto
-	"colorscheme xterm16
-	"colorscheme zenburn
+  " disable the Chinese IM when I leaving the insert mode.
+  autocmd InsertEnter * set noimdisable
+  autocmd InsertLeave * set imdisable
+
+  " changfe the default window size. (width x high)
+  "set columns=80 lines=38 "
 endif
 
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-if !has('gui')
-	"set background=dark
-	set t_Co=256		" support 256 color.
-  "colorscheme jellybeans
-	colorscheme Tomorrow-Night-Eighties
-endif
+" Tab
+" ---
 
-" - font type and size setting.
-if has('win32')
-	set guifont=Consolas:h12
-elseif has('gui_macvim')
-  set guifont=Monaco:h14
-else
-	set guifont=Monospace\ 12
-endif
+" always show the tab bar.
+"set showtabline=2
 
-" - show tab number.
+" show tab number.
 set tabline=%!MyTabLine()
 function! MyTabLine()
   let s = '' " complete tabline goes here
@@ -129,3 +146,20 @@ function! MyTabLine()
   return s
 endfunction
 
+" 80 Column
+" ---------
+
+set columns=80
+
+if exists('+colorcolumn')
+	hi ColorColumn ctermbg=232 guibg=#2d2d2d guifg=white
+  "set colorcolumn=80
+	"let &colorcolumn="80,".join(range(120,999),",")
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
+function! HightLightOverLength()
+	hi OverLength	ctermfg=white	ctermbg=darkred	guifg=white    guibg=#cc0000
+    match OverLength /\%>80v.\+/
+endfunction
