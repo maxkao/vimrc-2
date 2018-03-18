@@ -53,7 +53,7 @@ Linux & Mac OSX
 
   ::
 
-      git clone https://github.com/chusiang/vimrc.git
+      git clone https://github.com/chusiang/vimrc.git --depth=1
 
 * Install.
 
