@@ -161,7 +161,9 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "ultisnips_my"]
 " vim-airline/vim-airline
 " -----------------------
 
-"let g:airline_powerline_fonts = 1
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'tomorrow'
 
 
 " Calendar
@@ -195,7 +197,7 @@ let g:vimwiki_list = [
 " custom header color.
 :hi VimwikiHeader1 guifg=#FF0000	" Red
 :hi VimwikiHeader2 guifg=#FFDB00	" Yellow
-:hi VimwikiHeader3 guifg=#9C9CE0	" Light Purple 
+:hi VimwikiHeader3 guifg=#9C9CE0	" Light Purple
 :hi VimwikiHeader4 guifg=#91B9E0	" Light Blue
 :hi VimwikiHeader5 guifg=#999999	" Light Grey
 :hi VimwikiHeader6 guifg=#49D432	" Light Green
@@ -233,7 +235,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" ignore files of Ansible Roles.		
+" ignore files of Ansible Roles.
 let g:syntastic_ignore_files = ['.*roles/']
 
 nmap <leader>q :SyntasticCheck<CR>
@@ -280,14 +282,14 @@ nmap <leader>r :SyntasticReset<CR>
 "autocmd FileType php noremap <F4> :!php -l % <CR>
 "autocmd FileType php noremap <F5> <Esc>:EnableFastPHPFolds<Cr>
 "autocmd FileType php noremap <F6> <Esc>:EnablePHPFolds<Cr>
-"autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr> 
+"autocmd FileType php noremap <F7> <Esc>:DisablePHPFolds<Cr>
 
 
 " wannesm/wmgraphviz.vim
 " ----------------------
 
 "let g:WMGraphviz_viewer='xdg-open'
-"let g:WMGraphviz_output="png" 
+"let g:WMGraphviz_output="png"
 
 "nmap <leader>lp :GraphvizCompile<CR>
 "nmap <leader>ll :GraphvizCompilePDF<CR>

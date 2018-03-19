@@ -33,6 +33,8 @@ set relativenumber	"number of relative.
 " Status Line
 " -----------
 
+" > Replace by vim-airline.
+
 "set laststatus=2
 " - [filetype] filename \t encoding file-format AscII Hex Line
 "set statusline=%y\ %t\%r%h%w\ %m%=\ %{&fileencoding}\ [%{&ff}]\ [AscII=\%03.3b]\ [Hex=\%02.2B]\ [LINE=%L]\ [Pos=%l,%v,%p%%]

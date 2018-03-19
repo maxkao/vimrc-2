@@ -22,7 +22,7 @@ vimrc of chusiang
 :Requirements:
     Vim 7.4 or above.
 :Plugins Count:
-    38
+    39 
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
