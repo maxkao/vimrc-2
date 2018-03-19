@@ -29,15 +29,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/jonny/.vim/bundle/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/jonny/.vim/bundle')
-  call dein#begin('/Users/jonny/.vim/bundle')
+if dein#load_state('$HOME/.vim/bundle')
+  call dein#begin('$HOME/.vim/bundle')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/jonny/.vim/bundle/repos/github.com/Shougo/dein.vim')
+  call dein#add('$HOME/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here
   " -------------------------------
