@@ -138,6 +138,7 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 #. [ ] `Vim Auto Complete Popup`_ - Automatic trigger complete popup menu (need `L9`_).
 #. [X] `YouCompleteMe`_ - A code-completion engine for Vim. (need `ultisnips`_)
 #. [X] `ack.vim`_ - run ack in vim.
+#. [ ] `ale`_ - Asynchronous Lint Engine.
 #. [X] `dash.vim`_ - Search Dash.app from Vim (Mac only).
 #. [ ] `emmet-vim`_ - `emmet <http://emmet.io>`_ for vim.
 #. [X] `indentLine`_ - Display the indention levels with thin vertical lines.
@@ -147,18 +148,20 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 #. [X] `syntastic`_ - Syntax checking plugins of C, C++, CSS, Go, HTML, Java, JavaScript, JSON, PHP, Python, reStructuredText, Ruby, SASS, VimL, zsh ... `more <https://github.com/scrooloose/syntastic#introduction>`_.
 #. [X] `tagbar`_ - Display tags of the current file ordered by scope.
 #. [ ] `taglist.vim`_ - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
+#. [ ] `vim-move`_ - move lines and selections up and down.
 #. [X] `vim-ragtag`_ - A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more.
 #. [ ] `vim-snipmate`_ - auto-completion with menu. (need `vim-addon-mw-utils`_, `tlib_vim`_, `vim-snippets`_)
 #. [ ] `zeavim.vim`_ - Zeavim allows to use the offline documentation browser Zeal from Vim.
 
-.. _Trinity: https://github.com/wesleyche/Trinity
-.. _L9: https://github.com/vim-scripts/L9
 .. _EditorConfig Vim Plugin: https://github.com/editorconfig/editorconfig-vim
 .. _EnhCommentify.vim: http://www.vim.org/scripts/script.php?script_id=23
+.. _L9: https://github.com/vim-scripts/L9
 .. _SrcExpl: https://github.com/wesleyche/SrcExpl
+.. _Trinity: https://github.com/wesleyche/Trinity
 .. _Vim Auto Complete Popup: https://github.com/othree/vim-autocomplpop
 .. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
 .. _ack.vim: https://github.com/mileszs/ack.vim
+.. _ale: https://github.com/w0rp/ale
 .. _dash.vim: https://github.com/rizzatti/dash.vim
 .. _emmet-vim: https://github.com/mattn/emmet-vim
 .. _indentLine: https://github.com/Yggdroot/indentLine
@@ -170,12 +173,13 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 .. _tagbar: https://github.com/majutsushi/tagbar
 .. _taglist.vim: https://github.com/vim-scripts/taglist.vim
 .. _tlib_vim: https://github.com/tomtom/tlib_vim
+.. _ultisnips: https://github.com/SirVer/ultisnips
 .. _vim-addon-mw-utils: https://github.com/MarcWeber/vim-addon-mw-utils
+.. _vim-move: https://github.com/matze/vim-move
 .. _vim-ragtag: https://github.com/tpope/vim-ragtag
 .. _vim-snipmate: https://github.com/garbas/vim-snipmate
 .. _vim-snippets: https://github.com/honza/vim-snippets
 .. _zeavim.vim: https://github.com/KabbAmine/zeavim.vim
-.. _ultisnips: https://github.com/SirVer/ultisnips
 
 5.3.3. F2E (Front End Engineer)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -255,19 +259,21 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 ----------------------------------------
 
 #. [ ] `Amy.vim`_ - A colorscheme based on 'amy' sublime text 2 color theme.
+#. [ ] `Apprentice`_ - A dark, low-contrast, Vim colorscheme.
+#. [X] `Tomorrow Theme`_ - The precursor to Base16 Theme.
 #. [X] `jellybeans.vim`_ - A colorful, dark color scheme for vim.
+#. [X] `vim-airline`_ - Lean & mean status/tabline for vim that's light as air.
+#. [X] `vim-airline-themes`_ - A collection of themes for vim-airline.
 #. [ ] `vim-colorscheme-primary`_ - Primary, a Vim color scheme based on Google's colors.
 #. [ ] `vim-colorschemes`_ - one stop shop for vim colorschemes.
 #. [ ] `vim-powerline`_ - better-looking, more functional vim statuslines.
 #. [X] `vim-tomorrow-night`_ - Tomorrow Theme mirror.
-#. [ ] `Apprentice`_ - A dark, low-contrast, Vim colorscheme.
-#. [X] `Tomorrow Theme`_ - The precursor to Base16 Theme.
-#. [X] `vim-airline`_ - Lean & mean status/tabline for vim that's light as air.
 
 .. _Amy.vim: https://github.com/awinecki/amy-vim-coloscheme
 .. _Apprentice: https://github.com/romainl/Apprentice
 .. _Tomorrow Theme: https://github.com/chriskempson/tomorrow-theme
 .. _jellybeans.vim: https://github.com/nanotech/jellybeans.vim
+.. _vim-airline-themes: https://github.com/vim-airline/vim-airline-themes
 .. _vim-airline: https://github.com/bling/vim-airline
 .. _vim-colorscheme-primary: https://github.com/google/vim-colorscheme-primary
 .. _vim-colorschemes: https://github.com/flazz/vim-colorschemes
@@ -365,6 +371,7 @@ Sort by `:sort`.
 #. `jsleetw`_
 #. `mrmoneyc`_
 #. `othree`_
+#. `rockers7414`_
 #. `ssarcandy`_
 #. `toomore`_
 #. `weitsai`_
@@ -390,6 +397,7 @@ Sort by `:sort`.
 .. _jsleetw: https://github.com/jsleetw/MyDotFiles/tree/master/.vim
 .. _mrmoneyc: https://github.com/mrmoneyc/vimcfg
 .. _othree: https://github.com/othree/rc/blob/master/home/.vimrc
+.. _rockers7414: https://github.com/rockers7414/dotfiles
 .. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
 .. _toomore: https://github.com/toomore/toomore.vim
 .. _weitsai: https://github.com/weitsai/vim
