@@ -32,7 +32,7 @@ install:
 	@echo '==> Copy vimrc ...'
 	cat _vimrc  > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
-	cp -a _vim    ${DIR_VIM}
+	cp -a _vim/   ${DIR_VIM}
 
 	@echo '==> Install dein.vim ...'
 	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
