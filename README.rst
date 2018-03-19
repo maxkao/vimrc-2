@@ -377,6 +377,7 @@ Sort by `:sort`.
 #. `weitsai`_
 #. `wi1d5ky`_
 #. `xinsuiyuer`_
+#. `ych`_
 
 .. _Amix: https://github.com/amix/vimrc
 .. _Beata Lin: https://github.com/beata/vimrc
@@ -403,6 +404,7 @@ Sort by `:sort`.
 .. _weitsai: https://github.com/weitsai/vim
 .. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
+.. _ych: https://github.com/ych/vimrc
 
 8. License
 ==========
