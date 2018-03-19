@@ -14,6 +14,7 @@ FILE_VIMRC=${HOME}/.vimrc
 FILE_GVIMRC=${HOME}/.gvimrc
 DIR_VIM=${HOME}/.vim
 DIR_VIM_BAK=${HOME}/.vim.bak-${TIMESTAMP}
+DEIN_TARGET=~/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 main: update
 
@@ -35,9 +36,12 @@ install:
 	cp -a _vim/   ${DIR_VIM}
 
 	@echo '==> Install dein.vim ...'
-	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
-	sh ./dein_installer.sh ${DIR_VIM}/bundle/
-	rm -f dein_installer.sh
+ifneq ("$(wildcard ${DEIN_TARGET})","")
+	# Target of "${DEIN_TARGET}" is exist, ignore ...
+else
+	mkdir -p ${DEIN_TARGET}
+	git clone https://github.com/Shougo/dein.vim ${DEIN_TARGET}
+endif
 
 	@echo '==> Install plugins ...'
 	vim -c "try | call dein#install() | finally | qall! | endtry" -Ne
