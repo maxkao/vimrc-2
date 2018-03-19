@@ -33,7 +33,8 @@ install:
 	@echo '==> Copy vimrc ...'
 	cat _vimrc  > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
-	cp -a _vim/   ${DIR_VIM}
+	mkdir -p      ${DIR_VIM}/
+	cp -r _vim/*  ${DIR_VIM}/
 
 	@echo '==> Install dein.vim ...'
 ifneq ("$(wildcard ${DEIN_TARGET})","")
