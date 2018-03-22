@@ -42,12 +42,6 @@ nmap gH <Plug>GitGutterPrevHunk
 nmap <leader>w :call SearchWord()<CR>
 
 
-" chusiang/vimcdoc-tw
-" --------------------
-
-"set helplang=tw
-
-
 " easymotion/vim-easymotion
 " -------------------------
 
