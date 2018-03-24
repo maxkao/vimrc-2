@@ -305,7 +305,7 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 .. _vim-multiple-cursors: https://github.com/terryma/vim-multiple-cursors
 .. _vim-sdcv: https://github.com/chusiang/vim-sdcv
 .. _vimcdoc-tw: https://github.com/chusiang/vimcdoc-tw
-.. _vimwiki: http://code.google.com/p/vimwiki
+.. _vimwiki: https://github.com/vimwiki/vimwiki
 .. _wmgraphviz.vim: https://github.com/wannesm/wmgraphviz.vim
 .. _xterm-color-table.vim: https://github.com/guns/xterm-color-table.vim
 
