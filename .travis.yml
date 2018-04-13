@@ -19,5 +19,7 @@ jobs:
         - docker run -it --rm chusiang/vim-and-vi-mode:debian9 vim --version
 
         - echo "==> Install ..."
-        - docker run --rm -it -v $PWD:/srv chusiang/vim-and-vi-mode:debian9 /bin/sh -c "cd /srv && make install && make update"
+        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:debian9 /bin/sh -c "cd /srv && make install" . | tee output.debian-9.log
 
+        - echo "==> Check ..."
+        - grep "==> Done." output.debian-9.log
