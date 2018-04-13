@@ -11,6 +11,10 @@
 vimrc of chusiang
 =================
 
+.. image:: https://travis-ci.org/chusiang/vimrc.svg?branch=master
+   :target: https://travis-ci.org/chusiang/vimrc/
+   :alt: Travis CI
+
 :Author:
     Chu-Siang Lai (凍仁翔)
 :Build Date:
