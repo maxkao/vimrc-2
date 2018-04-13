@@ -2,15 +2,13 @@
 "  Author: Chu-Siang Lai / chusiang (at) drx.tw
 "  Blog: http://note.drx.tw
 "  Filename: 01.vimrc.vim
-"  Modified: 2018-03-18 22:46
+"  Modified: 2018-04-14 02:29
 "  Description: uncategorized config.
 "  Reference: https://github.com/chusiang/vimrc/blob/master/_vim/01.vimrc.vim
 " =============================================================================
 
 " Built-in
 " ========
-
-runtime! debian.vim
 
 if has("syntax")
   syntax on
