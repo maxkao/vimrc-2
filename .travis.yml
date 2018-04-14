@@ -9,17 +9,18 @@ before_install:
 
 jobs:
   include:
-
-    # ---- Debian 9  -----------------------------------------------------------
-
     - stage: Debian-9
       script:
-
         - echo "==> Show version ..."
         - docker run -it --rm chusiang/vim-and-vi-mode:debian9 vim --version
 
         - echo "==> Install ..."
-        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:debian9 /bin/sh -c "cd /srv && make install" . | tee output.debian-9.log
+        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:debian9
+            /bin/sh -c "cd /srv && make install" . | tee output.debian-9.log
 
         - echo "==> Check ..."
         - grep "==> Done." output.debian-9.log
+
+notifications:
+  slack:
+    secure: bBG2jRpsjxns4moSjXUgQyPcK3EANz0ovJ9WE5RaAF40kQ5gSb5UVallgGjotgGGK+lN4z1yCZZOcQYHNhC7ccUAxYOuLimS8oRLDow7o2mXi/i2Q8LYCy2ymw2PVtSgPJVv371CcQxPrQ9r4e+Gs5cXVOhm0riyOYUsao+rkYSIoRUWgMln4oCF80V31fd7YIES0ffhixfFPbRQ5RePpD8qZEjApme0LbV9ckQyY0mqUoLF22tn+Wv+GZcITD4+wB5Hx036RiuQh9bNCqLsovdMqwLT0PT5CR03p5EHYDWtwXZhkuWJhzBJTLRLXQUWk4qmhlKKTpL656tA2lzP6/E2Wu+Lfj1hIjsBuT+WdWESenSwuOvaAsy+xYDqJIwq4LccUGLX7lYcUA5mRKG9FPFdZ3ZMCHuhaV1Fp2ORvPQyGpADJi5uqbbJ6ZTAWj+7tgqyXTad3/NO2kutZJTNHagestUGNImzO1YnHENth6fEKPP0SQpfd7JuNuYmwcs37pueyNXdHCeqXFE97cTzPxeLRuI9xTNhmN8B/xhL8ScZjWY5NnacDBxFqaOSJagNw90VxROsvivcsBlAbWsWta9BxyMzaW7KreqK1tlobqtWjGiK8kBN+zR0DVBFFoA/saAeEMUrEUZchu45x6hNALiyyfHG9ztBCVB0BYJNvXk=
