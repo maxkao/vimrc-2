@@ -106,7 +106,8 @@ endif
 " pearofducks/ansible-vim
 " -----------------------
 
-au BufRead,BufNewFile */*playbooks/*.yml set filetype=ansible
+au BufRead,BufNewFile */*ansible/*.yml    set filetype=yaml.ansible
+au BufRead,BufNewFile */*playbooks/*.yml  set filetype=yaml.ansible
 
 
 " plasticboy/vim-markdown
