@@ -42,6 +42,12 @@ nmap gH <Plug>GitGutterPrevHunk
 nmap <leader>w :call SearchWord()<CR>
 
 
+" chusiang/vimcdoc-tw
+" --------------------
+
+"set helplang=tw
+
+
 " easymotion/vim-easymotion
 " -------------------------
 
@@ -88,6 +94,13 @@ if has('win32')
   let g:tagbar_ctags_bin='C:\ctags.exe'
 endif
 
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+      \ 'h:headings',
+    \ ],
+  \ 'sort' : 0
+\ }
 
 " mileszs/ack.vim
 " ---------------
@@ -106,8 +119,8 @@ endif
 " pearofducks/ansible-vim
 " -----------------------
 
-au BufRead,BufNewFile */*ansible/*.yml    set filetype=yaml.ansible
-au BufRead,BufNewFile */*playbooks/*.yml  set filetype=yaml.ansible
+au BufRead,BufNewFile */*ansible/*.yml   set filetype=yaml.ansible
+au BufRead,BufNewFile */*playbooks/*.yml set filetype=yaml.ansible
 
 
 " plasticboy/vim-markdown
@@ -210,6 +223,10 @@ autocmd BufRead,BufNewFile *.md noremap	<leader>wtb :VimwikiTable <CR>
 autocmd BufRead,BufNewFile *.md noremap	<leader>wj  :VimwikiDiaryNextDay <CR>
 autocmd BufRead,BufNewFile *.md noremap	<leader>wk  :VimwikiDiaryPrevDay <CR>
 autocmd BufRead,BufNewFile *.md noremap	<leader>wo  <C-Space> <CR>
+
+" syntax.
+au BufRead,BufNewFile */vimwiki/wiki/*.yml  set filetype=markdown
+au BufRead,BufNewFile */vimwiki/diary/*.yml set filetype=markdown
 
 
 " Syntastic
