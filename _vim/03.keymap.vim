@@ -95,10 +95,10 @@ endif
 " Tabs
 " ----
 
-nmap tt		:tabnew <CR>
-nmap tj		:tabnext <CR>
-nmap tk	 	:tabprev <CR>
-nmap te		:Texplore <CR>
+nmap <C-t>  :tabnew <CR>
+nmap tj     :tabnext <CR>
+nmap tk     :tabprev <CR>
+nmap te     :Texplore <CR>
 
 if has('gui_macvim')
   nmap <D-1>	:tabn1 <CR>
@@ -240,7 +240,7 @@ inoremap ' ''<LEFT>
 " Support the HHKB
 " ================
 
-" ~ 
+" ~
 cmap <S-ESC> ~
 cmap <S-ESC> ~
 inoremap <S-ESC> ~
