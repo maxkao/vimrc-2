@@ -379,7 +379,7 @@ Sort by `:sort`.
 #. `ssarcandy`_
 #. `toomore`_
 #. `weitsai`_
-#. `wi1d5ky`_
+#. `wildskyf`_
 #. `xinsuiyuer`_
 #. `ych`_
 
@@ -406,7 +406,7 @@ Sort by `:sort`.
 .. _ssarcandy: https://github.com/SSARCandy/ssarcandy-vim
 .. _toomore: https://github.com/toomore/toomore.vim
 .. _weitsai: https://github.com/weitsai/vim
-.. _wi1d5ky: https://github.com/wi1d5ky/myConfig/blob/master/.vimrc
+.. _wildskyf: https://github.com/wildskyf/vim.d
 .. _xinsuiyuer: https://github.com/xinsuiyuer/.vimrc
 .. _ych: https://github.com/ych/vimrc
 
