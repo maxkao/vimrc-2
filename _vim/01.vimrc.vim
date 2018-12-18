@@ -40,6 +40,7 @@ set mouse=nv		" Enable mouse usage (Normal + Visual modes)
 " auto cd curent dir. (for support some plugin #22)
 autocmd BufEnter * silent! lcd %:p:h
 
+set encoding=utf-8
 set fileencodings=utf8
 set hlsearch		" (hls) Hightlight in Search
 set ignorecase	" (ic) Case sensitive searches
@@ -92,7 +93,7 @@ set lazyredraw
 " - Don't make noise
 "set noerrorbells
 
-" Folding 
+" Folding
 " -------
 
 set foldenable
