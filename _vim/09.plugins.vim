@@ -126,8 +126,18 @@ au BufRead,BufNewFile */*playbooks/*.yml set filetype=yaml.ansible
 " plasticboy/vim-markdown
 " -----------------------
 
-let g:vim_markdown_conceal = 0
+" Disable folding.
 let g:vim_markdown_folding_disabled=1
+
+" Disable concealing some syntax.
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
+" Enable LaTeX math.
+let g:vim_markdown_math = 1
+
+" Enable YAML Front Matter.
+let g:vim_markdown_frontmatter = 1
 
 
 " scrooloose/nerdtree
