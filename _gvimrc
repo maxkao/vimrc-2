@@ -4,7 +4,6 @@
 "  Filename: _gvimrc
 "  Modified: 2016-10-06 19:00
 "  Description: GVim config.
-"  Reference: 
 " =========================================================== 
 
 if filereadable("${HOME}/.vimrc")

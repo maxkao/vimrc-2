@@ -2,12 +2,13 @@
 #  Author: Chu-Siang Lai / chusiang (at) drx.tw
 #  Blog: http://note.drx.tw
 #  Filename: Makefile
-#  Modified: 2018-03-19 00:23
+#  Modified: 2019-07-25 00:12
 #  Description: Install this with Make.
 #  Reference: https://github.com/chusiang/vimrc/blob/master/Makefile
 # =============================================================================
 
-.PHONY: all main backup install update clean clean-backup-file
+.PHONY: all main backup install update clean clean-backup-file check	\
+	yaml_check travis_check
 
 TIMESTAMP=`date "+%Y-%m-%d-%H:%M:%S"`
 FILE_VIMRC=${HOME}/.vimrc
@@ -68,3 +69,11 @@ clean-backup-file:
 	rm -rf ${HOME}/.vim_bak*
 
 	@echo '==> Done.'
+
+check: yaml_check travis_check
+
+yaml_check:
+	find -name "*.yml" -type f -exec yamllint {} \;
+
+travis_check:
+	travis lint .travis.yml
