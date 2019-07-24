@@ -54,6 +54,12 @@ nmap <leader>w :call SearchWord()<CR>
 " none.
 
 
+" editorconfig/editorconfig-vim
+" -----------------------------
+
+" let g:EditorConfig_verbose = 1
+
+
 " kien/ctrlp.vim
 " --------------
 
