@@ -1,3 +1,5 @@
+---
+
 language: bash
 sudo: required
 services:
@@ -10,28 +12,32 @@ before_install:
 jobs:
   include:
     - stage: Alpine 3
+      env:
+        - DOCKER_TAG="alpine3"
       script:
         - echo "==> Show version ..."
-        - docker run -it --rm chusiang/vim-and-vi-mode:alpine3 vim --version
+        - docker run -it --rm chusiang/vim-and-vi-mode:$DOCKER_TAG vim --version
 
         - echo "==> Install ..."
-        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:alpine3
-            /bin/sh -c "cd /srv && make install" . | tee output.alpine-3.log
+        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:$DOCKER_TAG
+            /bin/sh -c "cd /srv && make install" . | tee output.$DOCKER_TAG.log
 
         - echo "==> Check ..."
-        - grep "==> Done." output.alpine-3.log
+        - grep "==> Done." output.$DOCKER_TAG.log
 
     - stage: Debian 9
+      env:
+        - DOCKER_TAG="debian9"
       script:
         - echo "==> Show version ..."
-        - docker run -it --rm chusiang/vim-and-vi-mode:debian9 vim --version
+        - docker run -it --rm chusiang/vim-and-vi-mode:$DOCKER_TAG vim --version
 
         - echo "==> Install ..."
-        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:debian9
-            /bin/sh -c "cd /srv && make install" . | tee output.debian-9.log
+        - docker run -it -v $PWD:/srv chusiang/vim-and-vi-mode:$DOCKER_TAG
+            /bin/sh -c "cd /srv && make install" . | tee output.$DOCKER_TAG.log
 
         - echo "==> Check ..."
-        - grep "==> Done." output.debian-9.log
+        - grep "==> Done." output.$DOCKER_TAG.log
 
 notifications:
   slack:
