@@ -3,7 +3,7 @@
    Author: Chu-Siang Lai / chusiang (at) drx.tw
    Blog: http://note.drx.tw
    Filename: README.rst
-   Modified: 2018-03-19 01:28
+   Modified: 2019-07-25 00:22
    Reference: https://github.com/chusiang/vimrc/blob/master/README.rst
   =============================================================================
 
@@ -26,7 +26,7 @@ vimrc of chusiang
 :Requirements:
     Vim 7.4 or above.
 :Plugins Count:
-    39
+    40
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -64,13 +64,6 @@ Linux & Mac OSX
   ::
 
       cd vimrc && make install
-
-windows (No maintained)
------------------------
-
-::
-
-    WindowsInstall.bat
 
 4. HowTo
 ========
@@ -323,7 +316,6 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
     ├── LICENSE
     ├── Makefile
     ├── README.rst
-    ├── WindowsInstall.bat
     ├── _gvimrc
     ├── _vim
     │   ├── 01.vimrc.vim
@@ -344,12 +336,12 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
     │   ├── php-funclist.txt
     │   └── vimshrc
     ├── _vimrc
-    ├── _vimrc.win32
-    ├── ctags.exe
-    └── doc
-        └── xterm-color-table.html
+    ├── dein_installer.sh
+    ├── doc
+    │   └── xterm-color-table.html
+    └── output.debian-9.log
 
-    3 directories, 25 files
+    3 directories, 24 files
 
 7. Other vimrc list
 ===================
