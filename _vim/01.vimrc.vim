@@ -66,7 +66,9 @@ set smartindent
 set tabstop=2
 set softtabstop=2	" Set Soft tab stop.
 set shiftwidth=2	" Set Soft tab width.
-filetype indent on
+
+" Mark `filetype indent on` for support the EditorConfig. #31
+" filetype indent on
 
 " Scroll
 " ------
