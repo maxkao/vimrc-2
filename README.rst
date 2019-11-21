@@ -26,7 +26,7 @@ vimrc of chusiang
 :Requirements:
     Vim 7.4 or above.
 :Plugins Count:
-    40
+    41
 
 .. image:: https://lh6.googleusercontent.com/-jkam53cqxyk/Uo95ykP0eVI/AAAAAAAAWl4/ypRPFV90ul0/s800/2013-11-22-vim-chusiang.png
    :width: 720 px
@@ -226,9 +226,10 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 #. [X] `jQuery`_ - Syntax file for jQuery.
 #. [X] `nginx.vim`_ - highlights configuration files for nginx.
 #. [ ] `vim-chef`_ - Vim plugins for chef.
-#. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
 #. [ ] `vim-css-color`_ - Highlight colors in css files.
+#. [X] `vim-coloresque`_ - css/less/sass/html color preview for vim.
 #. [X] `vim-css3-syntax`_ - Add CSS3 syntax support to Vim's built-in syntax/css.vim.
+#. [X] `vim-json`_ - A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 #. [X] `vim-markdown`_ - Syntax highlighting and matching rules for Markdown. (need `Tabular`_)
 #. [X] `vim-tmux`_ - vim plugin for tmux.conf.
 #. [X] `yajs.vim`_ - Improved Highlight for Ajax, DOM and Browser Objects, Methods and Properties.
@@ -248,6 +249,7 @@ Backup directory: `${HOME}/.vim_back-${data}` [#]_
 .. _vim-coloresque: https://github.com/gorodinskiy/vim-coloresque
 .. _vim-css-color: https://github.com/skammer/vim-css-color
 .. _vim-css3-syntax: https://github.com/hail2u/vim-css3-syntax
+.. _vim-json: https://github.com/elzr/vim-json
 .. _vim-markdown: https://github.com/plasticboy/vim-markdown
 .. _vim-tmux: https://github.com/tmux-plugins/vim-tmux
 .. _yajs.vim: https://github.com/othree/yajs.vim

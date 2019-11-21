@@ -54,6 +54,12 @@ nmap <leader>w :call SearchWord()<CR>
 " none.
 
 
+" elzr/vim-json
+" -------------
+
+let g:indentLine_concealcursor=""
+
+
 " editorconfig/editorconfig-vim
 " -----------------------------
 
